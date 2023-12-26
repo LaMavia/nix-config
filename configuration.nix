@@ -26,8 +26,12 @@ let
       datadir = "${schema}/share/gsettings-schemas/${schema.name}";
     in ''
       export XDG_DATA_DIRS=${datadir}:$XDG_DATA_DIRS
-      gnome_schema=org.gnome.desktop.interface
-      gsettings set $gnome_schema gtk-theme 'Dracula'
+      export gnome_schema=org.gnome.desktop.interface
+      export GTK_THEME=nordic
+      gsettings set $gnome-schema gtk-theme 'Dracula'
+      gsettings set org.gnome.desktop.wm.preferences theme 'Nordic'
+      # gsettings set $gnome-schema icon-theme 'Adwaita'
+      gsettings set $gnome-schema cursor-theme 'Volantes Cursors'
     '';
   };
 
@@ -43,8 +47,7 @@ in
 
   # kvm
   boot.extraModprobeConfig = "options kvm_intel nested=1";
-  # libvirt
-  
+  # libvirt 
   virtualisation = {
     libvirtd = {
       enable = true;
@@ -63,6 +66,9 @@ in
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
+
+  # Kernel
+  boot.kernelPackages = pkgs.linuxPackages_6_6;
 
   networking.hostName = "nixos"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
@@ -89,6 +95,8 @@ in
   };
  
   environment.systemPackages = with pkgs; [
+    gnutar
+    zip
     neovim
     wget
     brave
@@ -99,8 +107,9 @@ in
     wayland
     xdg-utils
     glib
-    dracula-theme
+    nordic    
     gnome3.adwaita-icon-theme
+    volantes-cursors
     grim
     slurp
     wl-clipboard

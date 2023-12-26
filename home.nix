@@ -16,6 +16,14 @@
     };
   };
 
+  gtk = {
+    enable = true;
+    cursorTheme = {
+      name = "Volantes Cursors";
+      package = pkgs.volantes-cursors;
+    };
+  };
+
   programs.home-manager.enable = true;
 
   home.stateVersion = "23.11";
