@@ -36,6 +36,7 @@ in
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      <home-manager/nixos>
     ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
@@ -43,7 +44,20 @@ in
   # kvm
   boot.extraModprobeConfig = "options kvm_intel nested=1";
   # libvirt
-  virtualisation.libvirtd.enable = true;
+  
+  virtualisation = {
+    libvirtd = {
+      enable = true;
+      qemu = {
+        swtpm.enable = true;
+        ovmf = {
+          enable = true;
+          packages = [ pkgs.OVMFFull ];
+        };
+      };
+    };
+  };
+
   programs.virt-manager.enable = true;
 
   # Bootloader.
@@ -98,6 +112,9 @@ in
     rofi-wayland
     swaynotificationcenter
     brightnessctl
+    pulseaudio
+    zplug
+    home-manager
     # c
     gcc
     clang
@@ -108,6 +125,9 @@ in
     # virt
     libvirt
     virt-manager
+    win-virtio
+    OVMFFull
+    swtpm 
   ];
 
   environment.sessionVariables = rec {
@@ -115,6 +135,7 @@ in
     XDG_CONFIG_HOME = "$HOME/.config";
     XDG_DATA_HOME   = "$HOME/.local/share";
     XDG_STATE_HOME  = "$HOME/.local/state";
+    LIBVIRT_DEFAULT_URI = [ "qemu:///system" ];
   };
 
   services.pipewire = {
@@ -166,7 +187,7 @@ in
     enable= true;
     shellAliases = {
       nixos-config = "EDITOR=nvim sudoedit /etc/nixos/configuration.nix";
-    }; 
+    };
     histSize = 10000;
   };
 
@@ -189,7 +210,7 @@ in
   users.users.mavia = {
     isNormalUser = true;
     description = "Zuzanna Surowiec";
-    extraGroups = [ "networkmanager" "wheel" "libvirtd" ];
+    extraGroups = [ "networkmanager" "wheel" "libvirtd" "kvm" "qemu-libvirtd" ];
     packages = with pkgs; [
       brave
       thunderbird
@@ -200,6 +221,7 @@ in
       scala
       jetbrains.idea-community
       starship
+      lazygit
     ];
   };
 
