@@ -80,7 +80,7 @@ in
   time.timeZone = "Europe/Warsaw";
 
   # Select internationalisation properties.
-  i18n.defaultLocale = "es_ES.UTF-8";
+  i18n.defaultLocale = "ca_ES.UTF-8";
 
   i18n.extraLocaleSettings = {
     LC_ADDRESS = "es_ES.UTF-8";
@@ -95,6 +95,7 @@ in
   };
  
   environment.systemPackages = with pkgs; [
+    zsh
     gnutar
     zip
     neovim
@@ -122,7 +123,6 @@ in
     swaynotificationcenter
     brightnessctl
     pulseaudio
-    zplug
     home-manager
     # c
     gcc
@@ -192,16 +192,12 @@ in
   };
 
   # setup zsh as the default shell
-  programs.zsh = {
-    enable= true;
-    shellAliases = {
-      nixos-config = "EDITOR=nvim sudoedit /etc/nixos/configuration.nix";
-    };
-    histSize = 10000;
-  };
-
   users.defaultUserShell = pkgs.zsh;
   environment.shells = with pkgs; [ zsh ];
+
+  programs.zsh = {
+    enable = true;
+  };
 
   # setup fonts
   fonts.packages = with pkgs; [
@@ -221,16 +217,6 @@ in
     description = "Zuzanna Surowiec";
     extraGroups = [ "networkmanager" "wheel" "libvirtd" "kvm" "qemu-libvirtd" ];
     packages = with pkgs; [
-      brave
-      thunderbird
-      neovim
-      glab
-      gh
-      bun
-      scala
-      jetbrains.idea-community
-      starship
-      lazygit
     ];
   };
 
