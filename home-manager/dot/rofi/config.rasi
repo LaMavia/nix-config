@@ -1,36 +1,3 @@
-{ ... }:
-{
-  home.file.".config/rofi/shared/colors.rasi" = {
-    text = ''
-/**
- *
- * Author : Aditya Shakya (adi1090x)
- * Github : @adi1090x
- * 
- * Colors
- **/
-
-* {
-    background:     #1E2127;
-    background-alt: #282B31;
-    foreground:     #FFFFFF;
-    selected:       #61AFEF;
-    active:         #98C379;
-    urgent:         #E06C75;
-}
-    '';
-  };
-
-  home.file.".config/rofi/shared/fonts.rasi" = {
-    text = ''
-* {
-    font: "Iosevka Nerd Font 10";
-}
-    '';
-  };
-
-  home.file.".config/rofi/config.rasi" = {
-    text = ''
 /**
  *
  * Author : Aditya Shakya (adi1090x)
@@ -203,7 +170,4 @@ textbox {
     vertical-align:              0.5;
     horizontal-align:            0.0;
     highlight:                   none;
-}    '';
-  };
-
 }

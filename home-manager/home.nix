@@ -2,9 +2,12 @@
 
 {
   imports = [
-    ./dot/rofi.nix
-    ./dot/kitty.nix
-    ./dot/sway.nix
+    # dot files
+    ./dot/rofi/default.nix
+    ./dot/kitty/default.nix
+    ./dot/sway/default.nix
+    ./dot/waybar/default.nix
+    # program configs
     ./modules/git.nix
     ./modules/zsh.nix
     ./modules/gtk.nix
