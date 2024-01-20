@@ -35,6 +35,7 @@ inputbar {
     font:       "Montserrat 20";
     padding:    12px;
     spacing:    12px;
+    text-color: white;
     children:   [ icon-search, entry ];
 }
 
@@ -53,6 +54,7 @@ entry {
 
     placeholder         : "Search";
     placeholder-color   : @fg2;
+    text-color          : @fg2;
 }
 
 message {
@@ -105,5 +107,9 @@ element-icon {
 
 element-text {
     text-color: @fg1;
-    background-color: inherit;
+    background-color: white / 0%;
+}
+
+scrollbar {
+    background-color: @fg2;
 }
