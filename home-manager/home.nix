@@ -36,6 +36,7 @@
     amberol
     eartag
     planner
+    gnome.file-roller
   ];
 
   home.sessionVariables = {};
