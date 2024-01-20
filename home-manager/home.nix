@@ -32,6 +32,10 @@
     lazygit
     rustc
     cargo
+    octaveFull
+    amberol
+    eartag
+    planner
   ];
 
   home.sessionVariables = {};
