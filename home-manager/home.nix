@@ -37,6 +37,7 @@
     eartag
     planner
     gnome.file-roller
+    nodejs_21
   ];
 
   home.sessionVariables = {};
