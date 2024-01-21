@@ -7,6 +7,7 @@
     ./dot/kitty/default.nix
     ./dot/sway/default.nix
     ./dot/waybar/default.nix
+    ./dot/foot/default.nix
     # program configs
     ./modules/git.nix
     ./modules/zsh.nix
