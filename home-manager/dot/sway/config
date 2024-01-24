@@ -265,7 +265,7 @@ bar swaybar_command waybar
 default_border pixel 2
 
 # inactive window opacity
-exec /usr/share/sway/scripts/inactive-windows-transparency.py --opacity 0.05
+exec inactive-windows-transparency.py --opacity 0.1
 
 include /etc/sway/config.d/*
 

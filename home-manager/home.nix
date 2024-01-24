@@ -39,6 +39,8 @@
     planner
     gnome.file-roller
     nodejs_21
+    ripgrep
+    bottom
   ];
 
   home.sessionVariables = {};
