@@ -8,6 +8,7 @@
     ./dot/sway/default.nix
     ./dot/waybar/default.nix
     ./dot/foot/default.nix
+    ./dot/tmux/default.nix
     # program configs
     ./modules/git.nix
     ./modules/zsh.nix
@@ -27,8 +28,6 @@
     glab
     gh
     bun
-    scala
-    jetbrains.idea-community
     starship
     lazygit
     rustc
@@ -41,6 +40,7 @@
     nodejs_21
     ripgrep
     bottom
+    neovim
   ];
 
   home.sessionVariables = {};
