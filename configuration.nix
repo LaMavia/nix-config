@@ -98,7 +98,6 @@ in
     zsh
     gnutar
     zip
-    neovim
     wget
     brave
     sway
