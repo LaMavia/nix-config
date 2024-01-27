@@ -1,7 +1,7 @@
 {...}:
 {
   programs.git = {
-    enable = true;
+    enable = false;
     userName = "LaMavia";
     userEmail = "ts438730@students.mimuw.edu.pl";
   };
