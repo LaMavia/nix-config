@@ -30,15 +30,15 @@ output * bg "~/.config/sway/wallpaper.png" fill
 #
 # Example configuration:
 #
-# exec swayidle -w \
-#          timeout 300 'swaylock -f -c 000000' \
-#          timeout 600 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
-#          before-sleep 'swaylock -f -c 000000'
-#
+exec swayidle -w \
+         timeout 3000 'swaylock -f' \
+         timeout 6000 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
+         before-sleep 'swaylock -f'
+
 # This will lock your screen after 300 seconds of inactivity, then turn off
 # your displays after another 300 seconds, and turn your screens back on when
 # resumed. It will also lock your screen before your computer goes to sleep.
-
+#
 ### Input configuration
 #
 # Example configuration:
@@ -265,7 +265,7 @@ bar swaybar_command waybar
 default_border pixel 2
 
 # inactive window opacity
-exec inactive-windows-transparency.py --opacity 0.1
+exec inactive-windows-transparency.py --opacity 0.95
 
 include /etc/sway/config.d/*
 
