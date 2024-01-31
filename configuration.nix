@@ -21,29 +21,33 @@ let
     name = "configure-gtk";
     destination = "/bin/configure-gtk";
     executable = true;
-    text = let
-      schema = pkgs.gsettings-desktop-schemas;
-      datadir = "${schema}/share/gsettings-schemas/${schema.name}";
-    in ''
-      export XDG_DATA_DIRS=${datadir}:$XDG_DATA_DIRS
-      export gnome_schema=org.gnome.desktop.interface
-      export GTK_THEME=nordic
-      gsettings set $gnome-schema gtk-theme 'Dracula'
-      gsettings set org.gnome.desktop.wm.preferences theme 'Nordic'
-      # gsettings set $gnome-schema icon-theme 'Adwaita'
-      gsettings set $gnome-schema cursor-theme 'Volantes Cursors'
-    '';
+    text =
+      let
+        schema = pkgs.gsettings-desktop-schemas;
+        datadir = "${schema}/share/gsettings-schemas/${schema.name}";
+      in
+      ''
+        export XDG_DATA_DIRS=${datadir}:$XDG_DATA_DIRS
+        export gnome_schema=org.gnome.desktop.interface
+        export GTK_THEME=nordic
+        gsettings set $gnome-schema gtk-theme 'Dracula'
+        gsettings set org.gnome.desktop.wm.preferences theme 'Nordic'
+        # gsettings set $gnome-schema icon-theme 'Adwaita'
+        gsettings set $gnome-schema cursor-theme 'Volantes Cursors'
+      '';
   };
 
 in
 {
   imports =
-    [ # Include the results of the hardware scan.
+    [
+      # Include the results of the hardware scan.
       ./hardware-configuration.nix
       <home-manager/nixos>
     ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  nixpkgs.config.allowUnfree = true;
 
   # kvm
   boot.extraModprobeConfig = "options kvm_intel nested=1";
@@ -93,7 +97,7 @@ in
     LC_TELEPHONE = "es_ES.UTF-8";
     LC_TIME = "es_ES.UTF-8";
   };
- 
+
   environment.systemPackages = with pkgs; [
     zsh
     gnutar
@@ -107,7 +111,7 @@ in
     wayland
     xdg-utils
     glib
-    nordic    
+    nordic
     gnome3.adwaita-icon-theme
     volantes-cursors
     grim
@@ -135,14 +139,14 @@ in
     virt-manager
     win-virtio
     OVMFFull
-    swtpm 
+    swtpm
   ];
 
   environment.sessionVariables = rec {
-    XDG_CACHE_HOME  = "$HOME/.cache";
+    XDG_CACHE_HOME = "$HOME/.cache";
     XDG_CONFIG_HOME = "$HOME/.config";
-    XDG_DATA_HOME   = "$HOME/.local/share";
-    XDG_STATE_HOME  = "$HOME/.local/state";
+    XDG_DATA_HOME = "$HOME/.local/share";
+    XDG_STATE_HOME = "$HOME/.local/state";
     LIBVIRT_DEFAULT_URI = [ "qemu:///system" ];
   };
 
@@ -165,7 +169,7 @@ in
     };
     libinput = {
       enable = true;
-      touchpad = {     
+      touchpad = {
         naturalScrolling = true;
         tapping = true;
       };
