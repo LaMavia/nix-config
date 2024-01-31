@@ -2,9 +2,14 @@
 {
   gtk = {
     enable = true;
-    cursorTheme = {
-      name = "Volantes Cursors";
-      package = pkgs.volantes-cursors;
+    theme = {
+      name = "Catppuccin-Macchiato-Compact-Pink-Dark";
+      package = pkgs.catppuccin-gtk.override {
+        accents = [ "teal" ];
+        size = "standard";
+        tweaks = [ "rimless" "black" ];
+        variant = "macchiato";
+      };
     };
   };
 }
