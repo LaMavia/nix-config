@@ -20,29 +20,16 @@
   home.homeDirectory = "/home/mavia";
 
   home.packages = with pkgs; [
-    git
-    rofi
-    zsh
-    zplug
     brave
     thunderbird
-    neovim
-    glab
-    gh
     bun
-    starship
-    lazygit
     rustc
     cargo
     octaveFull
     amberol
     eartag
-    planner
     gnome.file-roller
     nodejs_21
-    ripgrep
-    bottom
-    neovim
     zoom-us
     signal-desktop
   ];
