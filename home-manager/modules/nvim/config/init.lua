@@ -2,6 +2,16 @@ local _dir = (...):match("(.-)[^%.]+$")
 local api = vim.api
 
 return {
+  options = {
+    opt = {
+      relativenumber = true, -- sets vim.opt.relativenumber
+      number = true, -- sets vim.opt.number
+      spell = true, -- sets vim.opt.spell
+      wrap = true, -- sets vim.opt.wrap
+      shiftwidth = 2,
+      tabstop = 2,
+    },
+  },
   -- Configure AstroNvim updates
   updater = {
     remote = "origin", -- remote to use
@@ -48,13 +58,5 @@ return {
     require('notebook').setup()
     require('prettier').setup{}
     require(_dir .. 'lsp.metals').setup()
-
-    -- require("coqtail").setup {}
-    -- Set up custom filetypes
-    vim.filetype.add {
-      extension = {
-        v = "coq",
-      }
-    }
   end,
 }
