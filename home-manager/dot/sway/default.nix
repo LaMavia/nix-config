@@ -6,7 +6,7 @@
   ];
 
   home.file.".config/sway/wallpaper.png" = {
-    source = ../../resources/simple-paisage.png;
+    source = ../../resources/simple-bulb.png;
   };
 
   home.file.".config/sway/config".source = ./config;

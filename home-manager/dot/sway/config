@@ -93,6 +93,9 @@ input type:touchpad {
     # rofi
     bindsym $mod+x exec --no-startup-id rofi -show drun 
 
+    # Lock screen
+    bindsym $mod+c exec swaylock -f
+
 # 
 # Brightness
 #
