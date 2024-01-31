@@ -14,6 +14,7 @@
     ./modules/git.nix
     ./modules/zsh.nix
     ./modules/gtk.nix
+    ./modules/nvim/default.nix
   ];
   home.username = "mavia";
   home.homeDirectory = "/home/mavia";
@@ -42,9 +43,13 @@
     ripgrep
     bottom
     neovim
+    zoom-us
+    signal-desktop
   ];
 
   home.sessionVariables = { };
+
+  nixpkgs.config.allowUnfree = true;
 
   programs.home-manager.enable = true;
 
