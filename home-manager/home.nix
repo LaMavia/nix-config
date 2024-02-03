@@ -14,6 +14,7 @@
     ./modules/git.nix
     ./modules/zsh.nix
     ./modules/gtk.nix
+    ./modules/fonts.nix
     ./modules/nvim/default.nix
   ];
   home.username = "mavia";
@@ -32,6 +33,7 @@
     nodejs_21
     zoom-us
     signal-desktop
+    waylock
   ];
 
   home.sessionVariables = { };
