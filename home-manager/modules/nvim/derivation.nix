@@ -8,7 +8,7 @@ stdenv.mkDerivation {
   src = builtins.fetchGit {
     url = "https://github.com/AstroNvim/AstroNvim.git";
   };
-
+  
   installPhase = ''
     cp -r . $out
     cp -r ${userConfig} $out/lua/user

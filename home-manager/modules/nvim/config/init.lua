@@ -57,6 +57,7 @@ return {
     require('nu').setup{}
     require('notebook').setup()
     require('prettier').setup{}
+    require('lspconfig').nixd.setup{}
     require(_dir .. 'lsp.metals').setup()
   end,
 }

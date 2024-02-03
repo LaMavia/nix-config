@@ -10,5 +10,6 @@ in
     lazygit
     ripgrep
     bottom
+    nixd
   ];
 }
