@@ -14,7 +14,7 @@ set $term kitty
 # on the original workspace that the command was run on.
 set $menu dmenu_path | dmenu | xargs swaymsg exec --
 
-set $lock 'swaylock -f -w'
+set $lock 'swaylock -f'
 
 ### Output configuration
 #
@@ -273,6 +273,8 @@ client.focused "#1b1b1b" "#1b1b1b" "#fefefe" "#fefefe" "#fefefe00"
 
 # inactive window opacity
 exec inactive-windows-transparency.py --opacity 0.95
+exec sleep 5; systemctl --user start kanshi.service
 
 include /etc/sway/config.d/*
+
 

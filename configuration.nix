@@ -99,6 +99,7 @@ in
   };
 
   environment.systemPackages = with pkgs; [
+    kanshi
     zsh
     gnutar
     zip
@@ -180,6 +181,14 @@ in
   systemd.services."autovt@tty1".enable = false;
 
   services.dbus.enable = true;
+
+  systemd.user.services.kanshi = {
+    description = "kanshi daemon";
+    serviceConfig = {
+      Type = "simple";
+      ExecStart = ''${pkgs.kanshi}/bin/kanshi -c kanshi_config_file'';
+    };
+  };
 
   xdg.portal = {
     enable = true;
