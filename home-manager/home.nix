@@ -3,11 +3,7 @@
 {
   imports = [
     # dot files
-    ./dot/rofi/default.nix
-    ./dot/kitty/default.nix
     ./dot/sway/default.nix
-    ./dot/swaylock/default.nix
-    ./dot/waybar/default.nix
     ./dot/foot/default.nix
     ./dot/tmux/default.nix
     # program configs
