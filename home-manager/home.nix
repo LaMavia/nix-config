@@ -30,20 +30,7 @@
     zoom-us
     signal-desktop
     waylock
-    volantes-cursors
   ];
-
-  home.file.".icons/default/index.theme".text = ''
-    [icon theme] 
-    Inherits=Volantes Cursors
-  '';
-
-  home.pointerCursor = {
-    gtk.enable = true;
-    package = pkgs.volantes-cursors;
-    name = "Volantes Cursors";
-    size = 13;
-  };
 
   home.sessionVariables = { };
 
