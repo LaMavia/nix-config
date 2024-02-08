@@ -30,10 +30,11 @@ let
         export XDG_DATA_DIRS=${datadir}:$XDG_DATA_DIRS
         export gnome_schema=org.gnome.desktop.interface
         export GTK_THEME=nordic
-        gsettings set $gnome-schema gtk-theme 'Dracula'
+        echo "$XDG_DATA_DIRS | $gnome_schema"
+        gsettings set $gnome_schema gtk-theme 'Dracula'
         gsettings set org.gnome.desktop.wm.preferences theme 'Nordic'
-        # gsettings set $gnome-schema icon-theme 'Adwaita'
-        gsettings set $gnome-schema cursor-theme 'Volantes Cursors'
+        # gsettings set $gnome_schema icon-theme 'Adwaita'
+        gsettings set $gnome_schema cursor-theme 'Volantes Cursors'
       '';
   };
 
