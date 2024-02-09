@@ -1,13 +1,17 @@
 { pkgs, ... }:
 {
+  dconf = {
+    enable = true;
+  };
+
   gtk = {
     enable = true;
     theme = {
-      name = "Catppuccin-Macchiato-Compact-Pink-Dark";
+      name = "Catppuccin-Macchiato-Standard-Pink-Dark";
       package = pkgs.catppuccin-gtk.override {
         accents = [ "pink" ];
         size = "standard";
-        tweaks = [ "rimless" "black" ];
+        # tweaks = [ "rimless" "black" ];
         variant = "macchiato";
       };
     };

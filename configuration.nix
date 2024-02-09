@@ -100,6 +100,7 @@ in
   };
 
   environment.systemPackages = with pkgs; [
+    git
     kanshi
     zsh
     gnutar
@@ -144,6 +145,25 @@ in
     swtpm
   ];
 
+  environment.gnome.excludePackages = (with pkgs; [
+    gnome-photos
+    gnome-tour
+    gedit
+  ]) ++ (with pkgs.gnome; [
+    cheese # webcam tool
+    gnome-music
+    gnome-terminal
+    epiphany # web browser
+    geary # email reader
+    evince # document viewer
+    gnome-characters
+    totem # video player
+    tali # poker game
+    iagno # go game
+    hitori # sudoku game
+    atomix # puzzle game
+  ]);
+
   environment.sessionVariables = rec {
     XDG_CACHE_HOME = "$HOME/.cache";
     XDG_CONFIG_HOME = "$HOME/.config";
@@ -158,10 +178,13 @@ in
     pulse.enable = true;
   };
 
+  hardware.pulseaudio.enable = false;
+
   services.xserver = {
     enable = true;
     layout = "pl";
     xkbVariant = "";
+    desktopManager.gnome.enable = true;
     displayManager = {
       gdm.enable = true;
       autoLogin = {
@@ -195,7 +218,7 @@ in
     enable = true;
     wlr.enable = true;
     # gtk portal needed to make gtk apps happy
-    extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
+    # extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
   };
 
   # enable sway window manager
