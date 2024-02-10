@@ -120,7 +120,6 @@ in
     grim
     slurp
     wl-clipboard
-    mako
     wdisplays
     tmux
     waybar
