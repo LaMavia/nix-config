@@ -9,7 +9,7 @@ return {
       spell = true, -- sets vim.opt.spell
       wrap = true, -- sets vim.opt.wrap
       shiftwidth = 2,
-      tabstop = 2,
+      tabstop = 2, 
     },
   },
   -- Configure AstroNvim updates
@@ -56,8 +56,29 @@ return {
   polish = function()
     require('nu').setup{}
     require('notebook').setup()
-    require('prettier').setup{}
+    -- require('prettier').setup{}
     require('lspconfig').nixd.setup{}
+    require('hologram').setup{
+      auto_display = true 
+    }
     require(_dir .. 'lsp.metals').setup()
+
+    require("prettier").setup({
+      bin = 'prettierd', -- or `'prettierd'` (v0.23.3+)
+      filetypes = {
+        "css",
+        "graphql",
+        "html",
+        "javascript",
+        "javascriptreact",
+        "json",
+        "less",
+        "markdown",
+        "scss",
+        "typescript",
+        "typescriptreact",
+        "yaml",
+      },
+    })
   end,
 }

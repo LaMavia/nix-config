@@ -1,4 +1,4 @@
-{ pkgs, fetchgit, ... }:
+{ pkgs, ... }:
 let
   config-derivation = pkgs.callPackage ./derivation.nix { };
 in
@@ -11,5 +11,6 @@ in
     ripgrep
     bottom
     nixd
+    prettierd
   ];
 }

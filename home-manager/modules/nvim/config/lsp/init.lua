@@ -1,4 +1,9 @@
 return {
+  opts = {
+    capabilities = {
+      offsetEncoding = {"utf-8"}
+    }
+  };
   -- customize lsp formatting options
   formatting = {
     -- control auto formatting on save
@@ -7,6 +12,6 @@ return {
     },
     disabled = {  },
     timeout_ms = 1000, -- default format timeout
-  }
+  },
 }
 

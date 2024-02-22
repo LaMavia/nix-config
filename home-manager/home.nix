@@ -30,6 +30,7 @@
     zoom-us
     signal-desktop
     waylock
+    vscode
   ];
 
   home.sessionVariables = { };
