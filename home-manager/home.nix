@@ -12,7 +12,9 @@
     ./modules/gtk.nix
     ./modules/fonts.nix
     ./modules/nvim/default.nix
+    # ./modules/nixvim/default.nix
   ];
+  
   home.username = "mavia";
   home.homeDirectory = "/home/mavia";
 
@@ -31,11 +33,16 @@
     signal-desktop
     waylock
     vscode
+    swiProlog
+    ciao
   ];
 
   home.sessionVariables = { };
 
-  nixpkgs.config.allowUnfree = true;
+  nixpkgs.config = {
+    allowUnfree = true;
+    allowUnfreePredicate = _:true;
+  };
 
   programs.home-manager.enable = true;
 
