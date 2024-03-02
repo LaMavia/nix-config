@@ -33,8 +33,6 @@
     signal-desktop
     waylock
     vscode
-    swiProlog
-    ciao
   ];
 
   home.sessionVariables = { };

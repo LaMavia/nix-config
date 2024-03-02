@@ -56,7 +56,9 @@ return {
   polish = function()
     require('nu').setup{}
     require('notebook').setup()
-    -- require('prettier').setup{}
+    require('prettier').setup{
+      bin = 'prettier'
+    }
     require('lspconfig').nixd.setup{}
     require('hologram').setup{
       auto_display = true 

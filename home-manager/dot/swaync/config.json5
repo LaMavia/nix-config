@@ -29,7 +29,7 @@
         "notifications",
 		"mpris",
 		"volume",
-        "buttons-grid"
+//        "buttons-grid"
     ],
     "widget-config": {
         "title": {
