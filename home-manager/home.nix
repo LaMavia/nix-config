@@ -8,11 +8,11 @@
     ./dot/tmux/default.nix
     # program configs
     ./modules/git.nix
-    ./modules/zsh.nix
+    ./modules/fish.nix
     ./modules/gtk.nix
     ./modules/fonts.nix
     ./modules/nvim/default.nix
-    # ./modules/nixvim/default.nix
+    ./modules/lvim/default.nix
   ];
   
   home.username = "mavia";
@@ -31,7 +31,6 @@
     nodejs_21
     zoom-us
     signal-desktop
-    waylock
     vscode
   ];
 

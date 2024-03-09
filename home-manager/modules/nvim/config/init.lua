@@ -54,13 +54,8 @@ return {
   -- augroups/autocommands and custom filetypes also this just pure lua so
   -- anything that doesn't fit in the normal config locations above can go here
   polish = function()
-    require('nu').setup{}
-    require('notebook').setup()
     require('lspconfig').nixd.setup{}
-    require('hologram').setup{
-      auto_display = true 
-    }
-    require(_dir .. 'lsp.metals').setup()
+    require('lspconfig').prolog_ls.setup{}
 
     require("prettier").setup({
       bin = 'prettierd', -- or `'prettierd'` (v0.23.3+)

@@ -1,16 +1,16 @@
 { pkgs, ... }:
 let
-  config-derivation = pkgs.callPackage ./derivation.nix { };
+ config-derivation = pkgs.callPackage ./derivation.nix { };
 in
 {
-  home.file.".config/nvim".source = config-derivation;
+ home.file.".config/nvim".source = config-derivation;
 
-  home.packages = with pkgs; [
-    neovim
-    lazygit
-    ripgrep
-    bottom
-    nixd
-    prettierd
-  ];
+ home.packages = with pkgs; [
+   neovim
+   lazygit
+   ripgrep
+   bottom
+   nixd
+   prettierd
+ ];
 }

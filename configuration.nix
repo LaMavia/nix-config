@@ -102,7 +102,7 @@ in
   environment.systemPackages = with pkgs; [
     git
     kanshi
-    zsh
+    fish
     gnutar
     zip
     wget
@@ -181,8 +181,10 @@ in
 
   services.xserver = {
     enable = true;
-    layout = "pl";
-    xkbVariant = "";
+    xkb = {
+      variant = "";
+      layout = "pl";
+    };
     desktopManager.gnome.enable = true;
     displayManager = {
       gdm.enable = true;
@@ -226,12 +228,18 @@ in
     wrapperFeatures.gtk = true;
   };
 
-  # setup zsh as the default shell
-  users.defaultUserShell = pkgs.zsh;
-  environment.shells = with pkgs; [ zsh ];
-
-  programs.zsh = {
+  programs.fish = {
     enable = true;
+  };
+
+  programs.bash = {
+    interactiveShellInit = ''
+      if [[ $(${pkgs.procps}/bin/ps --no-header --pid=$PPID --format=comm) != "fish" && -z ''${BASH_EXECUTION_STRING} ]]
+      then
+        shopt -q login_shell && LOGIN_OPTION='--login' || LOGIN_OPTION=""
+        exec ${pkgs.fish}/bin/fish $LOGIN_OPTION
+      fi
+    '';
   };
 
   # setup fonts
@@ -251,8 +259,7 @@ in
     isNormalUser = true;
     description = "Zuzanna Surowiec";
     extraGroups = [ "networkmanager" "wheel" "libvirtd" "kvm" "qemu-libvirtd" ];
-    packages = with pkgs; [
-    ];
+    shell = pkgs.bash;
   };
 
   services.openssh.enable = true;

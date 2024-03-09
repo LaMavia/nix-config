@@ -14,17 +14,20 @@ in
   programs.nixvim = {
     enable = true;
 
-    globals.mapleader = ",";
+    globals.mapleader = " ";
 
     options = {
       number = true;         # Show line numbers
       relativenumber = true; # Show relative line numbers
 
       shiftwidth = 2;        # Tab width should be 2
+    }; 
 
-    };
-
-    colorschemes.onedark.enable = true;
+#    colorschemes.catppuccin = {
+#      enable = true;
+#      flavour = "macchiato";
+#    };
+    colorschemes.one.enable = true;
 
     plugins = {
     	lightline.enable = true;
@@ -32,6 +35,13 @@ in
 	notify.enable = true;
 	telescope.extensions.file_browser.enable = true;
 	bufferline.enable = true;
+	nvim-tree.enable = true;
     };
+
+    keymaps = [
+      { key = "<leader>e"; action = "<cmd>Texplore<CR>"; }
+      { key = "<C-s>"; action = "<cmd>:w<CR>"; }
+#      { key = "<leader>"; }
+    ];
   };
 }
