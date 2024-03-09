@@ -6,6 +6,7 @@
     ./dot/sway/default.nix
     ./dot/foot/default.nix
     ./dot/tmux/default.nix
+    ./dot/gestures/default.nix
     # program configs
     ./modules/git.nix
     ./modules/fish.nix
@@ -32,6 +33,7 @@
     zoom-us
     signal-desktop
     vscode
+    spotify
   ];
 
   home.sessionVariables = { };

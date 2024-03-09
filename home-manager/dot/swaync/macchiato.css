@@ -27,6 +27,11 @@
   margin: 7px;
 }
 
+.floating-notifications.background .notification-row .notification-background .notification .notification-content .image,
+.control-center .notification-row .notification-background .notification .notification-content .image {
+  margin-right: 5px;
+}
+
 .floating-notifications.background .notification-row .notification-background .notification .notification-content .summary {
   color: #ffffff;
 }
@@ -36,7 +41,7 @@
 }
 
 .floating-notifications.background .notification-row .notification-background .notification .notification-content .body {
-  color: #ffffff;
+  color: #eeeeee;
 }
 
 .floating-notifications.background .notification-row .notification-background .notification>*:last-child>* {
