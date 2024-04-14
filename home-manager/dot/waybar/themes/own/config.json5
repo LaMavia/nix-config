@@ -11,10 +11,10 @@
         "clock"
     ],
     "modules-right": [
+        "tray",
         "sway/language",
         "idle_inhibitor",
-        "battery", 
-        "tray"
+        "battery" 
     ],
     // Modules configuration
     "sway/workspaces": {

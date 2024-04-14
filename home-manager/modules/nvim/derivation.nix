@@ -6,7 +6,7 @@ stdenv.mkDerivation {
   name = "nvim-config";
 
   src = builtins.fetchGit {
-    url = "https://github.com/AstroNvim/AstroNvim.git";
+    url = "https://github.com/AstroNvim/template";
   };
   
   installPhase = ''

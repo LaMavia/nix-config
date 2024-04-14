@@ -55,10 +55,12 @@ return {
   -- anything that doesn't fit in the normal config locations above can go here
   polish = function()
     require('lspconfig').nixd.setup{}
-    require('lspconfig').prolog_ls.setup{}
+    -- require("elixir").setup({})
 
-    require("prettier").setup({
-      bin = 'prettierd', -- or `'prettierd'` (v0.23.3+)
+    local prettier = require("prettier")
+
+    prettier.setup({
+      bin = 'prettier', -- or `'prettierd'` (v0.23.3+)
       filetypes = {
         "css",
         "graphql",
@@ -73,6 +75,6 @@ return {
         "typescriptreact",
         "yaml",
       },
-    })
+    })  
   end,
 }

@@ -6,6 +6,7 @@
     interactiveShellInit = ''
       set fish_greeting # Disable greeting
       starship init fish | source
+      direnv hook fish | source
     '';
 
     plugins = [

@@ -12,6 +12,6 @@ return {
     },
     disabled = {  },
     timeout_ms = 1000, -- default format timeout
-  },
+  } 
 }
 

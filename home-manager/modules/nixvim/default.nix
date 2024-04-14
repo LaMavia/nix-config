@@ -5,10 +5,16 @@ let
     # If you are not running an unstable channel of nixpkgs, select the corresponding branch of nixvim.
     # ref = "nixos-23.05";
   });
+  plugin-config = import ./plugins/default.nix;
 in
 {
   imports = [
     nixvim.homeManagerModules.nixvim
+    # plugin-config
+  ];
+
+  home.packages = with pkgs; [
+    haskell-language-server
   ];
 
   programs.nixvim = {
@@ -16,32 +22,30 @@ in
 
     globals.mapleader = " ";
 
-    options = {
+    clipboard.register = "unnamedplus";
+  
+    opts = {
       number = true;         # Show line numbers
       relativenumber = true; # Show relative line numbers
-
       shiftwidth = 2;        # Tab width should be 2
+      expandtab = true;
+
+      termguicolors = true;
     }; 
 
-#    colorschemes.catppuccin = {
-#      enable = true;
-#      flavour = "macchiato";
-#    };
     colorschemes.one.enable = true;
 
-    plugins = {
-    	lightline.enable = true;
-	which-key.enable = true;
-	notify.enable = true;
-	telescope.extensions.file_browser.enable = true;
-	bufferline.enable = true;
-	nvim-tree.enable = true;
-    };
+    plugins = plugin-config; 
+    extraPlugins = with pkgs.vimPlugins; [
+      nvim-web-devicons
+      luasnip
+    ];
 
     keymaps = [
-      { key = "<leader>e"; action = "<cmd>Texplore<CR>"; }
+      { key = "<leader>e"; action = "<cmd>NvimTreeToggle<CR>"; }
       { key = "<C-s>"; action = "<cmd>:w<CR>"; }
-#      { key = "<leader>"; }
     ];
+
+    extraConfigLua = builtins.readFile ./extra/cmp.lua;
   };
 }
