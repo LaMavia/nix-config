@@ -13,7 +13,7 @@
     ./modules/gtk.nix
     ./modules/fonts.nix
     ./modules/direnv.nix
-    # ./modules/nvim/default.nix
+    ./modules/nvim/default.nix
     ./modules/lvim/default.nix
     # ./modules/nixvim/default.nix
   ];

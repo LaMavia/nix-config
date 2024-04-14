@@ -1,0 +1,44 @@
+-- This will run last in the setup process and is a good place to configure
+-- things like custom filetypes. This just pure lua so anything that doesn't
+-- fit in the normal config locations above can go here
+
+-- Set up custom filetypes
+vim.filetype.add {
+  extension = {
+    foo = "fooscript",
+  },
+  filename = {
+    ["Foofile"] = "fooscript",
+  },
+  pattern = {
+    ["~/%.config/foo/.*"] = "fooscript",
+  },
+}
+
+require('lspconfig').nixd.setup{}
+-- require('lspconfig').tsserver.setup{
+--   on_attach = function(client)
+--     client.server_capabilities.documentFormattingProvider = false
+--     client.server_capabilities.documentRangeFormattingProvider = false
+--   end,
+--
+require("elixir").setup({})
+
+
+require('prettier').setup({
+  bin = 'prettierd', -- or `'prettierd'` (v0.23.3+)
+  filetypes = {
+    "css",
+    "graphql",
+    "html",
+    "javascript",
+    "javascriptreact",
+    "json",
+    "less",
+    "markdown",
+    "scss",
+    "typescript",
+    "typescriptreact",
+    "yaml",
+  },
+})

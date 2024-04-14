@@ -5,12 +5,5 @@ in
 {
  home.file.".config/nvim".source = config-derivation;
 
- home.packages = with pkgs; [
-   neovim
-   lazygit
-   ripgrep
-   bottom
-   nixd
-   prettierd
- ];
+ home.packages = import ./packages.nix { pkgs=pkgs; };
 }

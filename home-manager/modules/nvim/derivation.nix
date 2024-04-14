@@ -1,16 +1,13 @@
-{ stdenv, ... }:
-let
-  userConfig = ./config;
-in
+{ stdenv, pkgs, ... }:
 stdenv.mkDerivation {
   name = "nvim-config";
 
-  src = builtins.fetchGit {
-    url = "https://github.com/AstroNvim/template";
-  };
-  
+  src = ./astro-v4;
+
   installPhase = ''
     cp -r . $out
-    cp -r ${userConfig} $out/lua/user
+    ${pkgs.neovim}/bin/nvim --headless +q
   '';
+
+  buildInputs = import ./packages.nix { pkgs = pkgs; } ;
 }
