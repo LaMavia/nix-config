@@ -31,12 +31,14 @@
     amberol
     eartag
     gnome.file-roller
-    nodejs_21
+    nodejs_22
     zoom-us
     signal-desktop
     vscode
     spotify
-    haskellPackages.haskell-language-server
+    tokei
+    unzip
+    htop
   ];
 
   home.sessionVariables = { };

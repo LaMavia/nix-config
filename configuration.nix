@@ -49,6 +49,7 @@ in
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   nixpkgs.config.allowUnfree = true;
+  nixpkgs.config.allowUnfreePredicate = _: true;
 
   # kvm
   boot.extraModprobeConfig = "options kvm_intel nested=1";
@@ -171,6 +172,8 @@ in
     LIBVIRT_DEFAULT_URI = [ "qemu:///system" ];
   };
 
+  services.blueman.enable = true;
+
   services.pipewire = {
     enable = true;
     alsa.enable = true;
@@ -178,6 +181,23 @@ in
   };
 
   hardware.pulseaudio.enable = false;
+
+  services.libinput = {
+    enable = true;
+    touchpad = {
+      naturalScrolling = true;
+      tapping = true;
+    };
+  };
+
+  services.displayManager = {
+    enable = true;
+    autoLogin = {
+      enable = true;
+      user = "mavia";
+    };
+  };
+
 
   services.xserver = {
     enable = true;
@@ -188,22 +208,14 @@ in
     desktopManager.gnome.enable = true;
     displayManager = {
       gdm.enable = true;
-      autoLogin = {
-        enable = true;
-        user = "mavia";
-      };
-    };
-    libinput = {
-      enable = true;
-      touchpad = {
-        naturalScrolling = true;
-        tapping = true;
-      };
     };
   };
 
   systemd.services."getty@tty1".enable = false;
   systemd.services."autovt@tty1".enable = false;
+  systemd.extraConfig = ''
+    DefaultTimeoutStopSec=1s
+  '';
 
   services.dbus.enable = true;
 
@@ -221,6 +233,8 @@ in
     # gtk portal needed to make gtk apps happy
     # extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
   };
+
+  programs.nix-ld.enable = true;
 
   # enable sway window manager
   programs.sway = {
@@ -240,6 +254,12 @@ in
         exec ${pkgs.fish}/bin/fish $LOGIN_OPTION
       fi
     '';
+  };
+
+  programs.steam = {
+    enable = true;
+    remotePlay.openFirewall = true; # Open ports in the firewall for Steam Remote Play
+    dedicatedServer.openFirewall = true; # Open ports in the firewall for Source Dedicated Server
   };
 
   # setup fonts

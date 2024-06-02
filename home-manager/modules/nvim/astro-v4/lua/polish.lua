@@ -16,12 +16,6 @@ vim.filetype.add {
 }
 
 require('lspconfig').nixd.setup{}
--- require('lspconfig').tsserver.setup{
---   on_attach = function(client)
---     client.server_capabilities.documentFormattingProvider = false
---     client.server_capabilities.documentRangeFormattingProvider = false
---   end,
---
 require("elixir").setup({})
 
 
