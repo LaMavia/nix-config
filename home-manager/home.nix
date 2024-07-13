@@ -18,6 +18,7 @@
     # ./modules/nixvim/default.nix
   ];
   
+  home.enableNixpkgsReleaseCheck = false;
   home.username = "mavia";
   home.homeDirectory = "/home/mavia";
 
@@ -30,7 +31,7 @@
     octaveFull
     amberol
     eartag
-    gnome.file-roller
+    file-roller
     nodejs_22
     zoom-us
     signal-desktop
