@@ -2,7 +2,10 @@
 {
   virtualisation.docker = {
     enable = true;
-    setSocketVariable = true;
+    rootless = {
+      enable = true;
+      setSocketVariable = true;
+    };
   };
   users.users.mavia.extraGroups = [ "docker" ];
 }
