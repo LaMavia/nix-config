@@ -9,7 +9,7 @@
     ./dot/gestures/default.nix
     # program configs
     ./modules/git.nix
-    ./modules/fish.nix
+    ./modules/fish/default.nix
     ./modules/gtk.nix
     ./modules/fonts.nix
     ./modules/direnv.nix
@@ -40,6 +40,7 @@
     tokei
     unzip
     htop
+    (callPackage ./modules/zen/pkg.nix {})
   ];
 
   home.sessionVariables = { };
