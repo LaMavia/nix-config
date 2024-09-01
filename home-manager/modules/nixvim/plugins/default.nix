@@ -32,7 +32,7 @@ in
       elixirls.enable = true;
       jsonls.enable = true;
       nixd.enable = true;
-      vtsls.enable = true;
+      tsserver.enable = true;
       tailwindcss.enable = true;
       prolog-ls.enable = true;
       lua-ls.enable = true;

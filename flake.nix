@@ -20,6 +20,7 @@
         ./configuration/virtualisation/docker.nix
         home-manager.nixosModules.home-manager
           {
+            # home-manager.backupFileExtension = "backup";
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
             home-manager.users.mavia = import ./home-manager/home.nix;
