@@ -64,7 +64,6 @@ return {
       local elixirls = require("elixir.elixirls")
 
       elixir.setup {
-        nextls = {enable = true},
         credo = {},
         elixirls = {
           enable = true,
