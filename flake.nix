@@ -17,6 +17,7 @@
         ./configuration/packages.nix 
         ./configuration/programs.nix 
         ./configuration/services.nix 
+        ./configuration/hardware.nix
         ./configuration/virtualisation/docker.nix
         home-manager.nixosModules.home-manager
           {

@@ -11,8 +11,6 @@
     pulse.enable = true;
   };
 
-  hardware.pulseaudio.enable = false;
-
   services.libinput = {
     enable = true;
     touchpad = {

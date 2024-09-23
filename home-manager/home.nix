@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, lib, ... }:
 
 {
   imports = [
@@ -40,8 +40,16 @@
     tokei
     unzip
     htop
+    slack
+    zed-editor
+    zed
+    # blender-hip
     (callPackage ./modules/zen/pkg.nix {})
   ];
+
+  home.shellAliases = {
+    zed-editor = lib.getExe pkgs.zed-editor;
+  };
 
   home.sessionVariables = { };
 

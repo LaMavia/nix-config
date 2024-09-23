@@ -69,8 +69,6 @@
     LIBVIRT_DEFAULT_URI = [ "qemu:///system" ];
   };
 
-  hardware.pulseaudio.enable = false;
-
 
   xdg.portal = {
     enable = true;

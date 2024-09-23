@@ -1,7 +1,7 @@
 { makeDesktopItem, appimageTools, lib, fetchurl, ... }:
 let
   pname = "zen-specific";
-  version = "1.0.0-a.29";
+  version = "1.0.0-a.39";
 
   src = fetchurl {
     url = "https://github.com/zen-browser/desktop/releases/download/${version}/${pname}.AppImage";
