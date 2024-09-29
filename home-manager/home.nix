@@ -41,9 +41,11 @@
     unzip
     htop
     slack
-    zed-editor
+    onlyoffice-bin_latest
+    (lib.hiPrio zed-editor)
     zed
     # blender-hip
+    (callPackage ./modules/mc/pkg.nix {})
     (callPackage ./modules/zen/pkg.nix {})
   ];
 
