@@ -2,10 +2,9 @@
 {
   hardware.pulseaudio.enable = false;
 
-  hardware.opengl = {
+  hardware.graphics = {
     enable = true;
-    driSupport = true;
-    driSupport32Bit = true;
+    enable32Bit = true;
     extraPackages = with pkgs; [
       vulkan-loader
       vulkan-validation-layers
