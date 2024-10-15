@@ -48,13 +48,13 @@ return {
     -- customize language server configuration options passed to `lspconfig`
     ---@diagnostic disable: missing-fields
     config = {
-      -- hls = {
-      --   settings = {
-      --     haskell = {
-      --       formattingProvider = "stylish-haskell"
-      --     }
-      --   }
-      -- }
+      hls = {
+        settings = {
+          haskell = {
+            formattingProvider = "stylish-haskell"
+          }
+        }
+      }
       -- clangd = { capabilities = { offsetEncoding = "utf-8" } },
     },
     -- customize how language servers are attached
