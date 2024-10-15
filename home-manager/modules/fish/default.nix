@@ -7,6 +7,9 @@
       set fish_greeting # Disable greeting
       starship init fish | source
       direnv hook fish | source
+      if test "$TERM" = "xterm-kitty";
+        alias kssh="TERM=xterm-256color ssh"
+      end
     '';
 
     plugins = [

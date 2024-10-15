@@ -44,6 +44,8 @@
     onlyoffice-bin_latest
     (lib.hiPrio zed-editor)
     zed
+    whatsapp-for-linux
+    discord
     # blender-hip
     (callPackage ./modules/mc/pkg.nix {})
     (callPackage ./modules/zen/pkg.nix {})

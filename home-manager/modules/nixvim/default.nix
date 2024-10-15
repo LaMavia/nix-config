@@ -13,10 +13,6 @@ in
     # plugin-config
   ];
 
-  home.packages = with pkgs; [
-    haskell-language-server
-  ];
-
   programs.nixvim = {
     enable = true;
 
