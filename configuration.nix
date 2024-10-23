@@ -66,6 +66,7 @@
     XDG_CONFIG_HOME = "$HOME/.config";
     XDG_DATA_HOME = "$HOME/.local/share";
     XDG_STATE_HOME = "$HOME/.local/state";
+    XDG_CURRENT_DESKTOP = "sway";
     LIBVIRT_DEFAULT_URI = [ "qemu:///system" ];
   };
 
@@ -75,6 +76,10 @@
     wlr.enable = true;
     # gtk portal needed to make gtk apps happy
     # extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
+    extraPortals = with pkgs; [
+      xdg-desktop-portal-wlr
+      xdg-desktop-portal-gtk
+    ];
   };
 
   # setup fonts

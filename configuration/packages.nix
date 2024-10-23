@@ -35,7 +35,10 @@ let
 
 in
 {
-  environment.systemPackages = with pkgs; [
+  environment.systemPackages = [
+    dbus-sway-environment
+    configure-gtk
+  ] ++ (with pkgs; [
     git
     kanshi
     fish
@@ -43,9 +46,8 @@ in
     zip
     wget
     brave
+    (wrapFirefox (firefox-unwrapped.override { pipewireSupport = true;}) {})
     sway
-    dbus-sway-environment
-    configure-gtk
     kitty
     wayland
     xdg-utils
@@ -66,5 +68,5 @@ in
     pulseaudio
     home-manager
     gh
-  ];
+  ]);
 }
