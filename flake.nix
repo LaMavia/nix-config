@@ -19,6 +19,7 @@
         ./configuration/services.nix 
         ./configuration/hardware.nix
         ./configuration/virtualisation/docker.nix
+        ./configuration/virtualisation/wayland.nix
         home-manager.nixosModules.home-manager
           {
             # home-manager.backupFileExtension = "backup";

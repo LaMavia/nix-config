@@ -76,10 +76,6 @@
     wlr.enable = true;
     # gtk portal needed to make gtk apps happy
     # extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
-    extraPortals = with pkgs; [
-      xdg-desktop-portal-wlr
-      xdg-desktop-portal-gtk
-    ];
   };
 
   # setup fonts

@@ -68,5 +68,7 @@ in
     pulseaudio
     home-manager
     gh
+    appimage-run
+    totem
   ]);
 }
