@@ -70,5 +70,6 @@ in
     gh
     appimage-run
     totem
+    fcitx5
   ]);
 }
