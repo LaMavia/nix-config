@@ -65,7 +65,6 @@
       enabled = "fcitx5";
       fcitx5 = {
         waylandFrontend = true;
-        engines = with pkgs.fcitx-engines; [ mozc ];
         addons = with pkgs; [
           fcitx5-mozc
           fcitx5-gtk
@@ -94,7 +93,10 @@
     enable = true;
     wlr.enable = true;
     # gtk portal needed to make gtk apps happy
-    # extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
+    extraPortals = with pkgs; [ 
+      # xdg-desktop-portal-gtk 
+      xdg-desktop-portal-wlr
+    ];
   };
 
   # setup fonts

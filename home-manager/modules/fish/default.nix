@@ -10,6 +10,14 @@
       if test "$TERM" = "xterm-kitty";
         alias kssh="TERM=xterm-256color ssh"
       end
+
+      export XKB_DEFAULT_MODEL=jp106
+      export XKB_DEFAULT_LAYOUT=jp,br
+      export XKB_DEFAULT_OPTIONS=grp:rctrl_toggle
+      export GTK_IM_MODULE=fcitx
+      export QT_IM_MODULE=fcitx
+      export XMODIFIERS=@im=fcitx
+      fcitx -r
     '';
 
     plugins = [
@@ -32,6 +40,7 @@
     starship
     grc
     fish
+    fcitx5
     # (mommy.override {
     #   mommySettings = {};
     # })

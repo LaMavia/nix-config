@@ -21,6 +21,9 @@
 
   services.displayManager = {
     enable = true;
+    sddm = {
+      enable = true;
+    };
     autoLogin = {
       enable = true;
       user = "mavia";

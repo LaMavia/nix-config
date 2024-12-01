@@ -1,6 +1,12 @@
 { pkgs, ... }:
 {
-  programs.nix-ld.enable = true;
+  programs.nix-ld = {
+    enable = true;
+    libraries = with pkgs; [
+      zlib
+      libgcc
+    ];
+  };
 
   # enable sway window manager
   programs.sway = {
