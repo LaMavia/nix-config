@@ -30,9 +30,11 @@
 
   services.xserver = {
     enable = true;
-    desktopManager.gnome.enable = true;
-    displayManager = {
+    desktopManager = {
+      gnome.enable = true;
       runXdgAutostartIfNone = true;
+    };
+    displayManager = {
       setupCommands = ''
           export XKB_DEFAULT_MODEL=jp106
           export XKB_DEFAULT_LAYOUT=jp,ca

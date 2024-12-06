@@ -62,8 +62,7 @@
     };
 
     inputMethod = {
-      type = "fcitx5";
-      enable = true;
+      enabled = "fcitx5";
       fcitx5 = {
         waylandFrontend = true;
         addons = with pkgs; [
