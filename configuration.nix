@@ -79,7 +79,7 @@
     XDG_CONFIG_HOME = "$HOME/.config";
     XDG_DATA_HOME = "$HOME/.local/share";
     XDG_STATE_HOME = "$HOME/.local/state";
-    XDG_CURRENT_DESKTOP = "sway";
+    # XDG_CURRENT_DESKTOP = "sway";
     LIBVIRT_DEFAULT_URI = [ "qemu:///system" ];
     INPUT_METHOD = "fcitx";
     QT_IM_MODULE = "fcitx";

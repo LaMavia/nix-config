@@ -55,7 +55,7 @@ bindswitch --reload --locked lid:on exec $lock
 # Read `man 5 sway-input` for more information about this section.
 
 input type:keyboard {
-    xkb_layout pl,gr,jp
+    xkb_layout pl,gr
     xkb_options grp:win_space_toggle,compose:caps
 }
 
