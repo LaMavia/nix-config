@@ -62,10 +62,16 @@
     };
 
     inputMethod = {
-      enabled ="ibus";
-      ibus.engines = with pkgs.ibus-engines; [ 
-        anthy 
-      ];
+      enabled = "fcitx5";
+      fcitx5 = {
+        waylandFrontend = true;
+        addons = with pkgs; [
+          rime-data
+          fcitx5-rime
+          fcitx5-gtk
+          fcitx5-mozc
+        ];
+      };
     };
   };
   
@@ -76,11 +82,13 @@
     XDG_STATE_HOME = "$HOME/.local/state";
     # XDG_CURRENT_DESKTOP = "sway";
     LIBVIRT_DEFAULT_URI = [ "qemu:///system" ];
-    CLUTTER_IM_MODULE="xim";
-    QT_IM_MODULE="ibus";
-    XMODIFIERS="@im=ibus";
-    QT4_IM_MODULE="xim";
-    GTK_IM_MODULE="ibus";
+    GLFW_IM_MODULE = "fcitx";
+    GTK_IM_MODULE = "fcitx";
+    INPUT_METHOD = "fcitx";
+    XMODIFIERS = "@im=fcitx";
+    IMSETTINGS_MODULE = "fcitx";
+    QT_IM_MODULE = "fcitx";
+    SDL_IM_MODULE = "fcitx";
   };
 
 

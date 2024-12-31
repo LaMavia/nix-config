@@ -12,7 +12,7 @@
     ],
     "modules-right": [
         "tray",
-        "sway/language",
+        // "sway/language",
         "idle_inhibitor",
         "battery" 
     ],

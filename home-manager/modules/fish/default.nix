@@ -32,7 +32,6 @@
     starship
     grc
     fish
-    fcitx5
     # (mommy.override {
     #   mommySettings = {};
     # })

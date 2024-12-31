@@ -54,10 +54,10 @@ bindswitch --reload --locked lid:on exec $lock
 # You can get the names of your inputs by running: swaymsg -t get_inputs
 # Read `man 5 sway-input` for more information about this section.
 
-input type:keyboard {
-    xkb_layout pl,gr
-    xkb_options grp:win_space_toggle,compose:caps
-}
+# input type:keyboard {
+#     xkb_layout pl,gr
+#     xkb_options grp:win_space_toggle,compose:caps
+# }
 
 input type:touchpad {
     dwt disabled
@@ -274,7 +274,7 @@ client.focused "#1b1b1b" "#1b1b1b" "#fefefe" "#fefefe" "#fefefe00"
 # inactive window opacity
 exec inactive-windows-transparency.py --opacity 0.9
 exec sleep 5; systemctl --user start kanshi.service
-# exec fcitx5
+exec fcitx5 -d
 
 include /etc/sway/config.d/*
 
