@@ -2,7 +2,7 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, pkgs, ... }:
+{ config, pkgs, lib, ... }:
 {
   imports =
     [
@@ -62,15 +62,10 @@
     };
 
     inputMethod = {
-      enabled = "fcitx5";
-      fcitx5 = {
-        waylandFrontend = true;
-        addons = with pkgs; [
-          fcitx5-mozc
-          fcitx5-gtk
-          fcitx5-nord
-        ];
-      };
+      enabled ="ibus";
+      ibus.engines = with pkgs.ibus-engines; [ 
+        anthy 
+      ];
     };
   };
   
@@ -81,11 +76,11 @@
     XDG_STATE_HOME = "$HOME/.local/state";
     # XDG_CURRENT_DESKTOP = "sway";
     LIBVIRT_DEFAULT_URI = [ "qemu:///system" ];
-    INPUT_METHOD = "fcitx";
-    QT_IM_MODULE = "fcitx";
-    GTK_IM_MODULE = "fcitx";
-    XMODIFIERS = "@im=fcitx";
-    XIM_SERVERS = "fcitx";
+    CLUTTER_IM_MODULE="xim";
+    QT_IM_MODULE="ibus";
+    XMODIFIERS="@im=ibus";
+    QT4_IM_MODULE="xim";
+    GTK_IM_MODULE="ibus";
   };
 
 
