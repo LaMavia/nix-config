@@ -13,6 +13,7 @@
       modules = [ 
         ./hardware-configuration.nix 
         ./configuration.nix 
+        ./hardware-override.nix
         ./configuration/systemd.nix 
         ./configuration/packages.nix 
         ./configuration/programs.nix 
