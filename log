@@ -1,0 +1,1501 @@
+00:00:00.000 [INFO] [sway/main.c:338] Sway version 1.9
+00:00:00.000 [INFO] [sway/main.c:339] wlroots version 0.17.4
+00:00:00.009 [INFO] [sway/main.c:120] Linux nixos 6.6.37 #1-NixOS SMP PREEMPT_DYNAMIC Fri Jul  5 07:34:07 UTC 2024 x86_64 GNU/Linux
+00:00:00.009 [INFO] [sway/main.c:136] Contents of /etc/lsb-release:
+00:00:00.009 [INFO] [sway/main.c:120] DISTRIB_CODENAME=vicuna
+00:00:00.009 [INFO] [sway/main.c:120] DISTRIB_DESCRIPTION="NixOS 24.11 (Vicuna)"
+00:00:00.009 [INFO] [sway/main.c:120] DISTRIB_ID=nixos
+00:00:00.009 [INFO] [sway/main.c:120] DISTRIB_RELEASE="24.11"
+00:00:00.009 [INFO] [sway/main.c:120] LSB_VERSION="24.11 (Vicuna)"
+00:00:00.009 [INFO] [sway/main.c:136] Contents of /etc/os-release:
+00:00:00.009 [INFO] [sway/main.c:120] ANSI_COLOR="1;34"
+00:00:00.009 [INFO] [sway/main.c:120] BUG_REPORT_URL="https://github.com/NixOS/nixpkgs/issues"
+00:00:00.009 [INFO] [sway/main.c:120] BUILD_ID="24.11.20240709.feb2849"
+00:00:00.010 [INFO] [sway/main.c:120] DOCUMENTATION_URL="https://nixos.org/learn.html"
+00:00:00.010 [INFO] [sway/main.c:120] HOME_URL="https://nixos.org/"
+00:00:00.010 [INFO] [sway/main.c:120] ID=nixos
+00:00:00.010 [INFO] [sway/main.c:120] IMAGE_ID=""
+00:00:00.010 [INFO] [sway/main.c:120] IMAGE_VERSION=""
+00:00:00.010 [INFO] [sway/main.c:120] LOGO="nix-snowflake"
+00:00:00.010 [INFO] [sway/main.c:120] NAME=NixOS
+00:00:00.010 [INFO] [sway/main.c:120] PRETTY_NAME="NixOS 24.11 (Vicuna)"
+00:00:00.010 [INFO] [sway/main.c:120] SUPPORT_URL="https://nixos.org/community.html"
+00:00:00.010 [INFO] [sway/main.c:120] VERSION="24.11 (Vicuna)"
+00:00:00.010 [INFO] [sway/main.c:120] VERSION_CODENAME=vicuna
+00:00:00.010 [INFO] [sway/main.c:120] VERSION_ID="24.11"
+00:00:00.010 [INFO] [sway/main.c:108] LD_LIBRARY_PATH=
+00:00:00.010 [INFO] [sway/main.c:108] LD_PRELOAD=
+00:00:00.010 [INFO] [sway/main.c:108] PATH=/run/wrappers/bin:/home/mavia/.nix-profile/bin:/home/mavia/.local/state/nix/profile/bin:/home/mavia/.local/state/nix/profile/bin:/etc/profiles/per-user/mavia/bin:/nix/var/nix/profiles/default/bin:/run/current-system/sw/bin
+00:00:00.010 [INFO] [sway/main.c:108] SWAYSOCK=/run/user/1000/sway-ipc.1000.1853.sock
+00:00:00.011 [INFO] [sway/main.c:376] Starting sway version 1.9
+00:00:00.011 [DEBUG] [sway/server.c:129] Initializing Wayland server
+00:00:00.011 [INFO] [wlr] [backend/wayland/backend.c:572] Creating wayland backend
+00:00:00.011 [DEBUG] [wlr] [backend/wayland/backend.c:348] Remote wayland global: wl_shm v1
+00:00:00.011 [DEBUG] [wlr] [backend/wayland/backend.c:348] Remote wayland global: wl_drm v2
+00:00:00.011 [DEBUG] [wlr] [backend/wayland/backend.c:348] Remote wayland global: zwp_linux_dmabuf_v1 v4
+00:00:00.011 [DEBUG] [wlr] [backend/wayland/backend.c:348] Remote wayland global: wl_compositor v6
+00:00:00.011 [DEBUG] [wlr] [backend/wayland/backend.c:348] Remote wayland global: wl_subcompositor v1
+00:00:00.011 [DEBUG] [wlr] [backend/wayland/backend.c:348] Remote wayland global: wl_data_device_manager v3
+00:00:00.011 [DEBUG] [wlr] [backend/wayland/backend.c:348] Remote wayland global: zwlr_gamma_control_manager_v1 v1
+00:00:00.011 [DEBUG] [wlr] [backend/wayland/backend.c:348] Remote wayland global: zxdg_output_manager_v1 v3
+00:00:00.011 [DEBUG] [wlr] [backend/wayland/backend.c:348] Remote wayland global: ext_idle_notifier_v1 v1
+00:00:00.011 [DEBUG] [wlr] [backend/wayland/backend.c:348] Remote wayland global: zwp_idle_inhibit_manager_v1 v1
+00:00:00.011 [DEBUG] [wlr] [backend/wayland/backend.c:348] Remote wayland global: zwlr_layer_shell_v1 v4
+00:00:00.011 [DEBUG] [wlr] [backend/wayland/backend.c:348] Remote wayland global: xdg_wm_base v2
+00:00:00.011 [DEBUG] [wlr] [backend/wayland/backend.c:348] Remote wayland global: zwp_tablet_manager_v2 v1
+00:00:00.012 [DEBUG] [wlr] [backend/wayland/backend.c:348] Remote wayland global: org_kde_kwin_server_decoration_manager v1
+00:00:00.012 [DEBUG] [wlr] [backend/wayland/backend.c:348] Remote wayland global: zxdg_decoration_manager_v1 v1
+00:00:00.012 [DEBUG] [wlr] [backend/wayland/backend.c:348] Remote wayland global: zwp_relative_pointer_manager_v1 v1
+00:00:00.012 [DEBUG] [wlr] [backend/wayland/backend.c:348] Remote wayland global: zwp_pointer_constraints_v1 v1
+00:00:00.012 [DEBUG] [wlr] [backend/wayland/backend.c:348] Remote wayland global: wp_presentation v1
+00:00:00.012 [DEBUG] [wlr] [backend/wayland/backend.c:348] Remote wayland global: zwlr_output_manager_v1 v4
+00:00:00.012 [DEBUG] [wlr] [backend/wayland/backend.c:348] Remote wayland global: zwlr_output_power_manager_v1 v1
+00:00:00.012 [DEBUG] [wlr] [backend/wayland/backend.c:348] Remote wayland global: zwp_input_method_manager_v2 v1
+00:00:00.012 [DEBUG] [wlr] [backend/wayland/backend.c:348] Remote wayland global: zwp_text_input_manager_v3 v1
+00:00:00.012 [DEBUG] [wlr] [backend/wayland/backend.c:348] Remote wayland global: zwlr_foreign_toplevel_manager_v1 v3
+00:00:00.012 [DEBUG] [wlr] [backend/wayland/backend.c:348] Remote wayland global: ext_session_lock_manager_v1 v1
+00:00:00.012 [DEBUG] [wlr] [backend/wayland/backend.c:348] Remote wayland global: wp_drm_lease_device_v1 v1
+00:00:00.012 [DEBUG] [wlr] [backend/wayland/backend.c:348] Remote wayland global: zwlr_export_dmabuf_manager_v1 v1
+00:00:00.012 [DEBUG] [wlr] [backend/wayland/backend.c:348] Remote wayland global: zwlr_screencopy_manager_v1 v3
+00:00:00.012 [DEBUG] [wlr] [backend/wayland/backend.c:348] Remote wayland global: zwlr_data_control_manager_v1 v2
+00:00:00.012 [DEBUG] [wlr] [backend/wayland/backend.c:348] Remote wayland global: wp_security_context_manager_v1 v1
+00:00:00.012 [DEBUG] [wlr] [backend/wayland/backend.c:348] Remote wayland global: wp_viewporter v1
+00:00:00.012 [DEBUG] [wlr] [backend/wayland/backend.c:348] Remote wayland global: wp_single_pixel_buffer_manager_v1 v1
+00:00:00.012 [DEBUG] [wlr] [backend/wayland/backend.c:348] Remote wayland global: wp_content_type_manager_v1 v1
+00:00:00.012 [DEBUG] [wlr] [backend/wayland/backend.c:348] Remote wayland global: wp_fractional_scale_manager_v1 v1
+00:00:00.012 [DEBUG] [wlr] [backend/wayland/backend.c:348] Remote wayland global: zxdg_exporter_v1 v1
+00:00:00.012 [DEBUG] [wlr] [backend/wayland/backend.c:348] Remote wayland global: zxdg_importer_v1 v1
+00:00:00.012 [DEBUG] [wlr] [backend/wayland/backend.c:348] Remote wayland global: zxdg_exporter_v2 v1
+00:00:00.012 [DEBUG] [wlr] [backend/wayland/backend.c:348] Remote wayland global: zxdg_importer_v2 v1
+00:00:00.012 [DEBUG] [wlr] [backend/wayland/backend.c:348] Remote wayland global: xdg_activation_v1 v1
+00:00:00.012 [DEBUG] [wlr] [backend/wayland/backend.c:348] Remote wayland global: wp_cursor_shape_manager_v1 v1
+00:00:00.012 [DEBUG] [wlr] [backend/wayland/backend.c:348] Remote wayland global: zwp_virtual_keyboard_manager_v1 v1
+00:00:00.012 [DEBUG] [wlr] [backend/wayland/backend.c:348] Remote wayland global: zwlr_virtual_pointer_manager_v1 v2
+00:00:00.012 [DEBUG] [wlr] [backend/wayland/backend.c:348] Remote wayland global: zwlr_input_inhibit_manager_v1 v1
+00:00:00.012 [DEBUG] [wlr] [backend/wayland/backend.c:348] Remote wayland global: zwp_keyboard_shortcuts_inhibit_manager_v1 v1
+00:00:00.012 [DEBUG] [wlr] [backend/wayland/backend.c:348] Remote wayland global: zwp_pointer_gestures_v1 v3
+00:00:00.012 [DEBUG] [wlr] [backend/wayland/backend.c:348] Remote wayland global: wl_seat v8
+00:00:00.013 [DEBUG] [wlr] [backend/wayland/backend.c:348] Remote wayland global: zwp_primary_selection_device_manager_v1 v1
+00:00:00.013 [DEBUG] [wlr] [backend/wayland/backend.c:348] Remote wayland global: wl_output v4
+00:00:00.013 [DEBUG] [wlr] [backend/wayland/seat.c:332] seat 'seat0' offering pointer
+00:00:00.013 [DEBUG] [wlr] [backend/wayland/seat.c:343] seat 'seat0' offering keyboard
+00:00:00.014 [DEBUG] [wlr] [backend/wayland/backend.c:658] Opening DRM render node /dev/dri/renderD128
+00:00:00.016 [INFO] [wlr] [render/egl.c:206] Supported EGL client extensions: EGL_EXT_device_base EGL_EXT_device_enumeration EGL_EXT_device_query EGL_EXT_platform_base EGL_KHR_client_get_all_proc_addresses EGL_EXT_client_extensions EGL_KHR_debug EGL_EXT_platform_device EGL_EXT_explicit_device EGL_EXT_platform_wayland EGL_KHR_platform_wayland EGL_EXT_platform_x11 EGL_KHR_platform_x11 EGL_EXT_platform_xcb EGL_MESA_platform_gbm EGL_KHR_platform_gbm EGL_MESA_platform_surfaceless
+00:00:00.018 [DEBUG] [wlr] [render/egl.c:487] Using EGL device /dev/dri/card1
+00:00:00.078 [INFO] [wlr] [render/egl.c:355] Using EGL 1.5
+00:00:00.078 [INFO] [wlr] [render/egl.c:356] Supported EGL display extensions: EGL_ANDROID_blob_cache EGL_ANDROID_native_fence_sync EGL_EXT_config_select_group EGL_EXT_create_context_robustness EGL_EXT_image_dma_buf_import EGL_EXT_image_dma_buf_import_modifiers EGL_EXT_protected_surface EGL_EXT_query_reset_notification_strategy EGL_IMG_context_priority EGL_KHR_cl_event2 EGL_KHR_config_attribs EGL_KHR_context_flush_control EGL_KHR_create_context EGL_KHR_create_context_no_error EGL_KHR_fence_sync EGL_KHR_get_all_proc_addresses EGL_KHR_gl_colorspace EGL_KHR_gl_renderbuffer_image EGL_KHR_gl_texture_2D_image EGL_KHR_gl_texture_3D_image EGL_KHR_gl_texture_cubemap_image EGL_KHR_image_base EGL_KHR_no_config_context EGL_KHR_reusable_sync EGL_KHR_surfaceless_context EGL_EXT_pixel_format_float EGL_KHR_wait_sync EGL_MESA_configless_context EGL_MESA_drm_image EGL_MESA_gl_interop EGL_MESA_image_dma_buf_export EGL_MESA_query_driver EGL_MESA_x11_native_visual_id EGL_WL_bind_wayland_display 
+00:00:00.078 [INFO] [wlr] [render/egl.c:358] Supported EGL device extensions: EGL_EXT_device_drm EGL_EXT_device_drm_render_node
+00:00:00.078 [INFO] [wlr] [render/egl.c:360] EGL vendor: Mesa Project
+00:00:00.078 [DEBUG] [wlr] [render/egl.c:121] Supported DMA-BUF formats:
+00:00:00.078 [DEBUG] [wlr] [render/egl.c:170]   AB4H (0x48344241)
+00:00:00.078 [DEBUG] [wlr] [render/egl.c:104]     INVALID (0x00FFFFFFFFFFFFFF): ✓ texture  ✓ render
+00:00:00.078 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D_X,DCC,DCC_PIPE_ALIGN,DCC_INDEPENDENT_64B,DCC_MAX_COMPRESSED_BLOCK=64B,DCC_CONSTANT_ENCODE,PIPE_XOR_BITS=2,BANK_XOR_BITS=0,RB=1,PIPE_2 (0x020000044051BA01): ✓ texture  ✓ render
+00:00:00.078 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,DCC,DCC_PIPE_ALIGN,DCC_INDEPENDENT_64B,DCC_MAX_COMPRESSED_BLOCK=64B,DCC_CONSTANT_ENCODE,PIPE_XOR_BITS=2,BANK_XOR_BITS=0,RB=1,PIPE_2 (0x020000044051B901): ✓ texture  ✓ render
+00:00:00.078 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401A01): ✓ texture  ✓ render
+00:00:00.078 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401901): ✓ texture  ✓ render
+00:00:00.078 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D (0x0200000000000A01): ✓ texture  ✓ render
+00:00:00.078 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S (0x0200000000000901): ✓ texture  ✓ render
+00:00:00.078 [DEBUG] [wlr] [render/egl.c:104]     LINEAR (0x0000000000000000): ✓ texture  ✓ render
+00:00:00.078 [DEBUG] [wlr] [render/egl.c:170]   XB4H (0x48344258)
+00:00:00.078 [DEBUG] [wlr] [render/egl.c:104]     INVALID (0x00FFFFFFFFFFFFFF): ✓ texture  ✓ render
+00:00:00.078 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D_X,DCC,DCC_PIPE_ALIGN,DCC_INDEPENDENT_64B,DCC_MAX_COMPRESSED_BLOCK=64B,DCC_CONSTANT_ENCODE,PIPE_XOR_BITS=2,BANK_XOR_BITS=0,RB=1,PIPE_2 (0x020000044051BA01): ✓ texture  ✓ render
+00:00:00.078 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,DCC,DCC_PIPE_ALIGN,DCC_INDEPENDENT_64B,DCC_MAX_COMPRESSED_BLOCK=64B,DCC_CONSTANT_ENCODE,PIPE_XOR_BITS=2,BANK_XOR_BITS=0,RB=1,PIPE_2 (0x020000044051B901): ✓ texture  ✓ render
+00:00:00.078 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401A01): ✓ texture  ✓ render
+00:00:00.078 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401901): ✓ texture  ✓ render
+00:00:00.078 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D (0x0200000000000A01): ✓ texture  ✓ render
+00:00:00.078 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S (0x0200000000000901): ✓ texture  ✓ render
+00:00:00.078 [DEBUG] [wlr] [render/egl.c:104]     LINEAR (0x0000000000000000): ✓ texture  ✓ render
+00:00:00.078 [DEBUG] [wlr] [render/egl.c:170]   AB48 (0x38344241)
+00:00:00.078 [DEBUG] [wlr] [render/egl.c:104]     INVALID (0x00FFFFFFFFFFFFFF): ✓ texture  ✓ render
+00:00:00.078 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D_X,DCC,DCC_PIPE_ALIGN,DCC_INDEPENDENT_64B,DCC_MAX_COMPRESSED_BLOCK=64B,DCC_CONSTANT_ENCODE,PIPE_XOR_BITS=2,BANK_XOR_BITS=0,RB=1,PIPE_2 (0x020000044051BA01): ✓ texture  ✓ render
+00:00:00.078 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,DCC,DCC_PIPE_ALIGN,DCC_INDEPENDENT_64B,DCC_MAX_COMPRESSED_BLOCK=64B,DCC_CONSTANT_ENCODE,PIPE_XOR_BITS=2,BANK_XOR_BITS=0,RB=1,PIPE_2 (0x020000044051B901): ✓ texture  ✓ render
+00:00:00.078 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401A01): ✓ texture  ✓ render
+00:00:00.078 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401901): ✓ texture  ✓ render
+00:00:00.078 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D (0x0200000000000A01): ✓ texture  ✓ render
+00:00:00.079 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S (0x0200000000000901): ✓ texture  ✓ render
+00:00:00.079 [DEBUG] [wlr] [render/egl.c:104]     LINEAR (0x0000000000000000): ✓ texture  ✓ render
+00:00:00.079 [DEBUG] [wlr] [render/egl.c:170]   XB48 (0x38344258)
+00:00:00.079 [DEBUG] [wlr] [render/egl.c:104]     INVALID (0x00FFFFFFFFFFFFFF): ✓ texture  ✓ render
+00:00:00.079 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D_X,DCC,DCC_PIPE_ALIGN,DCC_INDEPENDENT_64B,DCC_MAX_COMPRESSED_BLOCK=64B,DCC_CONSTANT_ENCODE,PIPE_XOR_BITS=2,BANK_XOR_BITS=0,RB=1,PIPE_2 (0x020000044051BA01): ✓ texture  ✓ render
+00:00:00.079 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,DCC,DCC_PIPE_ALIGN,DCC_INDEPENDENT_64B,DCC_MAX_COMPRESSED_BLOCK=64B,DCC_CONSTANT_ENCODE,PIPE_XOR_BITS=2,BANK_XOR_BITS=0,RB=1,PIPE_2 (0x020000044051B901): ✓ texture  ✓ render
+00:00:00.079 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401A01): ✓ texture  ✓ render
+00:00:00.079 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401901): ✓ texture  ✓ render
+00:00:00.079 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D (0x0200000000000A01): ✓ texture  ✓ render
+00:00:00.079 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S (0x0200000000000901): ✓ texture  ✓ render
+00:00:00.079 [DEBUG] [wlr] [render/egl.c:104]     LINEAR (0x0000000000000000): ✓ texture  ✓ render
+00:00:00.079 [DEBUG] [wlr] [render/egl.c:170]   AR30 (0x30335241)
+00:00:00.079 [DEBUG] [wlr] [render/egl.c:104]     INVALID (0x00FFFFFFFFFFFFFF): ✓ texture  ✓ render
+00:00:00.079 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D_X,DCC,DCC_PIPE_ALIGN,DCC_INDEPENDENT_64B,DCC_MAX_COMPRESSED_BLOCK=64B,DCC_CONSTANT_ENCODE,PIPE_XOR_BITS=2,BANK_XOR_BITS=0,RB=1,PIPE_2 (0x020000044051BA01): ✓ texture  ✓ render
+00:00:00.079 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,DCC,DCC_PIPE_ALIGN,DCC_INDEPENDENT_64B,DCC_MAX_COMPRESSED_BLOCK=64B,DCC_CONSTANT_ENCODE,PIPE_XOR_BITS=2,BANK_XOR_BITS=0,RB=1,PIPE_2 (0x020000044051B901): ✓ texture  ✓ render
+00:00:00.079 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,DCC,DCC_RETILE,DCC_INDEPENDENT_64B,DCC_MAX_COMPRESSED_BLOCK=64B,DCC_CONSTANT_ENCODE,PIPE_XOR_BITS=2,BANK_XOR_BITS=0,RB=1,PIPE_2 (0x0200000440517901): ✓ texture  ✓ render
+00:00:00.079 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401A01): ✓ texture  ✓ render
+00:00:00.079 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401901): ✓ texture  ✓ render
+00:00:00.079 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D (0x0200000000000A01): ✓ texture  ✓ render
+00:00:00.079 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S (0x0200000000000901): ✓ texture  ✓ render
+00:00:00.079 [DEBUG] [wlr] [render/egl.c:104]     LINEAR (0x0000000000000000): ✓ texture  ✓ render
+00:00:00.079 [DEBUG] [wlr] [render/egl.c:170]   XR30 (0x30335258)
+00:00:00.079 [DEBUG] [wlr] [render/egl.c:104]     INVALID (0x00FFFFFFFFFFFFFF): ✓ texture  ✓ render
+00:00:00.079 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D_X,DCC,DCC_PIPE_ALIGN,DCC_INDEPENDENT_64B,DCC_MAX_COMPRESSED_BLOCK=64B,DCC_CONSTANT_ENCODE,PIPE_XOR_BITS=2,BANK_XOR_BITS=0,RB=1,PIPE_2 (0x020000044051BA01): ✓ texture  ✓ render
+00:00:00.079 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,DCC,DCC_PIPE_ALIGN,DCC_INDEPENDENT_64B,DCC_MAX_COMPRESSED_BLOCK=64B,DCC_CONSTANT_ENCODE,PIPE_XOR_BITS=2,BANK_XOR_BITS=0,RB=1,PIPE_2 (0x020000044051B901): ✓ texture  ✓ render
+00:00:00.079 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,DCC,DCC_RETILE,DCC_INDEPENDENT_64B,DCC_MAX_COMPRESSED_BLOCK=64B,DCC_CONSTANT_ENCODE,PIPE_XOR_BITS=2,BANK_XOR_BITS=0,RB=1,PIPE_2 (0x0200000440517901): ✓ texture  ✓ render
+00:00:00.079 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401A01): ✓ texture  ✓ render
+00:00:00.079 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401901): ✓ texture  ✓ render
+00:00:00.079 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D (0x0200000000000A01): ✓ texture  ✓ render
+00:00:00.079 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S (0x0200000000000901): ✓ texture  ✓ render
+00:00:00.079 [DEBUG] [wlr] [render/egl.c:104]     LINEAR (0x0000000000000000): ✓ texture  ✓ render
+00:00:00.079 [DEBUG] [wlr] [render/egl.c:170]   AB30 (0x30334241)
+00:00:00.079 [DEBUG] [wlr] [render/egl.c:104]     INVALID (0x00FFFFFFFFFFFFFF): ✓ texture  ✓ render
+00:00:00.079 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D_X,DCC,DCC_PIPE_ALIGN,DCC_INDEPENDENT_64B,DCC_MAX_COMPRESSED_BLOCK=64B,DCC_CONSTANT_ENCODE,PIPE_XOR_BITS=2,BANK_XOR_BITS=0,RB=1,PIPE_2 (0x020000044051BA01): ✓ texture  ✓ render
+00:00:00.079 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,DCC,DCC_PIPE_ALIGN,DCC_INDEPENDENT_64B,DCC_MAX_COMPRESSED_BLOCK=64B,DCC_CONSTANT_ENCODE,PIPE_XOR_BITS=2,BANK_XOR_BITS=0,RB=1,PIPE_2 (0x020000044051B901): ✓ texture  ✓ render
+00:00:00.079 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,DCC,DCC_RETILE,DCC_INDEPENDENT_64B,DCC_MAX_COMPRESSED_BLOCK=64B,DCC_CONSTANT_ENCODE,PIPE_XOR_BITS=2,BANK_XOR_BITS=0,RB=1,PIPE_2 (0x0200000440517901): ✓ texture  ✓ render
+00:00:00.079 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401A01): ✓ texture  ✓ render
+00:00:00.079 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401901): ✓ texture  ✓ render
+00:00:00.079 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D (0x0200000000000A01): ✓ texture  ✓ render
+00:00:00.079 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S (0x0200000000000901): ✓ texture  ✓ render
+00:00:00.079 [DEBUG] [wlr] [render/egl.c:104]     LINEAR (0x0000000000000000): ✓ texture  ✓ render
+00:00:00.079 [DEBUG] [wlr] [render/egl.c:170]   XB30 (0x30334258)
+00:00:00.079 [DEBUG] [wlr] [render/egl.c:104]     INVALID (0x00FFFFFFFFFFFFFF): ✓ texture  ✓ render
+00:00:00.079 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D_X,DCC,DCC_PIPE_ALIGN,DCC_INDEPENDENT_64B,DCC_MAX_COMPRESSED_BLOCK=64B,DCC_CONSTANT_ENCODE,PIPE_XOR_BITS=2,BANK_XOR_BITS=0,RB=1,PIPE_2 (0x020000044051BA01): ✓ texture  ✓ render
+00:00:00.079 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,DCC,DCC_PIPE_ALIGN,DCC_INDEPENDENT_64B,DCC_MAX_COMPRESSED_BLOCK=64B,DCC_CONSTANT_ENCODE,PIPE_XOR_BITS=2,BANK_XOR_BITS=0,RB=1,PIPE_2 (0x020000044051B901): ✓ texture  ✓ render
+00:00:00.079 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,DCC,DCC_RETILE,DCC_INDEPENDENT_64B,DCC_MAX_COMPRESSED_BLOCK=64B,DCC_CONSTANT_ENCODE,PIPE_XOR_BITS=2,BANK_XOR_BITS=0,RB=1,PIPE_2 (0x0200000440517901): ✓ texture  ✓ render
+00:00:00.080 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401A01): ✓ texture  ✓ render
+00:00:00.080 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401901): ✓ texture  ✓ render
+00:00:00.080 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D (0x0200000000000A01): ✓ texture  ✓ render
+00:00:00.080 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S (0x0200000000000901): ✓ texture  ✓ render
+00:00:00.080 [DEBUG] [wlr] [render/egl.c:104]     LINEAR (0x0000000000000000): ✓ texture  ✓ render
+00:00:00.080 [DEBUG] [wlr] [render/egl.c:170]   AR24 (0x34325241)
+00:00:00.080 [DEBUG] [wlr] [render/egl.c:104]     INVALID (0x00FFFFFFFFFFFFFF): ✓ texture  ✓ render
+00:00:00.080 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D_X,DCC,DCC_PIPE_ALIGN,DCC_INDEPENDENT_64B,DCC_MAX_COMPRESSED_BLOCK=64B,DCC_CONSTANT_ENCODE,PIPE_XOR_BITS=2,BANK_XOR_BITS=0,RB=1,PIPE_2 (0x020000044051BA01): ✓ texture  ✓ render
+00:00:00.080 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,DCC,DCC_PIPE_ALIGN,DCC_INDEPENDENT_64B,DCC_MAX_COMPRESSED_BLOCK=64B,DCC_CONSTANT_ENCODE,PIPE_XOR_BITS=2,BANK_XOR_BITS=0,RB=1,PIPE_2 (0x020000044051B901): ✓ texture  ✓ render
+00:00:00.080 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,DCC,DCC_RETILE,DCC_INDEPENDENT_64B,DCC_MAX_COMPRESSED_BLOCK=64B,DCC_CONSTANT_ENCODE,PIPE_XOR_BITS=2,BANK_XOR_BITS=0,RB=1,PIPE_2 (0x0200000440517901): ✓ texture  ✓ render
+00:00:00.080 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401A01): ✓ texture  ✓ render
+00:00:00.080 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401901): ✓ texture  ✓ render
+00:00:00.080 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D (0x0200000000000A01): ✓ texture  ✓ render
+00:00:00.080 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S (0x0200000000000901): ✓ texture  ✓ render
+00:00:00.080 [DEBUG] [wlr] [render/egl.c:104]     LINEAR (0x0000000000000000): ✓ texture  ✓ render
+00:00:00.080 [DEBUG] [wlr] [render/egl.c:170]   AB24 (0x34324241)
+00:00:00.080 [DEBUG] [wlr] [render/egl.c:104]     INVALID (0x00FFFFFFFFFFFFFF): ✓ texture  ✓ render
+00:00:00.080 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D_X,DCC,DCC_PIPE_ALIGN,DCC_INDEPENDENT_64B,DCC_MAX_COMPRESSED_BLOCK=64B,DCC_CONSTANT_ENCODE,PIPE_XOR_BITS=2,BANK_XOR_BITS=0,RB=1,PIPE_2 (0x020000044051BA01): ✓ texture  ✓ render
+00:00:00.080 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,DCC,DCC_PIPE_ALIGN,DCC_INDEPENDENT_64B,DCC_MAX_COMPRESSED_BLOCK=64B,DCC_CONSTANT_ENCODE,PIPE_XOR_BITS=2,BANK_XOR_BITS=0,RB=1,PIPE_2 (0x020000044051B901): ✓ texture  ✓ render
+00:00:00.080 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,DCC,DCC_RETILE,DCC_INDEPENDENT_64B,DCC_MAX_COMPRESSED_BLOCK=64B,DCC_CONSTANT_ENCODE,PIPE_XOR_BITS=2,BANK_XOR_BITS=0,RB=1,PIPE_2 (0x0200000440517901): ✓ texture  ✓ render
+00:00:00.080 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401A01): ✓ texture  ✓ render
+00:00:00.080 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401901): ✓ texture  ✓ render
+00:00:00.080 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D (0x0200000000000A01): ✓ texture  ✓ render
+00:00:00.080 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S (0x0200000000000901): ✓ texture  ✓ render
+00:00:00.080 [DEBUG] [wlr] [render/egl.c:104]     LINEAR (0x0000000000000000): ✓ texture  ✓ render
+00:00:00.080 [DEBUG] [wlr] [render/egl.c:170]   XR24 (0x34325258)
+00:00:00.080 [DEBUG] [wlr] [render/egl.c:104]     INVALID (0x00FFFFFFFFFFFFFF): ✓ texture  ✓ render
+00:00:00.080 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D_X,DCC,DCC_PIPE_ALIGN,DCC_INDEPENDENT_64B,DCC_MAX_COMPRESSED_BLOCK=64B,DCC_CONSTANT_ENCODE,PIPE_XOR_BITS=2,BANK_XOR_BITS=0,RB=1,PIPE_2 (0x020000044051BA01): ✓ texture  ✓ render
+00:00:00.080 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,DCC,DCC_PIPE_ALIGN,DCC_INDEPENDENT_64B,DCC_MAX_COMPRESSED_BLOCK=64B,DCC_CONSTANT_ENCODE,PIPE_XOR_BITS=2,BANK_XOR_BITS=0,RB=1,PIPE_2 (0x020000044051B901): ✓ texture  ✓ render
+00:00:00.080 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,DCC,DCC_RETILE,DCC_INDEPENDENT_64B,DCC_MAX_COMPRESSED_BLOCK=64B,DCC_CONSTANT_ENCODE,PIPE_XOR_BITS=2,BANK_XOR_BITS=0,RB=1,PIPE_2 (0x0200000440517901): ✓ texture  ✓ render
+00:00:00.080 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401A01): ✓ texture  ✓ render
+00:00:00.080 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401901): ✓ texture  ✓ render
+00:00:00.080 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D (0x0200000000000A01): ✓ texture  ✓ render
+00:00:00.080 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S (0x0200000000000901): ✓ texture  ✓ render
+00:00:00.080 [DEBUG] [wlr] [render/egl.c:104]     LINEAR (0x0000000000000000): ✓ texture  ✓ render
+00:00:00.080 [DEBUG] [wlr] [render/egl.c:170]   XB24 (0x34324258)
+00:00:00.080 [DEBUG] [wlr] [render/egl.c:104]     INVALID (0x00FFFFFFFFFFFFFF): ✓ texture  ✓ render
+00:00:00.080 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D_X,DCC,DCC_PIPE_ALIGN,DCC_INDEPENDENT_64B,DCC_MAX_COMPRESSED_BLOCK=64B,DCC_CONSTANT_ENCODE,PIPE_XOR_BITS=2,BANK_XOR_BITS=0,RB=1,PIPE_2 (0x020000044051BA01): ✓ texture  ✓ render
+00:00:00.080 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,DCC,DCC_PIPE_ALIGN,DCC_INDEPENDENT_64B,DCC_MAX_COMPRESSED_BLOCK=64B,DCC_CONSTANT_ENCODE,PIPE_XOR_BITS=2,BANK_XOR_BITS=0,RB=1,PIPE_2 (0x020000044051B901): ✓ texture  ✓ render
+00:00:00.080 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,DCC,DCC_RETILE,DCC_INDEPENDENT_64B,DCC_MAX_COMPRESSED_BLOCK=64B,DCC_CONSTANT_ENCODE,PIPE_XOR_BITS=2,BANK_XOR_BITS=0,RB=1,PIPE_2 (0x0200000440517901): ✓ texture  ✓ render
+00:00:00.080 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401A01): ✓ texture  ✓ render
+00:00:00.080 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401901): ✓ texture  ✓ render
+00:00:00.080 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D (0x0200000000000A01): ✓ texture  ✓ render
+00:00:00.080 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S (0x0200000000000901): ✓ texture  ✓ render
+00:00:00.080 [DEBUG] [wlr] [render/egl.c:104]     LINEAR (0x0000000000000000): ✓ texture  ✓ render
+00:00:00.081 [DEBUG] [wlr] [render/egl.c:170]   AR15 (0x35315241)
+00:00:00.081 [DEBUG] [wlr] [render/egl.c:104]     INVALID (0x00FFFFFFFFFFFFFF): ✓ texture  ✓ render
+00:00:00.081 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D_X,DCC,DCC_PIPE_ALIGN,DCC_INDEPENDENT_64B,DCC_MAX_COMPRESSED_BLOCK=64B,DCC_CONSTANT_ENCODE,PIPE_XOR_BITS=2,BANK_XOR_BITS=0,RB=1,PIPE_2 (0x020000044051BA01): ✓ texture  ✓ render
+00:00:00.081 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,DCC,DCC_PIPE_ALIGN,DCC_INDEPENDENT_64B,DCC_MAX_COMPRESSED_BLOCK=64B,DCC_CONSTANT_ENCODE,PIPE_XOR_BITS=2,BANK_XOR_BITS=0,RB=1,PIPE_2 (0x020000044051B901): ✓ texture  ✓ render
+00:00:00.081 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401A01): ✓ texture  ✓ render
+00:00:00.081 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401901): ✓ texture  ✓ render
+00:00:00.081 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D (0x0200000000000A01): ✓ texture  ✓ render
+00:00:00.081 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S (0x0200000000000901): ✓ texture  ✓ render
+00:00:00.081 [DEBUG] [wlr] [render/egl.c:104]     LINEAR (0x0000000000000000): ✓ texture  ✓ render
+00:00:00.081 [DEBUG] [wlr] [render/egl.c:170]   AB15 (0x35314241)
+00:00:00.081 [DEBUG] [wlr] [render/egl.c:104]     INVALID (0x00FFFFFFFFFFFFFF): ✓ texture  ✓ render
+00:00:00.081 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D_X,DCC,DCC_PIPE_ALIGN,DCC_INDEPENDENT_64B,DCC_MAX_COMPRESSED_BLOCK=64B,DCC_CONSTANT_ENCODE,PIPE_XOR_BITS=2,BANK_XOR_BITS=0,RB=1,PIPE_2 (0x020000044051BA01): ✓ texture  ✓ render
+00:00:00.081 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,DCC,DCC_PIPE_ALIGN,DCC_INDEPENDENT_64B,DCC_MAX_COMPRESSED_BLOCK=64B,DCC_CONSTANT_ENCODE,PIPE_XOR_BITS=2,BANK_XOR_BITS=0,RB=1,PIPE_2 (0x020000044051B901): ✓ texture  ✓ render
+00:00:00.081 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401A01): ✓ texture  ✓ render
+00:00:00.081 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401901): ✓ texture  ✓ render
+00:00:00.081 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D (0x0200000000000A01): ✓ texture  ✓ render
+00:00:00.081 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S (0x0200000000000901): ✓ texture  ✓ render
+00:00:00.081 [DEBUG] [wlr] [render/egl.c:104]     LINEAR (0x0000000000000000): ✓ texture  ✓ render
+00:00:00.081 [DEBUG] [wlr] [render/egl.c:170]   AR12 (0x32315241)
+00:00:00.081 [DEBUG] [wlr] [render/egl.c:104]     INVALID (0x00FFFFFFFFFFFFFF): ✓ texture  ✓ render
+00:00:00.081 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D_X,DCC,DCC_PIPE_ALIGN,DCC_INDEPENDENT_64B,DCC_MAX_COMPRESSED_BLOCK=64B,DCC_CONSTANT_ENCODE,PIPE_XOR_BITS=2,BANK_XOR_BITS=0,RB=1,PIPE_2 (0x020000044051BA01): ✓ texture  ✓ render
+00:00:00.081 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,DCC,DCC_PIPE_ALIGN,DCC_INDEPENDENT_64B,DCC_MAX_COMPRESSED_BLOCK=64B,DCC_CONSTANT_ENCODE,PIPE_XOR_BITS=2,BANK_XOR_BITS=0,RB=1,PIPE_2 (0x020000044051B901): ✓ texture  ✓ render
+00:00:00.081 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401A01): ✓ texture  ✓ render
+00:00:00.081 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401901): ✓ texture  ✓ render
+00:00:00.081 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D (0x0200000000000A01): ✓ texture  ✓ render
+00:00:00.081 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S (0x0200000000000901): ✓ texture  ✓ render
+00:00:00.081 [DEBUG] [wlr] [render/egl.c:104]     LINEAR (0x0000000000000000): ✓ texture  ✓ render
+00:00:00.081 [DEBUG] [wlr] [render/egl.c:170]   AB12 (0x32314241)
+00:00:00.081 [DEBUG] [wlr] [render/egl.c:104]     INVALID (0x00FFFFFFFFFFFFFF): ✓ texture  ✓ render
+00:00:00.081 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D_X,DCC,DCC_PIPE_ALIGN,DCC_INDEPENDENT_64B,DCC_MAX_COMPRESSED_BLOCK=64B,DCC_CONSTANT_ENCODE,PIPE_XOR_BITS=2,BANK_XOR_BITS=0,RB=1,PIPE_2 (0x020000044051BA01): ✓ texture  ✓ render
+00:00:00.081 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,DCC,DCC_PIPE_ALIGN,DCC_INDEPENDENT_64B,DCC_MAX_COMPRESSED_BLOCK=64B,DCC_CONSTANT_ENCODE,PIPE_XOR_BITS=2,BANK_XOR_BITS=0,RB=1,PIPE_2 (0x020000044051B901): ✓ texture  ✓ render
+00:00:00.081 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401A01): ✓ texture  ✓ render
+00:00:00.081 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401901): ✓ texture  ✓ render
+00:00:00.081 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D (0x0200000000000A01): ✓ texture  ✓ render
+00:00:00.081 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S (0x0200000000000901): ✓ texture  ✓ render
+00:00:00.081 [DEBUG] [wlr] [render/egl.c:104]     LINEAR (0x0000000000000000): ✓ texture  ✓ render
+00:00:00.081 [DEBUG] [wlr] [render/egl.c:170]   RG16 (0x36314752)
+00:00:00.081 [DEBUG] [wlr] [render/egl.c:104]     INVALID (0x00FFFFFFFFFFFFFF): ✓ texture  ✓ render
+00:00:00.081 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D_X,DCC,DCC_PIPE_ALIGN,DCC_INDEPENDENT_64B,DCC_MAX_COMPRESSED_BLOCK=64B,DCC_CONSTANT_ENCODE,PIPE_XOR_BITS=2,BANK_XOR_BITS=0,RB=1,PIPE_2 (0x020000044051BA01): ✓ texture  ✓ render
+00:00:00.081 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,DCC,DCC_PIPE_ALIGN,DCC_INDEPENDENT_64B,DCC_MAX_COMPRESSED_BLOCK=64B,DCC_CONSTANT_ENCODE,PIPE_XOR_BITS=2,BANK_XOR_BITS=0,RB=1,PIPE_2 (0x020000044051B901): ✓ texture  ✓ render
+00:00:00.081 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401A01): ✓ texture  ✓ render
+00:00:00.081 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401901): ✓ texture  ✓ render
+00:00:00.081 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D (0x0200000000000A01): ✓ texture  ✓ render
+00:00:00.081 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S (0x0200000000000901): ✓ texture  ✓ render
+00:00:00.081 [DEBUG] [wlr] [render/egl.c:104]     LINEAR (0x0000000000000000): ✓ texture  ✓ render
+00:00:00.081 [DEBUG] [wlr] [render/egl.c:170]   R8 (0x20203852)
+00:00:00.081 [DEBUG] [wlr] [render/egl.c:104]     INVALID (0x00FFFFFFFFFFFFFF): ✓ texture  ✓ render
+00:00:00.082 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D_X,DCC,DCC_PIPE_ALIGN,DCC_INDEPENDENT_64B,DCC_MAX_COMPRESSED_BLOCK=64B,DCC_CONSTANT_ENCODE,PIPE_XOR_BITS=2,BANK_XOR_BITS=0,RB=1,PIPE_2 (0x020000044051BA01): ✓ texture  ✓ render
+00:00:00.082 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,DCC,DCC_PIPE_ALIGN,DCC_INDEPENDENT_64B,DCC_MAX_COMPRESSED_BLOCK=64B,DCC_CONSTANT_ENCODE,PIPE_XOR_BITS=2,BANK_XOR_BITS=0,RB=1,PIPE_2 (0x020000044051B901): ✓ texture  ✓ render
+00:00:00.082 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401A01): ✓ texture  ✓ render
+00:00:00.082 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401901): ✓ texture  ✓ render
+00:00:00.082 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D (0x0200000000000A01): ✓ texture  ✓ render
+00:00:00.082 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S (0x0200000000000901): ✓ texture  ✓ render
+00:00:00.082 [DEBUG] [wlr] [render/egl.c:104]     LINEAR (0x0000000000000000): ✓ texture  ✓ render
+00:00:00.082 [DEBUG] [wlr] [render/egl.c:170]   R16 (0x20363152)
+00:00:00.082 [DEBUG] [wlr] [render/egl.c:104]     INVALID (0x00FFFFFFFFFFFFFF): ✓ texture  ✓ render
+00:00:00.082 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D_X,DCC,DCC_PIPE_ALIGN,DCC_INDEPENDENT_64B,DCC_MAX_COMPRESSED_BLOCK=64B,DCC_CONSTANT_ENCODE,PIPE_XOR_BITS=2,BANK_XOR_BITS=0,RB=1,PIPE_2 (0x020000044051BA01): ✓ texture  ✓ render
+00:00:00.082 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,DCC,DCC_PIPE_ALIGN,DCC_INDEPENDENT_64B,DCC_MAX_COMPRESSED_BLOCK=64B,DCC_CONSTANT_ENCODE,PIPE_XOR_BITS=2,BANK_XOR_BITS=0,RB=1,PIPE_2 (0x020000044051B901): ✓ texture  ✓ render
+00:00:00.082 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401A01): ✓ texture  ✓ render
+00:00:00.082 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401901): ✓ texture  ✓ render
+00:00:00.082 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D (0x0200000000000A01): ✓ texture  ✓ render
+00:00:00.082 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S (0x0200000000000901): ✓ texture  ✓ render
+00:00:00.082 [DEBUG] [wlr] [render/egl.c:104]     LINEAR (0x0000000000000000): ✓ texture  ✓ render
+00:00:00.082 [DEBUG] [wlr] [render/egl.c:170]   GR88 (0x38385247)
+00:00:00.082 [DEBUG] [wlr] [render/egl.c:104]     INVALID (0x00FFFFFFFFFFFFFF): ✓ texture  ✓ render
+00:00:00.082 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D_X,DCC,DCC_PIPE_ALIGN,DCC_INDEPENDENT_64B,DCC_MAX_COMPRESSED_BLOCK=64B,DCC_CONSTANT_ENCODE,PIPE_XOR_BITS=2,BANK_XOR_BITS=0,RB=1,PIPE_2 (0x020000044051BA01): ✓ texture  ✓ render
+00:00:00.082 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,DCC,DCC_PIPE_ALIGN,DCC_INDEPENDENT_64B,DCC_MAX_COMPRESSED_BLOCK=64B,DCC_CONSTANT_ENCODE,PIPE_XOR_BITS=2,BANK_XOR_BITS=0,RB=1,PIPE_2 (0x020000044051B901): ✓ texture  ✓ render
+00:00:00.082 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401A01): ✓ texture  ✓ render
+00:00:00.082 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401901): ✓ texture  ✓ render
+00:00:00.082 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D (0x0200000000000A01): ✓ texture  ✓ render
+00:00:00.082 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S (0x0200000000000901): ✓ texture  ✓ render
+00:00:00.082 [DEBUG] [wlr] [render/egl.c:104]     LINEAR (0x0000000000000000): ✓ texture  ✓ render
+00:00:00.082 [DEBUG] [wlr] [render/egl.c:170]   GR32 (0x32335247)
+00:00:00.082 [DEBUG] [wlr] [render/egl.c:104]     INVALID (0x00FFFFFFFFFFFFFF): ✓ texture  ✓ render
+00:00:00.082 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D_X,DCC,DCC_PIPE_ALIGN,DCC_INDEPENDENT_64B,DCC_MAX_COMPRESSED_BLOCK=64B,DCC_CONSTANT_ENCODE,PIPE_XOR_BITS=2,BANK_XOR_BITS=0,RB=1,PIPE_2 (0x020000044051BA01): ✓ texture  ✓ render
+00:00:00.082 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,DCC,DCC_PIPE_ALIGN,DCC_INDEPENDENT_64B,DCC_MAX_COMPRESSED_BLOCK=64B,DCC_CONSTANT_ENCODE,PIPE_XOR_BITS=2,BANK_XOR_BITS=0,RB=1,PIPE_2 (0x020000044051B901): ✓ texture  ✓ render
+00:00:00.082 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,DCC,DCC_RETILE,DCC_INDEPENDENT_64B,DCC_MAX_COMPRESSED_BLOCK=64B,DCC_CONSTANT_ENCODE,PIPE_XOR_BITS=2,BANK_XOR_BITS=0,RB=1,PIPE_2 (0x0200000440517901): ✓ texture  ✓ render
+00:00:00.082 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401A01): ✓ texture  ✓ render
+00:00:00.082 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401901): ✓ texture  ✓ render
+00:00:00.082 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D (0x0200000000000A01): ✓ texture  ✓ render
+00:00:00.082 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S (0x0200000000000901): ✓ texture  ✓ render
+00:00:00.082 [DEBUG] [wlr] [render/egl.c:104]     LINEAR (0x0000000000000000): ✓ texture  ✓ render
+00:00:00.082 [DEBUG] [wlr] [render/egl.c:170]   YUV9 (0x39565559)
+00:00:00.082 [DEBUG] [wlr] [render/egl.c:104]     INVALID (0x00FFFFFFFFFFFFFF): ✓ texture  ✓ render
+00:00:00.082 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401A01): ✓ texture  ✗ render
+00:00:00.082 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401901): ✓ texture  ✗ render
+00:00:00.082 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D (0x0200000000000A01): ✓ texture  ✗ render
+00:00:00.082 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S (0x0200000000000901): ✓ texture  ✗ render
+00:00:00.082 [DEBUG] [wlr] [render/egl.c:104]     LINEAR (0x0000000000000000): ✓ texture  ✗ render
+00:00:00.082 [DEBUG] [wlr] [render/egl.c:170]   YU11 (0x31315559)
+00:00:00.082 [DEBUG] [wlr] [render/egl.c:104]     INVALID (0x00FFFFFFFFFFFFFF): ✓ texture  ✓ render
+00:00:00.082 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401A01): ✓ texture  ✗ render
+00:00:00.082 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401901): ✓ texture  ✗ render
+00:00:00.082 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D (0x0200000000000A01): ✓ texture  ✗ render
+00:00:00.082 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S (0x0200000000000901): ✓ texture  ✗ render
+00:00:00.083 [DEBUG] [wlr] [render/egl.c:104]     LINEAR (0x0000000000000000): ✓ texture  ✗ render
+00:00:00.083 [DEBUG] [wlr] [render/egl.c:170]   YU12 (0x32315559)
+00:00:00.083 [DEBUG] [wlr] [render/egl.c:104]     INVALID (0x00FFFFFFFFFFFFFF): ✓ texture  ✓ render
+00:00:00.083 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401A01): ✓ texture  ✗ render
+00:00:00.083 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401901): ✓ texture  ✗ render
+00:00:00.083 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D (0x0200000000000A01): ✓ texture  ✗ render
+00:00:00.083 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S (0x0200000000000901): ✓ texture  ✗ render
+00:00:00.083 [DEBUG] [wlr] [render/egl.c:104]     LINEAR (0x0000000000000000): ✓ texture  ✗ render
+00:00:00.083 [DEBUG] [wlr] [render/egl.c:170]   YU16 (0x36315559)
+00:00:00.083 [DEBUG] [wlr] [render/egl.c:104]     INVALID (0x00FFFFFFFFFFFFFF): ✓ texture  ✓ render
+00:00:00.083 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401A01): ✓ texture  ✗ render
+00:00:00.083 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401901): ✓ texture  ✗ render
+00:00:00.083 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D (0x0200000000000A01): ✓ texture  ✗ render
+00:00:00.083 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S (0x0200000000000901): ✓ texture  ✗ render
+00:00:00.083 [DEBUG] [wlr] [render/egl.c:104]     LINEAR (0x0000000000000000): ✓ texture  ✗ render
+00:00:00.083 [DEBUG] [wlr] [render/egl.c:170]   YU24 (0x34325559)
+00:00:00.083 [DEBUG] [wlr] [render/egl.c:104]     INVALID (0x00FFFFFFFFFFFFFF): ✓ texture  ✓ render
+00:00:00.083 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401A01): ✓ texture  ✗ render
+00:00:00.083 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401901): ✓ texture  ✗ render
+00:00:00.083 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D (0x0200000000000A01): ✓ texture  ✗ render
+00:00:00.083 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S (0x0200000000000901): ✓ texture  ✗ render
+00:00:00.083 [DEBUG] [wlr] [render/egl.c:104]     LINEAR (0x0000000000000000): ✓ texture  ✗ render
+00:00:00.083 [DEBUG] [wlr] [render/egl.c:170]   YVU9 (0x39555659)
+00:00:00.083 [DEBUG] [wlr] [render/egl.c:104]     INVALID (0x00FFFFFFFFFFFFFF): ✓ texture  ✓ render
+00:00:00.083 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401A01): ✓ texture  ✗ render
+00:00:00.083 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401901): ✓ texture  ✗ render
+00:00:00.083 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D (0x0200000000000A01): ✓ texture  ✗ render
+00:00:00.083 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S (0x0200000000000901): ✓ texture  ✗ render
+00:00:00.083 [DEBUG] [wlr] [render/egl.c:104]     LINEAR (0x0000000000000000): ✓ texture  ✗ render
+00:00:00.083 [DEBUG] [wlr] [render/egl.c:170]   YV11 (0x31315659)
+00:00:00.083 [DEBUG] [wlr] [render/egl.c:104]     INVALID (0x00FFFFFFFFFFFFFF): ✓ texture  ✓ render
+00:00:00.083 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401A01): ✓ texture  ✗ render
+00:00:00.083 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401901): ✓ texture  ✗ render
+00:00:00.083 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D (0x0200000000000A01): ✓ texture  ✗ render
+00:00:00.083 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S (0x0200000000000901): ✓ texture  ✗ render
+00:00:00.083 [DEBUG] [wlr] [render/egl.c:104]     LINEAR (0x0000000000000000): ✓ texture  ✗ render
+00:00:00.083 [DEBUG] [wlr] [render/egl.c:170]   YV12 (0x32315659)
+00:00:00.083 [DEBUG] [wlr] [render/egl.c:104]     INVALID (0x00FFFFFFFFFFFFFF): ✓ texture  ✓ render
+00:00:00.083 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401A01): ✓ texture  ✗ render
+00:00:00.083 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401901): ✓ texture  ✗ render
+00:00:00.083 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D (0x0200000000000A01): ✓ texture  ✗ render
+00:00:00.083 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S (0x0200000000000901): ✓ texture  ✗ render
+00:00:00.083 [DEBUG] [wlr] [render/egl.c:104]     LINEAR (0x0000000000000000): ✓ texture  ✗ render
+00:00:00.083 [DEBUG] [wlr] [render/egl.c:170]   YV16 (0x36315659)
+00:00:00.083 [DEBUG] [wlr] [render/egl.c:104]     INVALID (0x00FFFFFFFFFFFFFF): ✓ texture  ✓ render
+00:00:00.083 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401A01): ✓ texture  ✗ render
+00:00:00.083 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401901): ✓ texture  ✗ render
+00:00:00.083 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D (0x0200000000000A01): ✓ texture  ✗ render
+00:00:00.083 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S (0x0200000000000901): ✓ texture  ✗ render
+00:00:00.083 [DEBUG] [wlr] [render/egl.c:104]     LINEAR (0x0000000000000000): ✓ texture  ✗ render
+00:00:00.084 [DEBUG] [wlr] [render/egl.c:170]   YV24 (0x34325659)
+00:00:00.084 [DEBUG] [wlr] [render/egl.c:104]     INVALID (0x00FFFFFFFFFFFFFF): ✓ texture  ✓ render
+00:00:00.084 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401A01): ✓ texture  ✗ render
+00:00:00.084 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401901): ✓ texture  ✗ render
+00:00:00.084 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D (0x0200000000000A01): ✓ texture  ✗ render
+00:00:00.084 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S (0x0200000000000901): ✓ texture  ✗ render
+00:00:00.084 [DEBUG] [wlr] [render/egl.c:104]     LINEAR (0x0000000000000000): ✓ texture  ✗ render
+00:00:00.084 [DEBUG] [wlr] [render/egl.c:170]   NV12 (0x3231564E)
+00:00:00.084 [DEBUG] [wlr] [render/egl.c:104]     INVALID (0x00FFFFFFFFFFFFFF): ✓ texture  ✓ render
+00:00:00.084 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401A01): ✓ texture  ✗ render
+00:00:00.084 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401901): ✓ texture  ✗ render
+00:00:00.084 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D (0x0200000000000A01): ✓ texture  ✗ render
+00:00:00.084 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S (0x0200000000000901): ✓ texture  ✗ render
+00:00:00.084 [DEBUG] [wlr] [render/egl.c:104]     LINEAR (0x0000000000000000): ✓ texture  ✗ render
+00:00:00.084 [DEBUG] [wlr] [render/egl.c:170]   NV21 (0x3132564E)
+00:00:00.084 [DEBUG] [wlr] [render/egl.c:104]     INVALID (0x00FFFFFFFFFFFFFF): ✓ texture  ✓ render
+00:00:00.084 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401A01): ✓ texture  ✗ render
+00:00:00.084 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401901): ✓ texture  ✗ render
+00:00:00.084 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D (0x0200000000000A01): ✓ texture  ✗ render
+00:00:00.084 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S (0x0200000000000901): ✓ texture  ✗ render
+00:00:00.084 [DEBUG] [wlr] [render/egl.c:104]     LINEAR (0x0000000000000000): ✓ texture  ✗ render
+00:00:00.084 [DEBUG] [wlr] [render/egl.c:170]   P010 (0x30313050)
+00:00:00.084 [DEBUG] [wlr] [render/egl.c:104]     INVALID (0x00FFFFFFFFFFFFFF): ✓ texture  ✓ render
+00:00:00.084 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401A01): ✓ texture  ✗ render
+00:00:00.084 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401901): ✓ texture  ✗ render
+00:00:00.084 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D (0x0200000000000A01): ✓ texture  ✗ render
+00:00:00.084 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S (0x0200000000000901): ✓ texture  ✗ render
+00:00:00.084 [DEBUG] [wlr] [render/egl.c:104]     LINEAR (0x0000000000000000): ✓ texture  ✗ render
+00:00:00.084 [DEBUG] [wlr] [render/egl.c:170]   P012 (0x32313050)
+00:00:00.084 [DEBUG] [wlr] [render/egl.c:104]     INVALID (0x00FFFFFFFFFFFFFF): ✓ texture  ✓ render
+00:00:00.084 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401A01): ✓ texture  ✗ render
+00:00:00.084 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401901): ✓ texture  ✗ render
+00:00:00.084 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D (0x0200000000000A01): ✓ texture  ✗ render
+00:00:00.084 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S (0x0200000000000901): ✓ texture  ✗ render
+00:00:00.084 [DEBUG] [wlr] [render/egl.c:104]     LINEAR (0x0000000000000000): ✓ texture  ✗ render
+00:00:00.084 [DEBUG] [wlr] [render/egl.c:170]   P016 (0x36313050)
+00:00:00.084 [DEBUG] [wlr] [render/egl.c:104]     INVALID (0x00FFFFFFFFFFFFFF): ✓ texture  ✓ render
+00:00:00.084 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401A01): ✓ texture  ✗ render
+00:00:00.084 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401901): ✓ texture  ✗ render
+00:00:00.084 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D (0x0200000000000A01): ✓ texture  ✗ render
+00:00:00.084 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S (0x0200000000000901): ✓ texture  ✗ render
+00:00:00.084 [DEBUG] [wlr] [render/egl.c:104]     LINEAR (0x0000000000000000): ✓ texture  ✗ render
+00:00:00.084 [DEBUG] [wlr] [render/egl.c:170]   P030 (0x30333050)
+00:00:00.084 [DEBUG] [wlr] [render/egl.c:104]     INVALID (0x00FFFFFFFFFFFFFF): ✓ texture  ✓ render
+00:00:00.084 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401A01): ✓ texture  ✗ render
+00:00:00.084 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401901): ✓ texture  ✗ render
+00:00:00.084 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D (0x0200000000000A01): ✓ texture  ✗ render
+00:00:00.084 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S (0x0200000000000901): ✓ texture  ✗ render
+00:00:00.084 [DEBUG] [wlr] [render/egl.c:104]     LINEAR (0x0000000000000000): ✓ texture  ✗ render
+00:00:00.084 [DEBUG] [wlr] [render/egl.c:170]   NV16 (0x3631564E)
+00:00:00.085 [DEBUG] [wlr] [render/egl.c:104]     INVALID (0x00FFFFFFFFFFFFFF): ✓ texture  ✓ render
+00:00:00.085 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401A01): ✓ texture  ✗ render
+00:00:00.085 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401901): ✓ texture  ✗ render
+00:00:00.085 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D (0x0200000000000A01): ✓ texture  ✗ render
+00:00:00.085 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S (0x0200000000000901): ✓ texture  ✗ render
+00:00:00.085 [DEBUG] [wlr] [render/egl.c:104]     LINEAR (0x0000000000000000): ✓ texture  ✗ render
+00:00:00.085 [DEBUG] [wlr] [render/egl.c:170]   AYUV (0x56555941)
+00:00:00.085 [DEBUG] [wlr] [render/egl.c:104]     INVALID (0x00FFFFFFFFFFFFFF): ✓ texture  ✓ render
+00:00:00.085 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D_X,DCC,DCC_PIPE_ALIGN,DCC_INDEPENDENT_64B,DCC_MAX_COMPRESSED_BLOCK=64B,DCC_CONSTANT_ENCODE,PIPE_XOR_BITS=2,BANK_XOR_BITS=0,RB=1,PIPE_2 (0x020000044051BA01): ✓ texture  ✗ render
+00:00:00.085 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,DCC,DCC_PIPE_ALIGN,DCC_INDEPENDENT_64B,DCC_MAX_COMPRESSED_BLOCK=64B,DCC_CONSTANT_ENCODE,PIPE_XOR_BITS=2,BANK_XOR_BITS=0,RB=1,PIPE_2 (0x020000044051B901): ✓ texture  ✗ render
+00:00:00.085 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401A01): ✓ texture  ✗ render
+00:00:00.085 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401901): ✓ texture  ✗ render
+00:00:00.085 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D (0x0200000000000A01): ✓ texture  ✗ render
+00:00:00.085 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S (0x0200000000000901): ✓ texture  ✗ render
+00:00:00.085 [DEBUG] [wlr] [render/egl.c:104]     LINEAR (0x0000000000000000): ✓ texture  ✗ render
+00:00:00.085 [DEBUG] [wlr] [render/egl.c:170]   XYUV (0x56555958)
+00:00:00.085 [DEBUG] [wlr] [render/egl.c:104]     INVALID (0x00FFFFFFFFFFFFFF): ✓ texture  ✓ render
+00:00:00.085 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D_X,DCC,DCC_PIPE_ALIGN,DCC_INDEPENDENT_64B,DCC_MAX_COMPRESSED_BLOCK=64B,DCC_CONSTANT_ENCODE,PIPE_XOR_BITS=2,BANK_XOR_BITS=0,RB=1,PIPE_2 (0x020000044051BA01): ✓ texture  ✗ render
+00:00:00.085 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,DCC,DCC_PIPE_ALIGN,DCC_INDEPENDENT_64B,DCC_MAX_COMPRESSED_BLOCK=64B,DCC_CONSTANT_ENCODE,PIPE_XOR_BITS=2,BANK_XOR_BITS=0,RB=1,PIPE_2 (0x020000044051B901): ✓ texture  ✗ render
+00:00:00.085 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401A01): ✓ texture  ✗ render
+00:00:00.085 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401901): ✓ texture  ✗ render
+00:00:00.085 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D (0x0200000000000A01): ✓ texture  ✗ render
+00:00:00.085 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S (0x0200000000000901): ✓ texture  ✗ render
+00:00:00.085 [DEBUG] [wlr] [render/egl.c:104]     LINEAR (0x0000000000000000): ✓ texture  ✗ render
+00:00:00.085 [DEBUG] [wlr] [render/egl.c:170]   Y410 (0x30313459)
+00:00:00.085 [DEBUG] [wlr] [render/egl.c:104]     INVALID (0x00FFFFFFFFFFFFFF): ✓ texture  ✓ render
+00:00:00.085 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D_X,DCC,DCC_PIPE_ALIGN,DCC_INDEPENDENT_64B,DCC_MAX_COMPRESSED_BLOCK=64B,DCC_CONSTANT_ENCODE,PIPE_XOR_BITS=2,BANK_XOR_BITS=0,RB=1,PIPE_2 (0x020000044051BA01): ✓ texture  ✗ render
+00:00:00.085 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,DCC,DCC_PIPE_ALIGN,DCC_INDEPENDENT_64B,DCC_MAX_COMPRESSED_BLOCK=64B,DCC_CONSTANT_ENCODE,PIPE_XOR_BITS=2,BANK_XOR_BITS=0,RB=1,PIPE_2 (0x020000044051B901): ✓ texture  ✗ render
+00:00:00.085 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,DCC,DCC_RETILE,DCC_INDEPENDENT_64B,DCC_MAX_COMPRESSED_BLOCK=64B,DCC_CONSTANT_ENCODE,PIPE_XOR_BITS=2,BANK_XOR_BITS=0,RB=1,PIPE_2 (0x0200000440517901): ✓ texture  ✗ render
+00:00:00.085 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401A01): ✓ texture  ✗ render
+00:00:00.085 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401901): ✓ texture  ✗ render
+00:00:00.085 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D (0x0200000000000A01): ✓ texture  ✗ render
+00:00:00.085 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S (0x0200000000000901): ✓ texture  ✗ render
+00:00:00.085 [DEBUG] [wlr] [render/egl.c:104]     LINEAR (0x0000000000000000): ✓ texture  ✗ render
+00:00:00.085 [DEBUG] [wlr] [render/egl.c:170]   Y412 (0x32313459)
+00:00:00.085 [DEBUG] [wlr] [render/egl.c:104]     INVALID (0x00FFFFFFFFFFFFFF): ✓ texture  ✓ render
+00:00:00.085 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D_X,DCC,DCC_PIPE_ALIGN,DCC_INDEPENDENT_64B,DCC_MAX_COMPRESSED_BLOCK=64B,DCC_CONSTANT_ENCODE,PIPE_XOR_BITS=2,BANK_XOR_BITS=0,RB=1,PIPE_2 (0x020000044051BA01): ✓ texture  ✗ render
+00:00:00.085 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,DCC,DCC_PIPE_ALIGN,DCC_INDEPENDENT_64B,DCC_MAX_COMPRESSED_BLOCK=64B,DCC_CONSTANT_ENCODE,PIPE_XOR_BITS=2,BANK_XOR_BITS=0,RB=1,PIPE_2 (0x020000044051B901): ✓ texture  ✗ render
+00:00:00.085 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401A01): ✓ texture  ✗ render
+00:00:00.085 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401901): ✓ texture  ✗ render
+00:00:00.085 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D (0x0200000000000A01): ✓ texture  ✗ render
+00:00:00.085 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S (0x0200000000000901): ✓ texture  ✗ render
+00:00:00.085 [DEBUG] [wlr] [render/egl.c:104]     LINEAR (0x0000000000000000): ✓ texture  ✗ render
+00:00:00.085 [DEBUG] [wlr] [render/egl.c:170]   Y416 (0x36313459)
+00:00:00.085 [DEBUG] [wlr] [render/egl.c:104]     INVALID (0x00FFFFFFFFFFFFFF): ✓ texture  ✓ render
+00:00:00.085 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D_X,DCC,DCC_PIPE_ALIGN,DCC_INDEPENDENT_64B,DCC_MAX_COMPRESSED_BLOCK=64B,DCC_CONSTANT_ENCODE,PIPE_XOR_BITS=2,BANK_XOR_BITS=0,RB=1,PIPE_2 (0x020000044051BA01): ✓ texture  ✗ render
+00:00:00.085 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,DCC,DCC_PIPE_ALIGN,DCC_INDEPENDENT_64B,DCC_MAX_COMPRESSED_BLOCK=64B,DCC_CONSTANT_ENCODE,PIPE_XOR_BITS=2,BANK_XOR_BITS=0,RB=1,PIPE_2 (0x020000044051B901): ✓ texture  ✗ render
+00:00:00.086 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401A01): ✓ texture  ✗ render
+00:00:00.086 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401901): ✓ texture  ✗ render
+00:00:00.086 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D (0x0200000000000A01): ✓ texture  ✗ render
+00:00:00.086 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S (0x0200000000000901): ✓ texture  ✗ render
+00:00:00.086 [DEBUG] [wlr] [render/egl.c:104]     LINEAR (0x0000000000000000): ✓ texture  ✗ render
+00:00:00.086 [DEBUG] [wlr] [render/egl.c:170]   YUYV (0x56595559)
+00:00:00.086 [DEBUG] [wlr] [render/egl.c:104]     INVALID (0x00FFFFFFFFFFFFFF): ✓ texture  ✓ render
+00:00:00.086 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D_X,DCC,DCC_PIPE_ALIGN,DCC_INDEPENDENT_64B,DCC_MAX_COMPRESSED_BLOCK=64B,DCC_CONSTANT_ENCODE,PIPE_XOR_BITS=2,BANK_XOR_BITS=0,RB=1,PIPE_2 (0x020000044051BA01): ✓ texture  ✗ render
+00:00:00.086 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,DCC,DCC_PIPE_ALIGN,DCC_INDEPENDENT_64B,DCC_MAX_COMPRESSED_BLOCK=64B,DCC_CONSTANT_ENCODE,PIPE_XOR_BITS=2,BANK_XOR_BITS=0,RB=1,PIPE_2 (0x020000044051B901): ✓ texture  ✗ render
+00:00:00.086 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,DCC,DCC_RETILE,DCC_INDEPENDENT_64B,DCC_MAX_COMPRESSED_BLOCK=64B,DCC_CONSTANT_ENCODE,PIPE_XOR_BITS=2,BANK_XOR_BITS=0,RB=1,PIPE_2 (0x0200000440517901): ✓ texture  ✗ render
+00:00:00.086 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401A01): ✓ texture  ✗ render
+00:00:00.086 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401901): ✓ texture  ✗ render
+00:00:00.086 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D (0x0200000000000A01): ✓ texture  ✗ render
+00:00:00.086 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S (0x0200000000000901): ✓ texture  ✗ render
+00:00:00.086 [DEBUG] [wlr] [render/egl.c:104]     LINEAR (0x0000000000000000): ✓ texture  ✗ render
+00:00:00.086 [DEBUG] [wlr] [render/egl.c:170]   YVYU (0x55595659)
+00:00:00.086 [DEBUG] [wlr] [render/egl.c:104]     INVALID (0x00FFFFFFFFFFFFFF): ✓ texture  ✓ render
+00:00:00.086 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D_X,DCC,DCC_PIPE_ALIGN,DCC_INDEPENDENT_64B,DCC_MAX_COMPRESSED_BLOCK=64B,DCC_CONSTANT_ENCODE,PIPE_XOR_BITS=2,BANK_XOR_BITS=0,RB=1,PIPE_2 (0x020000044051BA01): ✓ texture  ✗ render
+00:00:00.086 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,DCC,DCC_PIPE_ALIGN,DCC_INDEPENDENT_64B,DCC_MAX_COMPRESSED_BLOCK=64B,DCC_CONSTANT_ENCODE,PIPE_XOR_BITS=2,BANK_XOR_BITS=0,RB=1,PIPE_2 (0x020000044051B901): ✓ texture  ✗ render
+00:00:00.086 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,DCC,DCC_RETILE,DCC_INDEPENDENT_64B,DCC_MAX_COMPRESSED_BLOCK=64B,DCC_CONSTANT_ENCODE,PIPE_XOR_BITS=2,BANK_XOR_BITS=0,RB=1,PIPE_2 (0x0200000440517901): ✓ texture  ✗ render
+00:00:00.086 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401A01): ✓ texture  ✗ render
+00:00:00.086 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401901): ✓ texture  ✗ render
+00:00:00.086 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D (0x0200000000000A01): ✓ texture  ✗ render
+00:00:00.086 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S (0x0200000000000901): ✓ texture  ✗ render
+00:00:00.086 [DEBUG] [wlr] [render/egl.c:104]     LINEAR (0x0000000000000000): ✓ texture  ✗ render
+00:00:00.086 [DEBUG] [wlr] [render/egl.c:170]   UYVY (0x59565955)
+00:00:00.086 [DEBUG] [wlr] [render/egl.c:104]     INVALID (0x00FFFFFFFFFFFFFF): ✓ texture  ✓ render
+00:00:00.086 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D_X,DCC,DCC_PIPE_ALIGN,DCC_INDEPENDENT_64B,DCC_MAX_COMPRESSED_BLOCK=64B,DCC_CONSTANT_ENCODE,PIPE_XOR_BITS=2,BANK_XOR_BITS=0,RB=1,PIPE_2 (0x020000044051BA01): ✓ texture  ✗ render
+00:00:00.086 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,DCC,DCC_PIPE_ALIGN,DCC_INDEPENDENT_64B,DCC_MAX_COMPRESSED_BLOCK=64B,DCC_CONSTANT_ENCODE,PIPE_XOR_BITS=2,BANK_XOR_BITS=0,RB=1,PIPE_2 (0x020000044051B901): ✓ texture  ✗ render
+00:00:00.086 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,DCC,DCC_RETILE,DCC_INDEPENDENT_64B,DCC_MAX_COMPRESSED_BLOCK=64B,DCC_CONSTANT_ENCODE,PIPE_XOR_BITS=2,BANK_XOR_BITS=0,RB=1,PIPE_2 (0x0200000440517901): ✓ texture  ✗ render
+00:00:00.086 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401A01): ✓ texture  ✗ render
+00:00:00.086 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401901): ✓ texture  ✗ render
+00:00:00.086 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D (0x0200000000000A01): ✓ texture  ✗ render
+00:00:00.086 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S (0x0200000000000901): ✓ texture  ✗ render
+00:00:00.086 [DEBUG] [wlr] [render/egl.c:104]     LINEAR (0x0000000000000000): ✓ texture  ✗ render
+00:00:00.086 [DEBUG] [wlr] [render/egl.c:170]   VYUY (0x59555956)
+00:00:00.086 [DEBUG] [wlr] [render/egl.c:104]     INVALID (0x00FFFFFFFFFFFFFF): ✓ texture  ✓ render
+00:00:00.086 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D_X,DCC,DCC_PIPE_ALIGN,DCC_INDEPENDENT_64B,DCC_MAX_COMPRESSED_BLOCK=64B,DCC_CONSTANT_ENCODE,PIPE_XOR_BITS=2,BANK_XOR_BITS=0,RB=1,PIPE_2 (0x020000044051BA01): ✓ texture  ✗ render
+00:00:00.086 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,DCC,DCC_PIPE_ALIGN,DCC_INDEPENDENT_64B,DCC_MAX_COMPRESSED_BLOCK=64B,DCC_CONSTANT_ENCODE,PIPE_XOR_BITS=2,BANK_XOR_BITS=0,RB=1,PIPE_2 (0x020000044051B901): ✓ texture  ✗ render
+00:00:00.086 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,DCC,DCC_RETILE,DCC_INDEPENDENT_64B,DCC_MAX_COMPRESSED_BLOCK=64B,DCC_CONSTANT_ENCODE,PIPE_XOR_BITS=2,BANK_XOR_BITS=0,RB=1,PIPE_2 (0x0200000440517901): ✓ texture  ✗ render
+00:00:00.086 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401A01): ✓ texture  ✗ render
+00:00:00.086 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401901): ✓ texture  ✗ render
+00:00:00.086 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D (0x0200000000000A01): ✓ texture  ✗ render
+00:00:00.086 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S (0x0200000000000901): ✓ texture  ✗ render
+00:00:00.086 [DEBUG] [wlr] [render/egl.c:104]     LINEAR (0x0000000000000000): ✓ texture  ✗ render
+00:00:00.086 [DEBUG] [wlr] [render/egl.c:170]   Y210 (0x30313259)
+00:00:00.086 [DEBUG] [wlr] [render/egl.c:104]     INVALID (0x00FFFFFFFFFFFFFF): ✓ texture  ✓ render
+00:00:00.087 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D_X,DCC,DCC_PIPE_ALIGN,DCC_INDEPENDENT_64B,DCC_MAX_COMPRESSED_BLOCK=64B,DCC_CONSTANT_ENCODE,PIPE_XOR_BITS=2,BANK_XOR_BITS=0,RB=1,PIPE_2 (0x020000044051BA01): ✓ texture  ✗ render
+00:00:00.087 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,DCC,DCC_PIPE_ALIGN,DCC_INDEPENDENT_64B,DCC_MAX_COMPRESSED_BLOCK=64B,DCC_CONSTANT_ENCODE,PIPE_XOR_BITS=2,BANK_XOR_BITS=0,RB=1,PIPE_2 (0x020000044051B901): ✓ texture  ✗ render
+00:00:00.087 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401A01): ✓ texture  ✗ render
+00:00:00.087 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401901): ✓ texture  ✗ render
+00:00:00.087 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D (0x0200000000000A01): ✓ texture  ✗ render
+00:00:00.087 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S (0x0200000000000901): ✓ texture  ✗ render
+00:00:00.087 [DEBUG] [wlr] [render/egl.c:104]     LINEAR (0x0000000000000000): ✓ texture  ✗ render
+00:00:00.087 [DEBUG] [wlr] [render/egl.c:170]   Y212 (0x32313259)
+00:00:00.087 [DEBUG] [wlr] [render/egl.c:104]     INVALID (0x00FFFFFFFFFFFFFF): ✓ texture  ✓ render
+00:00:00.087 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D_X,DCC,DCC_PIPE_ALIGN,DCC_INDEPENDENT_64B,DCC_MAX_COMPRESSED_BLOCK=64B,DCC_CONSTANT_ENCODE,PIPE_XOR_BITS=2,BANK_XOR_BITS=0,RB=1,PIPE_2 (0x020000044051BA01): ✓ texture  ✗ render
+00:00:00.087 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,DCC,DCC_PIPE_ALIGN,DCC_INDEPENDENT_64B,DCC_MAX_COMPRESSED_BLOCK=64B,DCC_CONSTANT_ENCODE,PIPE_XOR_BITS=2,BANK_XOR_BITS=0,RB=1,PIPE_2 (0x020000044051B901): ✓ texture  ✗ render
+00:00:00.087 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401A01): ✓ texture  ✗ render
+00:00:00.087 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401901): ✓ texture  ✗ render
+00:00:00.087 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D (0x0200000000000A01): ✓ texture  ✗ render
+00:00:00.087 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S (0x0200000000000901): ✓ texture  ✗ render
+00:00:00.087 [DEBUG] [wlr] [render/egl.c:104]     LINEAR (0x0000000000000000): ✓ texture  ✗ render
+00:00:00.087 [DEBUG] [wlr] [render/egl.c:170]   Y216 (0x36313259)
+00:00:00.087 [DEBUG] [wlr] [render/egl.c:104]     INVALID (0x00FFFFFFFFFFFFFF): ✓ texture  ✓ render
+00:00:00.087 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D_X,DCC,DCC_PIPE_ALIGN,DCC_INDEPENDENT_64B,DCC_MAX_COMPRESSED_BLOCK=64B,DCC_CONSTANT_ENCODE,PIPE_XOR_BITS=2,BANK_XOR_BITS=0,RB=1,PIPE_2 (0x020000044051BA01): ✓ texture  ✗ render
+00:00:00.087 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,DCC,DCC_PIPE_ALIGN,DCC_INDEPENDENT_64B,DCC_MAX_COMPRESSED_BLOCK=64B,DCC_CONSTANT_ENCODE,PIPE_XOR_BITS=2,BANK_XOR_BITS=0,RB=1,PIPE_2 (0x020000044051B901): ✓ texture  ✗ render
+00:00:00.087 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401A01): ✓ texture  ✗ render
+00:00:00.087 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S_X,PIPE_XOR_BITS=2,BANK_XOR_BITS=0 (0x0200000000401901): ✓ texture  ✗ render
+00:00:00.087 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_D (0x0200000000000A01): ✓ texture  ✗ render
+00:00:00.087 [DEBUG] [wlr] [render/egl.c:104]     GFX9,GFX9_64K_S (0x0200000000000901): ✓ texture  ✗ render
+00:00:00.087 [DEBUG] [wlr] [render/egl.c:104]     LINEAR (0x0000000000000000): ✓ texture  ✗ render
+00:00:00.087 [DEBUG] [wlr] [render/egl.c:190] EGL DMA-BUF format modifiers supported
+amdgpu: amdgpu_cs_ctx_create2 failed. (-13)
+00:00:00.089 [DEBUG] [wlr] [render/egl.c:435] Obtained high priority context
+00:00:00.089 [DEBUG] [wlr] [render/egl.c:536] Using EGL_PLATFORM_DEVICE_EXT
+00:00:00.090 [INFO] [wlr] [render/gles2/renderer.c:842] Creating GLES2 renderer
+00:00:00.091 [INFO] [wlr] [render/gles2/renderer.c:843] Using OpenGL ES 3.2 Mesa 24.1.2
+00:00:00.091 [INFO] [wlr] [render/gles2/renderer.c:844] GL vendor: AMD
+00:00:00.091 [INFO] [wlr] [render/gles2/renderer.c:845] GL renderer: AMD Radeon Graphics (radeonsi, renoir, LLVM 17.0.6, DRM 3.54, 6.6.37)
+00:00:00.091 [INFO] [wlr] [render/gles2/renderer.c:846] Supported GLES2 extensions: GL_EXT_blend_minmax GL_EXT_multi_draw_arrays GL_EXT_texture_filter_anisotropic GL_EXT_texture_compression_s3tc GL_EXT_texture_compression_dxt1 GL_EXT_texture_compression_rgtc GL_EXT_texture_format_BGRA8888 GL_OES_compressed_ETC1_RGB8_texture GL_OES_depth24 GL_OES_element_index_uint GL_OES_fbo_render_mipmap GL_OES_mapbuffer GL_OES_rgb8_rgba8 GL_OES_standard_derivatives GL_OES_stencil8 GL_OES_texture_3D GL_OES_texture_float GL_OES_texture_float_linear GL_OES_texture_half_float GL_OES_texture_half_float_linear GL_OES_texture_npot GL_OES_vertex_half_float GL_EXT_draw_instanced GL_EXT_texture_sRGB_decode GL_OES_EGL_image GL_OES_depth_texture GL_AMD_performance_monitor GL_OES_packed_depth_stencil GL_EXT_texture_type_2_10_10_10_REV GL_NV_conditional_render GL_OES_get_program_binary GL_APPLE_texture_max_level GL_EXT_discard_framebuffer GL_EXT_read_format_bgra GL_EXT_texture_storage GL_NV_pack_subimage GL_NV_texture_barrier GL_EXT_frag_depth GL_NV_fbo_color_attachments GL_OES_EGL_image_external GL_OES_EGL_sync GL_OES_vertex_array_object GL_OES_viewport_array GL_ANGLE_pack_reverse_row_order GL_ANGLE_texture_compression_dxt3 GL_ANGLE_texture_compression_dxt5 GL_EXT_occlusion_query_boolean GL_EXT_robustness GL_EXT_texture_rg GL_EXT_unpack_subimage GL_NV_draw_buffers GL_NV_read_buffer GL_NV_read_depth GL_NV_read_depth_stencil GL_NV_read_stencil GL_APPLE_sync GL_EXT_draw_buffers GL_EXT_instanced_arrays GL_EXT_map_buffer_range GL_KHR_debug GL_KHR_robustness GL_KHR_texture_compression_astc_ldr GL_NV_generate_mipmap_sRGB GL_NV_pixel_buffer_object GL_OES_depth_texture_cube_map GL_OES_required_internalformat GL_OES_surfaceless_context GL_EXT_color_buffer_float GL_EXT_debug_label GL_EXT_sRGB_write_control GL_EXT_separate_shader_objects GL_EXT_shader_group_vote GL_EXT_shader_implicit_conversions GL_EXT_shader_integer_mix GL_EXT_tessellation_point_size GL_EXT_tessellation_shader GL_ANDROID_extension_pack_es31a GL_EXT_base_instance GL_EXT_compressed_ETC1_RGB8_sub_texture GL_EXT_copy_image GL_EXT_draw_buffers_indexed GL_EXT_draw_elements_base_vertex GL_EXT_gpu_shader5 GL_EXT_polygon_offset_clamp GL_EXT_primitive_bounding_box GL_EXT_render_snorm GL_EXT_shader_io_blocks GL_EXT_texture_border_clamp GL_EXT_texture_buffer GL_EXT_texture_cube_map_array GL_EXT_texture_norm16 GL_EXT_texture_view GL_KHR_blend_equation_advanced GL_KHR_context_flush_control GL_KHR_robust_buffer_access_behavior GL_NV_image_formats GL_NV_shader_noperspective_interpolation GL_OES_copy_image GL_OES_draw_buffers_indexed GL_OES_draw_elements_base_vertex GL_OES_gpu_shader5 GL_OES_primitive_bounding_box GL_OES_sample_shading GL_OES_sample_variables GL_OES_shader_io_blocks GL_OES_shader_multisample_interpolation GL_OES_tessellation_point_size GL_OES_tessellation_shader GL_OES_texture_border_clamp GL_OES_texture_buffer GL_OES_texture_cube_map_array GL_OES_texture_stencil8 GL_OES_texture_storage_multisample_2d_array GL_OES_texture_view GL_EXT_blend_func_extended GL_EXT_buffer_storage GL_EXT_float_blend GL_EXT_geometry_point_size GL_EXT_geometry_shader GL_EXT_shader_samples_identical GL_EXT_texture_sRGB_R8 GL_KHR_no_error GL_KHR_texture_compression_astc_sliced_3d GL_OES_EGL_image_external_essl3 GL_OES_geometry_point_size GL_OES_geometry_shader GL_OES_shader_image_atomic GL_EXT_clear_texture GL_EXT_clip_cull_distance GL_EXT_disjoint_timer_query GL_EXT_texture_compression_s3tc_srgb GL_EXT_window_rectangles GL_MESA_shader_integer_functions GL_EXT_clip_control GL_EXT_color_buffer_half_float GL_EXT_memory_object GL_EXT_memory_object_fd GL_EXT_semaphore GL_EXT_semaphore_fd GL_EXT_texture_compression_bptc GL_EXT_texture_mirror_clamp_to_edge GL_KHR_parallel_shader_compile GL_NV_alpha_to_coverage_dither_control GL_AMD_framebuffer_multisample_advanced GL_EXT_EGL_image_storage GL_EXT_texture_shadow_lod GL_INTEL_blackhole_render GL_MESA_framebuffer_flip_y GL_NV_compute_shader_derivatives GL_EXT_demote_to_helper_invocation GL_EXT_depth_clamp GL_EXT_texture_query_lod GL_MESA_sampler_objects GL_MESA_bgra GL_MESA_texture_const_bandwidth 
+00:00:00.091 [DEBUG] [wlr] [render/gles2/renderer.c:901] GPU reset notifications are enabled
+00:00:00.105 [DEBUG] [wlr] [render/allocator/allocator.c:107] Trying to create gbm allocator
+00:00:00.115 [DEBUG] [wlr] [render/allocator/gbm.c:213] Created GBM allocator with backend drm
+00:00:00.115 [DEBUG] [wlr] [render/allocator/gbm.c:216] Using DRM node /dev/dri/renderD128
+00:00:00.115 [DEBUG] [wlr] [types/wlr_drm_lease_v1.c:710] No DRM backend supplied, failed to create wlr_drm_lease_v1_manager
+00:00:00.115 [DEBUG] [sway/server.c:264] Failed to create wlr_drm_lease_device_v1
+00:00:00.116 [INFO] [sway/server.c:265] VR will not be available
+00:00:00.116 [INFO] [wlr] [wayland] unable to lock lockfile /run/user/1000/wayland-1.lock, maybe another compositor is running
+00:00:00.116 [INFO] [wlr] [backend/headless/backend.c:67] Creating headless backend
+00:00:00.120 [INFO] [sway/config.c:417] Loading config from /home/mavia/.config/sway/config
+00:00:00.120 [DEBUG] [sway/config.c:839] Read line 1: ### Variables
+00:00:00.121 [DEBUG] [sway/config.c:839] Read line 2: #
+00:00:00.121 [DEBUG] [sway/config.c:839] Read line 3: # Logo key. Use Mod1 for Alt.
+00:00:00.121 [DEBUG] [sway/config.c:839] Read line 4: set $mod Mod4
+00:00:00.121 [INFO] [sway/commands.c:381] Config command: set $mod Mod4
+00:00:00.121 [INFO] [sway/commands.c:404] After replacement: set $mod Mod4
+00:00:00.121 [DEBUG] [sway/config.c:839] Read line 5: # Home row direction keys, like vim
+00:00:00.121 [DEBUG] [sway/config.c:839] Read line 6: set $left h
+00:00:00.121 [INFO] [sway/commands.c:381] Config command: set $left h
+00:00:00.121 [INFO] [sway/commands.c:404] After replacement: set $left h
+00:00:00.121 [DEBUG] [sway/config.c:839] Read line 7: set $down j
+00:00:00.121 [INFO] [sway/commands.c:381] Config command: set $down j
+00:00:00.121 [INFO] [sway/commands.c:404] After replacement: set $down j
+00:00:00.121 [DEBUG] [sway/config.c:839] Read line 8: set $up k
+00:00:00.121 [INFO] [sway/commands.c:381] Config command: set $up k
+00:00:00.121 [INFO] [sway/commands.c:404] After replacement: set $up k
+00:00:00.121 [DEBUG] [sway/config.c:839] Read line 9: set $right l
+00:00:00.121 [INFO] [sway/commands.c:381] Config command: set $right l
+00:00:00.121 [INFO] [sway/commands.c:404] After replacement: set $right l
+00:00:00.121 [DEBUG] [sway/config.c:839] Read line 10: # Your preferred terminal emulator
+00:00:00.121 [DEBUG] [sway/config.c:839] Read line 11: set $term kitty
+00:00:00.121 [INFO] [sway/commands.c:381] Config command: set $term kitty
+00:00:00.121 [INFO] [sway/commands.c:404] After replacement: set $term kitty
+00:00:00.121 [DEBUG] [sway/config.c:839] Read line 12: # Your preferred application launcher
+00:00:00.121 [DEBUG] [sway/config.c:839] Read line 13: # Note: pass the final command to swaymsg so that the resulting window can be opened
+00:00:00.121 [DEBUG] [sway/config.c:839] Read line 14: # on the original workspace that the command was run on.
+00:00:00.121 [DEBUG] [sway/config.c:839] Read line 15: set $menu dmenu_path | dmenu | xargs swaymsg exec --
+00:00:00.121 [INFO] [sway/commands.c:381] Config command: set $menu dmenu_path | dmenu | xargs swaymsg exec --
+00:00:00.121 [INFO] [sway/commands.c:404] After replacement: set $menu dmenu_path | dmenu | xargs swaymsg exec --
+00:00:00.121 [DEBUG] [sway/config.c:839] Read line 16: 
+00:00:00.121 [DEBUG] [sway/config.c:839] Read line 17: set $lock 'swaylock -f'
+00:00:00.121 [INFO] [sway/commands.c:381] Config command: set $lock 'swaylock -f'
+00:00:00.121 [INFO] [sway/commands.c:404] After replacement: set $lock 'swaylock -f'
+00:00:00.121 [DEBUG] [sway/config.c:839] Read line 18: 
+00:00:00.121 [DEBUG] [sway/config.c:839] Read line 19: ### Output configuration
+00:00:00.121 [DEBUG] [sway/config.c:839] Read line 20: #
+00:00:00.121 [DEBUG] [sway/config.c:839] Read line 21: # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
+00:00:00.121 [DEBUG] [sway/config.c:839] Read line 22: output * bg "~/.config/sway/wallpaper.png" fill 
+00:00:00.121 [INFO] [sway/commands.c:381] Config command: output * bg "~/.config/sway/wallpaper.png" fill
+00:00:00.121 [INFO] [sway/commands.c:404] After replacement: output * bg "~/.config/sway/wallpaper.png" fill
+00:00:00.121 [DEBUG] [sway/commands.c:436] Subcommand: bg ~/.config/sway/wallpaper.png fill
+00:00:00.121 [DEBUG] [sway/config/output.c:231] Adding output * config
+00:00:00.121 [DEBUG] [sway/config/output.c:235] Config stored for output * (enabled: -1) (-1x-1@-1.000000Hz position -1,-1 scale -1.000000 subpixel unknown transform -1) (bg /home/mavia/.config/sway/wallpaper.png fill) (power -1) (max render time: -1)
+00:00:00.121 [DEBUG] [sway/config/output.c:903] spawn_swaybg cmd[0] = /nix/store/ywf960qsaw4117izfgi2bpv2zzh6ifg4-swaybg-1.2.1/bin/swaybg
+00:00:00.121 [DEBUG] [sway/config/output.c:903] spawn_swaybg cmd[1] = -o
+00:00:00.121 [DEBUG] [sway/config/output.c:903] spawn_swaybg cmd[2] = *
+00:00:00.121 [DEBUG] [sway/config/output.c:903] spawn_swaybg cmd[3] = -i
+00:00:00.121 [DEBUG] [sway/config/output.c:903] spawn_swaybg cmd[4] = /home/mavia/.config/sway/wallpaper.png
+00:00:00.122 [DEBUG] [sway/config/output.c:903] spawn_swaybg cmd[5] = -m
+00:00:00.122 [DEBUG] [sway/config/output.c:903] spawn_swaybg cmd[6] = fill
+00:00:00.131 [DEBUG] [sway/config.c:839] Read line 23: 
+00:00:00.131 [DEBUG] [sway/config.c:839] Read line 24: #
+00:00:00.131 [DEBUG] [sway/config.c:839] Read line 25: # Example configuration:
+00:00:00.131 [DEBUG] [sway/config.c:839] Read line 26: #
+00:00:00.131 [DEBUG] [sway/config.c:839] Read line 27: #   output HDMI-A-1 resolution 1920x1080 position 1920,0
+00:00:00.131 [DEBUG] [sway/config.c:839] Read line 28: #
+00:00:00.131 [DEBUG] [sway/config.c:839] Read line 29: # You can get the names of your outputs by running: swaymsg -t get_outputs
+00:00:00.131 [DEBUG] [sway/config.c:839] Read line 30: 
+00:00:00.131 [DEBUG] [sway/config.c:839] Read line 31: ### Idle configuration
+00:00:00.132 [DEBUG] [sway/config.c:839] Read line 35: exec swayidle -w          timeout 900 $lock          timeout 1800 'swaymsg "output * power off"' resume 'swaymsg "output * power on"'          before-sleep $lock lock $lock unlock $lock
+00:00:00.132 [INFO] [sway/commands.c:381] Config command: exec swayidle -w          timeout 900 $lock          timeout 1800 'swaymsg "output * power off"' resume 'swaymsg "output * power on"'          before-sleep $lock lock $lock unlock $lock
+00:00:00.132 [INFO] [sway/commands.c:404] After replacement: exec swayidle -w timeout 900 'swaylock -f' timeout 1800 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' before-sleep 'swaylock -f' lock 'swaylock -f' unlock 'swaylock -f'
+00:00:00.132 [DEBUG] [sway/config.c:883] Deferring command `exec swayidle -w          timeout 900 $lock          timeout 1800 'swaymsg "output * power off"' resume 'swaymsg "output * power on"'          before-sleep $lock lock $lock unlock $lock'
+00:00:00.132 [DEBUG] [sway/config.c:839] Read line 36: 
+00:00:00.132 [DEBUG] [sway/config.c:839] Read line 37: bindswitch --reload --locked lid:on exec $lock
+00:00:00.132 [INFO] [sway/commands.c:381] Config command: bindswitch --reload --locked lid:on exec $lock
+00:00:00.132 [INFO] [sway/commands.c:404] After replacement: bindswitch --reload --locked lid:on exec 'swaylock -f'
+00:00:00.132 [DEBUG] [sway/commands/bind.c:235] bindswitch - Bound lid:on to command `exec 'swaylock -f'`
+00:00:00.132 [DEBUG] [sway/config.c:839] Read line 38: 
+00:00:00.132 [DEBUG] [sway/config.c:839] Read line 39: # This will lock your screen after 300 seconds of inactivity, then turn off
+00:00:00.132 [DEBUG] [sway/config.c:839] Read line 40: # your displays after another 300 seconds, and turn your screens back on when
+00:00:00.132 [DEBUG] [sway/config.c:839] Read line 41: # resumed. It will also lock your screen before your computer goes to sleep.
+00:00:00.132 [DEBUG] [sway/config.c:839] Read line 42: #
+00:00:00.132 [DEBUG] [sway/config.c:839] Read line 43: ### Input configuration
+00:00:00.132 [DEBUG] [sway/config.c:839] Read line 44: #
+00:00:00.132 [DEBUG] [sway/config.c:839] Read line 45: # Example configuration:
+00:00:00.132 [DEBUG] [sway/config.c:839] Read line 46: #
+00:00:00.132 [DEBUG] [sway/config.c:839] Read line 47: #   input "2:14:SynPS/2_Synaptics_TouchPad" {
+00:00:00.132 [DEBUG] [sway/config.c:839] Read line 48: #       dwt enabled
+00:00:00.132 [DEBUG] [sway/config.c:839] Read line 49: #       tap enabled
+00:00:00.132 [DEBUG] [sway/config.c:839] Read line 50: #       natural_scroll enabled
+00:00:00.132 [DEBUG] [sway/config.c:839] Read line 51: #       middle_emulation enabled
+00:00:00.132 [DEBUG] [sway/config.c:839] Read line 52: #   }
+00:00:00.132 [DEBUG] [sway/config.c:839] Read line 53: #
+00:00:00.132 [DEBUG] [sway/config.c:839] Read line 54: # You can get the names of your inputs by running: swaymsg -t get_inputs
+00:00:00.132 [DEBUG] [sway/config.c:839] Read line 55: # Read `man 5 sway-input` for more information about this section.
+00:00:00.132 [DEBUG] [sway/config.c:839] Read line 56: 
+00:00:00.132 [DEBUG] [sway/config.c:839] Read line 57: # input type:keyboard {
+00:00:00.132 [DEBUG] [sway/config.c:839] Read line 58: #     xkb_layout pl,gr
+00:00:00.132 [DEBUG] [sway/config.c:839] Read line 59: #     xkb_options grp:win_space_toggle,compose:caps
+00:00:00.132 [DEBUG] [sway/config.c:839] Read line 60: # }
+00:00:00.132 [DEBUG] [sway/config.c:839] Read line 61: 
+00:00:00.132 [DEBUG] [sway/config.c:839] Read line 62: input type:touchpad {
+00:00:00.132 [DEBUG] [sway/config.c:893] Entering block 'input type:touchpad'
+00:00:00.132 [DEBUG] [sway/config.c:839] Read line 63:     dwt disabled
+00:00:00.132 [INFO] [sway/commands.c:381] Config command: input type:touchpad dwt disabled
+00:00:00.133 [INFO] [sway/commands.c:404] After replacement: input type:touchpad dwt disabled
+00:00:00.133 [DEBUG] [sway/commands/input.c:57] entering input block: type:touchpad
+00:00:00.133 [DEBUG] [sway/config/input.c:15] new_input_config(type:touchpad)
+00:00:00.133 [DEBUG] [sway/commands.c:436] Subcommand: dwt disabled
+00:00:00.133 [DEBUG] [sway/config/input.c:15] new_input_config(temp)
+00:00:00.139 [DEBUG] [sway/config/input.c:362] Config stored for input type:touchpad
+00:00:00.139 [DEBUG] [sway/config.c:839] Read line 64:     tap enabled
+00:00:00.139 [INFO] [sway/commands.c:381] Config command: input type:touchpad tap enabled
+00:00:00.139 [INFO] [sway/commands.c:404] After replacement: input type:touchpad tap enabled
+00:00:00.139 [DEBUG] [sway/commands/input.c:57] entering input block: type:touchpad
+00:00:00.139 [DEBUG] [sway/config/input.c:15] new_input_config(type:touchpad)
+00:00:00.139 [DEBUG] [sway/commands.c:436] Subcommand: tap enabled
+00:00:00.139 [DEBUG] [sway/config/input.c:15] new_input_config(temp)
+00:00:00.145 [DEBUG] [sway/config/input.c:362] Config stored for input type:touchpad
+00:00:00.145 [DEBUG] [sway/config.c:839] Read line 65:     natural_scroll enabled
+00:00:00.145 [INFO] [sway/commands.c:381] Config command: input type:touchpad natural_scroll enabled
+00:00:00.145 [INFO] [sway/commands.c:404] After replacement: input type:touchpad natural_scroll enabled
+00:00:00.145 [DEBUG] [sway/commands/input.c:57] entering input block: type:touchpad
+00:00:00.145 [DEBUG] [sway/config/input.c:15] new_input_config(type:touchpad)
+00:00:00.145 [DEBUG] [sway/commands.c:436] Subcommand: natural_scroll enabled
+00:00:00.145 [DEBUG] [sway/config/input.c:15] new_input_config(temp)
+00:00:00.149 [DEBUG] [sway/config/input.c:362] Config stored for input type:touchpad
+00:00:00.149 [DEBUG] [sway/config.c:839] Read line 66:     middle_emulation enabled
+00:00:00.149 [INFO] [sway/commands.c:381] Config command: input type:touchpad middle_emulation enabled
+00:00:00.149 [INFO] [sway/commands.c:404] After replacement: input type:touchpad middle_emulation enabled
+00:00:00.149 [DEBUG] [sway/commands/input.c:57] entering input block: type:touchpad
+00:00:00.149 [DEBUG] [sway/config/input.c:15] new_input_config(type:touchpad)
+00:00:00.149 [DEBUG] [sway/commands.c:436] Subcommand: middle_emulation enabled
+00:00:00.149 [DEBUG] [sway/config/input.c:15] new_input_config(temp)
+00:00:00.154 [DEBUG] [sway/config/input.c:362] Config stored for input type:touchpad
+00:00:00.154 [DEBUG] [sway/config.c:839] Read line 67: }
+00:00:00.154 [DEBUG] [sway/config.c:910] Exiting block 'input type:touchpad'
+00:00:00.154 [DEBUG] [sway/config.c:839] Read line 68: 
+00:00:00.154 [DEBUG] [sway/config.c:839] Read line 69: 
+00:00:00.154 [DEBUG] [sway/config.c:839] Read line 70: ### Key bindings
+00:00:00.154 [DEBUG] [sway/config.c:839] Read line 71: #
+00:00:00.154 [DEBUG] [sway/config.c:839] Read line 72: # Basics:
+00:00:00.154 [DEBUG] [sway/config.c:839] Read line 73: #
+00:00:00.154 [DEBUG] [sway/config.c:839] Read line 74:     # Start a terminal
+00:00:00.154 [DEBUG] [sway/config.c:839] Read line 75:     bindsym $mod+Return exec $term
+00:00:00.154 [INFO] [sway/commands.c:381] Config command: bindsym $mod+Return exec $term
+00:00:00.154 [INFO] [sway/commands.c:404] After replacement: bindsym Mod4+Return exec kitty
+00:00:00.154 [DEBUG] [sway/commands/bind.c:298] bindsym - Bound Mod4+Return to command `exec kitty` for device '*'
+00:00:00.154 [DEBUG] [sway/config.c:839] Read line 76: 
+00:00:00.154 [DEBUG] [sway/config.c:839] Read line 77:     # Kill focused window
+00:00:00.154 [DEBUG] [sway/config.c:839] Read line 78:     bindsym $mod+q kill
+00:00:00.154 [INFO] [sway/commands.c:381] Config command: bindsym $mod+q kill
+00:00:00.154 [INFO] [sway/commands.c:404] After replacement: bindsym Mod4+q kill
+00:00:00.154 [DEBUG] [sway/commands/bind.c:298] bindsym - Bound Mod4+q to command `kill` for device '*'
+00:00:00.154 [DEBUG] [sway/config.c:839] Read line 79: 
+00:00:00.154 [DEBUG] [sway/config.c:839] Read line 80:     # Drag floating windows by holding down $mod and left mouse button.
+00:00:00.154 [DEBUG] [sway/config.c:839] Read line 81:     # Resize them with right mouse button + $mod.
+00:00:00.154 [DEBUG] [sway/config.c:839] Read line 82:     # Despite the name, also works for non-floating windows.
+00:00:00.154 [DEBUG] [sway/config.c:839] Read line 83:     # Change normal to inverse to use left mouse button for resizing and right
+00:00:00.154 [DEBUG] [sway/config.c:839] Read line 84:     # mouse button for dragging.
+00:00:00.154 [DEBUG] [sway/config.c:839] Read line 85:     floating_modifier $mod normal
+00:00:00.154 [INFO] [sway/commands.c:381] Config command: floating_modifier $mod normal
+00:00:00.154 [INFO] [sway/commands.c:404] After replacement: floating_modifier Mod4 normal
+00:00:00.154 [DEBUG] [sway/config.c:839] Read line 86: 
+00:00:00.154 [DEBUG] [sway/config.c:839] Read line 87:     # Reload the configuration file
+00:00:00.154 [DEBUG] [sway/config.c:839] Read line 88:     bindsym $mod+Shift+c reload
+00:00:00.154 [INFO] [sway/commands.c:381] Config command: bindsym $mod+Shift+c reload
+00:00:00.154 [INFO] [sway/commands.c:404] After replacement: bindsym Mod4+Shift+c reload
+00:00:00.154 [DEBUG] [sway/commands/bind.c:298] bindsym - Bound Mod4+Shift+c to command `reload` for device '*'
+00:00:00.154 [DEBUG] [sway/config.c:839] Read line 89: 
+00:00:00.155 [DEBUG] [sway/config.c:839] Read line 90:     # Exit sway (logs you out of your Wayland session)
+00:00:00.155 [DEBUG] [sway/config.c:839] Read line 91:     bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
+00:00:00.155 [INFO] [sway/commands.c:381] Config command: bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
+00:00:00.155 [INFO] [sway/commands.c:404] After replacement: bindsym Mod4+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
+00:00:00.155 [DEBUG] [sway/commands/bind.c:298] bindsym - Bound Mod4+Shift+e to command `exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'` for device '*'
+00:00:00.155 [DEBUG] [sway/config.c:839] Read line 92: 
+00:00:00.155 [DEBUG] [sway/config.c:839] Read line 93:     # rofi
+00:00:00.155 [DEBUG] [sway/config.c:839] Read line 94:     bindsym $mod+x exec --no-startup-id rofi -show drun 
+00:00:00.155 [INFO] [sway/commands.c:381] Config command: bindsym $mod+x exec --no-startup-id rofi -show drun
+00:00:00.155 [INFO] [sway/commands.c:404] After replacement: bindsym Mod4+x exec --no-startup-id rofi -show drun
+00:00:00.155 [DEBUG] [sway/commands/bind.c:298] bindsym - Bound Mod4+x to command `exec --no-startup-id rofi -show drun` for device '*'
+00:00:00.155 [DEBUG] [sway/config.c:839] Read line 95: 
+00:00:00.155 [DEBUG] [sway/config.c:839] Read line 96:     # Lock screen
+00:00:00.155 [DEBUG] [sway/config.c:839] Read line 97:     bindsym $mod+c exec $lock
+00:00:00.155 [INFO] [sway/commands.c:381] Config command: bindsym $mod+c exec $lock
+00:00:00.155 [INFO] [sway/commands.c:404] After replacement: bindsym Mod4+c exec 'swaylock -f'
+00:00:00.155 [DEBUG] [sway/commands/bind.c:298] bindsym - Bound Mod4+c to command `exec 'swaylock -f'` for device '*'
+00:00:00.155 [DEBUG] [sway/config.c:839] Read line 98: 
+00:00:00.155 [DEBUG] [sway/config.c:839] Read line 99:     # nc
+00:00:00.155 [DEBUG] [sway/config.c:839] Read line 100:     bindsym $mod+Shift+n exec swaync-client -t
+00:00:00.155 [INFO] [sway/commands.c:381] Config command: bindsym $mod+Shift+n exec swaync-client -t
+00:00:00.155 [INFO] [sway/commands.c:404] After replacement: bindsym Mod4+Shift+n exec swaync-client -t
+00:00:00.155 [DEBUG] [sway/commands/bind.c:298] bindsym - Bound Mod4+Shift+n to command `exec swaync-client -t` for device '*'
+00:00:00.155 [DEBUG] [sway/config.c:839] Read line 101: 
+00:00:00.155 [DEBUG] [sway/config.c:839] Read line 102: # 
+00:00:00.155 [DEBUG] [sway/config.c:839] Read line 103: # Brightness
+00:00:00.155 [DEBUG] [sway/config.c:839] Read line 104: #
+00:00:00.155 [DEBUG] [sway/config.c:839] Read line 105: 
+00:00:00.155 [DEBUG] [sway/config.c:839] Read line 106: bindsym --locked XF86MonBrightnessUp exec brightnessctl s +5% 
+00:00:00.155 [INFO] [sway/commands.c:381] Config command: bindsym --locked XF86MonBrightnessUp exec brightnessctl s +5%
+00:00:00.155 [INFO] [sway/commands.c:404] After replacement: bindsym --locked XF86MonBrightnessUp exec brightnessctl s +5%
+00:00:00.155 [DEBUG] [sway/commands/bind.c:298] bindsym - Bound XF86MonBrightnessUp to command `exec brightnessctl s +5%` for device '*'
+00:00:00.155 [DEBUG] [sway/config.c:839] Read line 107: bindsym --locked XF86MonBrightnessDown exec brightnessctl s 5%-
+00:00:00.155 [INFO] [sway/commands.c:381] Config command: bindsym --locked XF86MonBrightnessDown exec brightnessctl s 5%-
+00:00:00.155 [INFO] [sway/commands.c:404] After replacement: bindsym --locked XF86MonBrightnessDown exec brightnessctl s 5%-
+00:00:00.155 [DEBUG] [sway/commands/bind.c:298] bindsym - Bound XF86MonBrightnessDown to command `exec brightnessctl s 5%-` for device '*'
+00:00:00.155 [DEBUG] [sway/config.c:839] Read line 108: 
+00:00:00.155 [DEBUG] [sway/config.c:839] Read line 109: #
+00:00:00.155 [DEBUG] [sway/config.c:839] Read line 110: # Volume
+00:00:00.155 [DEBUG] [sway/config.c:839] Read line 111: #
+00:00:00.155 [DEBUG] [sway/config.c:839] Read line 112: 
+00:00:00.155 [DEBUG] [sway/config.c:839] Read line 113: bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
+00:00:00.155 [INFO] [sway/commands.c:381] Config command: bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
+00:00:00.155 [INFO] [sway/commands.c:404] After replacement: bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
+00:00:00.155 [DEBUG] [sway/commands/bind.c:298] bindsym - Bound XF86AudioMute to command `exec pactl set-sink-mute @DEFAULT_SINK@ toggle` for device '*'
+00:00:00.155 [DEBUG] [sway/config.c:839] Read line 114: bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
+00:00:00.155 [INFO] [sway/commands.c:381] Config command: bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
+00:00:00.155 [INFO] [sway/commands.c:404] After replacement: bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
+00:00:00.156 [DEBUG] [sway/commands/bind.c:298] bindsym - Bound XF86AudioRaiseVolume to command `exec pactl set-sink-volume @DEFAULT_SINK@ +5%` for device '*'
+00:00:00.156 [DEBUG] [sway/config.c:839] Read line 115: bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
+00:00:00.156 [INFO] [sway/commands.c:381] Config command: bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
+00:00:00.156 [INFO] [sway/commands.c:404] After replacement: bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
+00:00:00.156 [DEBUG] [sway/commands/bind.c:298] bindsym - Bound XF86AudioLowerVolume to command `exec pactl set-sink-volume @DEFAULT_SINK@ -5%` for device '*'
+00:00:00.156 [DEBUG] [sway/config.c:839] Read line 116: 
+00:00:00.156 [DEBUG] [sway/config.c:839] Read line 117: #
+00:00:00.156 [DEBUG] [sway/config.c:839] Read line 118: # Moving around:
+00:00:00.156 [DEBUG] [sway/config.c:839] Read line 119: #
+00:00:00.156 [DEBUG] [sway/config.c:839] Read line 120:     # Move your focus around
+00:00:00.156 [DEBUG] [sway/config.c:839] Read line 121:     bindsym $mod+$left focus left
+00:00:00.156 [INFO] [sway/commands.c:381] Config command: bindsym $mod+$left focus left
+00:00:00.156 [INFO] [sway/commands.c:404] After replacement: bindsym Mod4+h focus left
+00:00:00.156 [DEBUG] [sway/commands/bind.c:298] bindsym - Bound Mod4+h to command `focus left` for device '*'
+00:00:00.156 [DEBUG] [sway/config.c:839] Read line 122:     bindsym $mod+$down focus down
+00:00:00.156 [INFO] [sway/commands.c:381] Config command: bindsym $mod+$down focus down
+00:00:00.156 [INFO] [sway/commands.c:404] After replacement: bindsym Mod4+j focus down
+00:00:00.156 [DEBUG] [sway/commands/bind.c:298] bindsym - Bound Mod4+j to command `focus down` for device '*'
+00:00:00.156 [DEBUG] [sway/config.c:839] Read line 123:     bindsym $mod+$up focus up
+00:00:00.156 [INFO] [sway/commands.c:381] Config command: bindsym $mod+$up focus up
+00:00:00.156 [INFO] [sway/commands.c:404] After replacement: bindsym Mod4+k focus up
+00:00:00.156 [DEBUG] [sway/commands/bind.c:298] bindsym - Bound Mod4+k to command `focus up` for device '*'
+00:00:00.156 [DEBUG] [sway/config.c:839] Read line 124:     bindsym $mod+$right focus right
+00:00:00.156 [INFO] [sway/commands.c:381] Config command: bindsym $mod+$right focus right
+00:00:00.156 [INFO] [sway/commands.c:404] After replacement: bindsym Mod4+l focus right
+00:00:00.156 [DEBUG] [sway/commands/bind.c:298] bindsym - Bound Mod4+l to command `focus right` for device '*'
+00:00:00.156 [DEBUG] [sway/config.c:839] Read line 125:     # Or use $mod+[up|down|left|right]
+00:00:00.156 [DEBUG] [sway/config.c:839] Read line 126:     bindsym $mod+Left focus left
+00:00:00.156 [INFO] [sway/commands.c:381] Config command: bindsym $mod+Left focus left
+00:00:00.156 [INFO] [sway/commands.c:404] After replacement: bindsym Mod4+Left focus left
+00:00:00.156 [DEBUG] [sway/commands/bind.c:298] bindsym - Bound Mod4+Left to command `focus left` for device '*'
+00:00:00.156 [DEBUG] [sway/config.c:839] Read line 127:     bindsym $mod+Down focus down
+00:00:00.156 [INFO] [sway/commands.c:381] Config command: bindsym $mod+Down focus down
+00:00:00.156 [INFO] [sway/commands.c:404] After replacement: bindsym Mod4+Down focus down
+00:00:00.156 [DEBUG] [sway/commands/bind.c:298] bindsym - Bound Mod4+Down to command `focus down` for device '*'
+00:00:00.156 [DEBUG] [sway/config.c:839] Read line 128:     bindsym $mod+Up focus up
+00:00:00.156 [INFO] [sway/commands.c:381] Config command: bindsym $mod+Up focus up
+00:00:00.156 [INFO] [sway/commands.c:404] After replacement: bindsym Mod4+Up focus up
+00:00:00.156 [DEBUG] [sway/commands/bind.c:298] bindsym - Bound Mod4+Up to command `focus up` for device '*'
+00:00:00.156 [DEBUG] [sway/config.c:839] Read line 129:     bindsym $mod+Right focus right
+00:00:00.156 [INFO] [sway/commands.c:381] Config command: bindsym $mod+Right focus right
+00:00:00.156 [INFO] [sway/commands.c:404] After replacement: bindsym Mod4+Right focus right
+00:00:00.156 [DEBUG] [sway/commands/bind.c:298] bindsym - Bound Mod4+Right to command `focus right` for device '*'
+00:00:00.156 [DEBUG] [sway/config.c:839] Read line 130: 
+00:00:00.156 [DEBUG] [sway/config.c:839] Read line 131:     # Move the focused window with the same, but add Shift
+00:00:00.156 [DEBUG] [sway/config.c:839] Read line 132:     bindsym $mod+Shift+$left move left
+00:00:00.156 [INFO] [sway/commands.c:381] Config command: bindsym $mod+Shift+$left move left
+00:00:00.156 [INFO] [sway/commands.c:404] After replacement: bindsym Mod4+Shift+h move left
+00:00:00.156 [DEBUG] [sway/commands/bind.c:298] bindsym - Bound Mod4+Shift+h to command `move left` for device '*'
+00:00:00.157 [DEBUG] [sway/config.c:839] Read line 133:     bindsym $mod+Shift+$down move down
+00:00:00.157 [INFO] [sway/commands.c:381] Config command: bindsym $mod+Shift+$down move down
+00:00:00.157 [INFO] [sway/commands.c:404] After replacement: bindsym Mod4+Shift+j move down
+00:00:00.157 [DEBUG] [sway/commands/bind.c:298] bindsym - Bound Mod4+Shift+j to command `move down` for device '*'
+00:00:00.157 [DEBUG] [sway/config.c:839] Read line 134:     bindsym $mod+Shift+$up move up
+00:00:00.157 [INFO] [sway/commands.c:381] Config command: bindsym $mod+Shift+$up move up
+00:00:00.157 [INFO] [sway/commands.c:404] After replacement: bindsym Mod4+Shift+k move up
+00:00:00.157 [DEBUG] [sway/commands/bind.c:298] bindsym - Bound Mod4+Shift+k to command `move up` for device '*'
+00:00:00.157 [DEBUG] [sway/config.c:839] Read line 135:     bindsym $mod+Shift+$right move right
+00:00:00.157 [INFO] [sway/commands.c:381] Config command: bindsym $mod+Shift+$right move right
+00:00:00.157 [INFO] [sway/commands.c:404] After replacement: bindsym Mod4+Shift+l move right
+00:00:00.157 [DEBUG] [sway/commands/bind.c:298] bindsym - Bound Mod4+Shift+l to command `move right` for device '*'
+00:00:00.157 [DEBUG] [sway/config.c:839] Read line 136:     # Ditto, with arrow keys
+00:00:00.157 [DEBUG] [sway/config.c:839] Read line 137:     bindsym $mod+Shift+Left move left
+00:00:00.157 [INFO] [sway/commands.c:381] Config command: bindsym $mod+Shift+Left move left
+00:00:00.157 [INFO] [sway/commands.c:404] After replacement: bindsym Mod4+Shift+Left move left
+00:00:00.157 [DEBUG] [sway/commands/bind.c:298] bindsym - Bound Mod4+Shift+Left to command `move left` for device '*'
+00:00:00.157 [DEBUG] [sway/config.c:839] Read line 138:     bindsym $mod+Shift+Down move down
+00:00:00.157 [INFO] [sway/commands.c:381] Config command: bindsym $mod+Shift+Down move down
+00:00:00.157 [INFO] [sway/commands.c:404] After replacement: bindsym Mod4+Shift+Down move down
+00:00:00.157 [DEBUG] [sway/commands/bind.c:298] bindsym - Bound Mod4+Shift+Down to command `move down` for device '*'
+00:00:00.157 [DEBUG] [sway/config.c:839] Read line 139:     bindsym $mod+Shift+Up move up
+00:00:00.157 [INFO] [sway/commands.c:381] Config command: bindsym $mod+Shift+Up move up
+00:00:00.157 [INFO] [sway/commands.c:404] After replacement: bindsym Mod4+Shift+Up move up
+00:00:00.157 [DEBUG] [sway/commands/bind.c:298] bindsym - Bound Mod4+Shift+Up to command `move up` for device '*'
+00:00:00.157 [DEBUG] [sway/config.c:839] Read line 140:     bindsym $mod+Shift+Right move right
+00:00:00.157 [INFO] [sway/commands.c:381] Config command: bindsym $mod+Shift+Right move right
+00:00:00.157 [INFO] [sway/commands.c:404] After replacement: bindsym Mod4+Shift+Right move right
+00:00:00.157 [DEBUG] [sway/commands/bind.c:298] bindsym - Bound Mod4+Shift+Right to command `move right` for device '*'
+00:00:00.157 [DEBUG] [sway/config.c:839] Read line 141: #
+00:00:00.157 [DEBUG] [sway/config.c:839] Read line 142: # Workspaces:
+00:00:00.157 [DEBUG] [sway/config.c:839] Read line 143: #
+00:00:00.157 [DEBUG] [sway/config.c:839] Read line 144:     # Switch to workspace
+00:00:00.157 [DEBUG] [sway/config.c:839] Read line 145:     bindsym $mod+1 workspace number 1
+00:00:00.157 [INFO] [sway/commands.c:381] Config command: bindsym $mod+1 workspace number 1
+00:00:00.157 [INFO] [sway/commands.c:404] After replacement: bindsym Mod4+1 workspace number 1
+00:00:00.157 [DEBUG] [sway/commands/bind.c:298] bindsym - Bound Mod4+1 to command `workspace number 1` for device '*'
+00:00:00.157 [DEBUG] [sway/config.c:839] Read line 146:     bindsym $mod+2 workspace number 2
+00:00:00.157 [INFO] [sway/commands.c:381] Config command: bindsym $mod+2 workspace number 2
+00:00:00.157 [INFO] [sway/commands.c:404] After replacement: bindsym Mod4+2 workspace number 2
+00:00:00.157 [DEBUG] [sway/commands/bind.c:298] bindsym - Bound Mod4+2 to command `workspace number 2` for device '*'
+00:00:00.157 [DEBUG] [sway/config.c:839] Read line 147:     bindsym $mod+3 workspace number 3
+00:00:00.157 [INFO] [sway/commands.c:381] Config command: bindsym $mod+3 workspace number 3
+00:00:00.157 [INFO] [sway/commands.c:404] After replacement: bindsym Mod4+3 workspace number 3
+00:00:00.157 [DEBUG] [sway/commands/bind.c:298] bindsym - Bound Mod4+3 to command `workspace number 3` for device '*'
+00:00:00.157 [DEBUG] [sway/config.c:839] Read line 148:     bindsym $mod+4 workspace number 4
+00:00:00.157 [INFO] [sway/commands.c:381] Config command: bindsym $mod+4 workspace number 4
+00:00:00.157 [INFO] [sway/commands.c:404] After replacement: bindsym Mod4+4 workspace number 4
+00:00:00.157 [DEBUG] [sway/commands/bind.c:298] bindsym - Bound Mod4+4 to command `workspace number 4` for device '*'
+00:00:00.158 [DEBUG] [sway/config.c:839] Read line 149:     bindsym $mod+5 workspace number 5
+00:00:00.158 [INFO] [sway/commands.c:381] Config command: bindsym $mod+5 workspace number 5
+00:00:00.158 [INFO] [sway/commands.c:404] After replacement: bindsym Mod4+5 workspace number 5
+00:00:00.158 [DEBUG] [sway/commands/bind.c:298] bindsym - Bound Mod4+5 to command `workspace number 5` for device '*'
+00:00:00.158 [DEBUG] [sway/config.c:839] Read line 150:     bindsym $mod+6 workspace number 6
+00:00:00.158 [INFO] [sway/commands.c:381] Config command: bindsym $mod+6 workspace number 6
+00:00:00.158 [INFO] [sway/commands.c:404] After replacement: bindsym Mod4+6 workspace number 6
+00:00:00.158 [DEBUG] [sway/commands/bind.c:298] bindsym - Bound Mod4+6 to command `workspace number 6` for device '*'
+00:00:00.158 [DEBUG] [sway/config.c:839] Read line 151:     bindsym $mod+7 workspace number 7
+00:00:00.158 [INFO] [sway/commands.c:381] Config command: bindsym $mod+7 workspace number 7
+00:00:00.158 [INFO] [sway/commands.c:404] After replacement: bindsym Mod4+7 workspace number 7
+00:00:00.158 [DEBUG] [sway/commands/bind.c:298] bindsym - Bound Mod4+7 to command `workspace number 7` for device '*'
+00:00:00.158 [DEBUG] [sway/config.c:839] Read line 152:     bindsym $mod+8 workspace number 8
+00:00:00.158 [INFO] [sway/commands.c:381] Config command: bindsym $mod+8 workspace number 8
+00:00:00.158 [INFO] [sway/commands.c:404] After replacement: bindsym Mod4+8 workspace number 8
+00:00:00.158 [DEBUG] [sway/commands/bind.c:298] bindsym - Bound Mod4+8 to command `workspace number 8` for device '*'
+00:00:00.158 [DEBUG] [sway/config.c:839] Read line 153:     bindsym $mod+9 workspace number 9
+00:00:00.158 [INFO] [sway/commands.c:381] Config command: bindsym $mod+9 workspace number 9
+00:00:00.158 [INFO] [sway/commands.c:404] After replacement: bindsym Mod4+9 workspace number 9
+00:00:00.158 [DEBUG] [sway/commands/bind.c:298] bindsym - Bound Mod4+9 to command `workspace number 9` for device '*'
+00:00:00.158 [DEBUG] [sway/config.c:839] Read line 154:     bindsym $mod+0 workspace number 10
+00:00:00.158 [INFO] [sway/commands.c:381] Config command: bindsym $mod+0 workspace number 10
+00:00:00.158 [INFO] [sway/commands.c:404] After replacement: bindsym Mod4+0 workspace number 10
+00:00:00.158 [DEBUG] [sway/commands/bind.c:298] bindsym - Bound Mod4+0 to command `workspace number 10` for device '*'
+00:00:00.158 [DEBUG] [sway/config.c:839] Read line 155:     # Move focused container to workspace
+00:00:00.158 [DEBUG] [sway/config.c:839] Read line 156:     bindsym $mod+Shift+1 move container to workspace number 1
+00:00:00.158 [INFO] [sway/commands.c:381] Config command: bindsym $mod+Shift+1 move container to workspace number 1
+00:00:00.158 [INFO] [sway/commands.c:404] After replacement: bindsym Mod4+Shift+1 move container to workspace number 1
+00:00:00.158 [DEBUG] [sway/commands/bind.c:298] bindsym - Bound Mod4+Shift+1 to command `move container to workspace number 1` for device '*'
+00:00:00.158 [DEBUG] [sway/config.c:839] Read line 157:     bindsym $mod+Shift+2 move container to workspace number 2
+00:00:00.158 [INFO] [sway/commands.c:381] Config command: bindsym $mod+Shift+2 move container to workspace number 2
+00:00:00.158 [INFO] [sway/commands.c:404] After replacement: bindsym Mod4+Shift+2 move container to workspace number 2
+00:00:00.158 [DEBUG] [sway/commands/bind.c:298] bindsym - Bound Mod4+Shift+2 to command `move container to workspace number 2` for device '*'
+00:00:00.158 [DEBUG] [sway/config.c:839] Read line 158:     bindsym $mod+Shift+3 move container to workspace number 3
+00:00:00.158 [INFO] [sway/commands.c:381] Config command: bindsym $mod+Shift+3 move container to workspace number 3
+00:00:00.158 [INFO] [sway/commands.c:404] After replacement: bindsym Mod4+Shift+3 move container to workspace number 3
+00:00:00.158 [DEBUG] [sway/commands/bind.c:298] bindsym - Bound Mod4+Shift+3 to command `move container to workspace number 3` for device '*'
+00:00:00.158 [DEBUG] [sway/config.c:839] Read line 159:     bindsym $mod+Shift+4 move container to workspace number 4
+00:00:00.158 [INFO] [sway/commands.c:381] Config command: bindsym $mod+Shift+4 move container to workspace number 4
+00:00:00.158 [INFO] [sway/commands.c:404] After replacement: bindsym Mod4+Shift+4 move container to workspace number 4
+00:00:00.158 [DEBUG] [sway/commands/bind.c:298] bindsym - Bound Mod4+Shift+4 to command `move container to workspace number 4` for device '*'
+00:00:00.158 [DEBUG] [sway/config.c:839] Read line 160:     bindsym $mod+Shift+5 move container to workspace number 5
+00:00:00.158 [INFO] [sway/commands.c:381] Config command: bindsym $mod+Shift+5 move container to workspace number 5
+00:00:00.158 [INFO] [sway/commands.c:404] After replacement: bindsym Mod4+Shift+5 move container to workspace number 5
+00:00:00.158 [DEBUG] [sway/commands/bind.c:298] bindsym - Bound Mod4+Shift+5 to command `move container to workspace number 5` for device '*'
+00:00:00.158 [DEBUG] [sway/config.c:839] Read line 161:     bindsym $mod+Shift+6 move container to workspace number 6
+00:00:00.158 [INFO] [sway/commands.c:381] Config command: bindsym $mod+Shift+6 move container to workspace number 6
+00:00:00.159 [INFO] [sway/commands.c:404] After replacement: bindsym Mod4+Shift+6 move container to workspace number 6
+00:00:00.159 [DEBUG] [sway/commands/bind.c:298] bindsym - Bound Mod4+Shift+6 to command `move container to workspace number 6` for device '*'
+00:00:00.159 [DEBUG] [sway/config.c:839] Read line 162:     bindsym $mod+Shift+7 move container to workspace number 7
+00:00:00.159 [INFO] [sway/commands.c:381] Config command: bindsym $mod+Shift+7 move container to workspace number 7
+00:00:00.159 [INFO] [sway/commands.c:404] After replacement: bindsym Mod4+Shift+7 move container to workspace number 7
+00:00:00.159 [DEBUG] [sway/commands/bind.c:298] bindsym - Bound Mod4+Shift+7 to command `move container to workspace number 7` for device '*'
+00:00:00.159 [DEBUG] [sway/config.c:839] Read line 163:     bindsym $mod+Shift+8 move container to workspace number 8
+00:00:00.159 [INFO] [sway/commands.c:381] Config command: bindsym $mod+Shift+8 move container to workspace number 8
+00:00:00.159 [INFO] [sway/commands.c:404] After replacement: bindsym Mod4+Shift+8 move container to workspace number 8
+00:00:00.159 [DEBUG] [sway/commands/bind.c:298] bindsym - Bound Mod4+Shift+8 to command `move container to workspace number 8` for device '*'
+00:00:00.159 [DEBUG] [sway/config.c:839] Read line 164:     bindsym $mod+Shift+9 move container to workspace number 9
+00:00:00.159 [INFO] [sway/commands.c:381] Config command: bindsym $mod+Shift+9 move container to workspace number 9
+00:00:00.159 [INFO] [sway/commands.c:404] After replacement: bindsym Mod4+Shift+9 move container to workspace number 9
+00:00:00.159 [DEBUG] [sway/commands/bind.c:298] bindsym - Bound Mod4+Shift+9 to command `move container to workspace number 9` for device '*'
+00:00:00.159 [DEBUG] [sway/config.c:839] Read line 165:     bindsym $mod+Shift+0 move container to workspace number 10
+00:00:00.159 [INFO] [sway/commands.c:381] Config command: bindsym $mod+Shift+0 move container to workspace number 10
+00:00:00.159 [INFO] [sway/commands.c:404] After replacement: bindsym Mod4+Shift+0 move container to workspace number 10
+00:00:00.159 [DEBUG] [sway/commands/bind.c:298] bindsym - Bound Mod4+Shift+0 to command `move container to workspace number 10` for device '*'
+00:00:00.159 [DEBUG] [sway/config.c:839] Read line 166:     # Note: workspaces can have any name you want, not just numbers.
+00:00:00.159 [DEBUG] [sway/config.c:839] Read line 167:     # We just use 1-10 as the default.
+00:00:00.159 [DEBUG] [sway/config.c:839] Read line 168: #
+00:00:00.159 [DEBUG] [sway/config.c:839] Read line 169: # Layout stuff:
+00:00:00.159 [DEBUG] [sway/config.c:839] Read line 170: #
+00:00:00.159 [DEBUG] [sway/config.c:839] Read line 171:     # You can "split" the current object of your focus with
+00:00:00.159 [DEBUG] [sway/config.c:839] Read line 172:     # $mod+b or $mod+v, for horizontal and vertical splits
+00:00:00.159 [DEBUG] [sway/config.c:839] Read line 173:     # respectively.
+00:00:00.159 [DEBUG] [sway/config.c:839] Read line 174:     bindsym $mod+b splith
+00:00:00.159 [INFO] [sway/commands.c:381] Config command: bindsym $mod+b splith
+00:00:00.159 [INFO] [sway/commands.c:404] After replacement: bindsym Mod4+b splith
+00:00:00.159 [DEBUG] [sway/commands/bind.c:298] bindsym - Bound Mod4+b to command `splith` for device '*'
+00:00:00.159 [DEBUG] [sway/config.c:839] Read line 175:     bindsym $mod+v splitv
+00:00:00.159 [INFO] [sway/commands.c:381] Config command: bindsym $mod+v splitv
+00:00:00.159 [INFO] [sway/commands.c:404] After replacement: bindsym Mod4+v splitv
+00:00:00.159 [DEBUG] [sway/commands/bind.c:298] bindsym - Bound Mod4+v to command `splitv` for device '*'
+00:00:00.159 [DEBUG] [sway/config.c:839] Read line 176: 
+00:00:00.159 [DEBUG] [sway/config.c:839] Read line 177:     # Switch the current container between different layout styles
+00:00:00.159 [DEBUG] [sway/config.c:839] Read line 178:     bindsym $mod+s layout stacking
+00:00:00.159 [INFO] [sway/commands.c:381] Config command: bindsym $mod+s layout stacking
+00:00:00.159 [INFO] [sway/commands.c:404] After replacement: bindsym Mod4+s layout stacking
+00:00:00.160 [DEBUG] [sway/commands/bind.c:298] bindsym - Bound Mod4+s to command `layout stacking` for device '*'
+00:00:00.160 [DEBUG] [sway/config.c:839] Read line 179:     bindsym $mod+w layout tabbed
+00:00:00.160 [INFO] [sway/commands.c:381] Config command: bindsym $mod+w layout tabbed
+00:00:00.160 [INFO] [sway/commands.c:404] After replacement: bindsym Mod4+w layout tabbed
+00:00:00.160 [DEBUG] [sway/commands/bind.c:298] bindsym - Bound Mod4+w to command `layout tabbed` for device '*'
+00:00:00.160 [DEBUG] [sway/config.c:839] Read line 180:     bindsym $mod+e layout toggle split
+00:00:00.160 [INFO] [sway/commands.c:381] Config command: bindsym $mod+e layout toggle split
+00:00:00.160 [INFO] [sway/commands.c:404] After replacement: bindsym Mod4+e layout toggle split
+00:00:00.160 [DEBUG] [sway/commands/bind.c:298] bindsym - Bound Mod4+e to command `layout toggle split` for device '*'
+00:00:00.160 [DEBUG] [sway/config.c:839] Read line 181: 
+00:00:00.160 [DEBUG] [sway/config.c:839] Read line 182:     # Make the current focus fullscreen
+00:00:00.160 [DEBUG] [sway/config.c:839] Read line 183:     bindsym $mod+f fullscreen
+00:00:00.160 [INFO] [sway/commands.c:381] Config command: bindsym $mod+f fullscreen
+00:00:00.160 [INFO] [sway/commands.c:404] After replacement: bindsym Mod4+f fullscreen
+00:00:00.160 [DEBUG] [sway/commands/bind.c:298] bindsym - Bound Mod4+f to command `fullscreen` for device '*'
+00:00:00.160 [DEBUG] [sway/config.c:839] Read line 184: 
+00:00:00.160 [DEBUG] [sway/config.c:839] Read line 185:     # Toggle the current focus between tiling and floating mode
+00:00:00.160 [DEBUG] [sway/config.c:839] Read line 186:     bindsym $mod+Shift+space floating toggle
+00:00:00.160 [INFO] [sway/commands.c:381] Config command: bindsym $mod+Shift+space floating toggle
+00:00:00.160 [INFO] [sway/commands.c:404] After replacement: bindsym Mod4+Shift+space floating toggle
+00:00:00.160 [DEBUG] [sway/commands/bind.c:298] bindsym - Bound Mod4+Shift+space to command `floating toggle` for device '*'
+00:00:00.160 [DEBUG] [sway/config.c:839] Read line 187: 
+00:00:00.160 [DEBUG] [sway/config.c:839] Read line 188:     # Swap focus between the tiling area and the floating area
+00:00:00.160 [DEBUG] [sway/config.c:839] Read line 189:     bindsym $mod+space focus mode_toggle
+00:00:00.160 [INFO] [sway/commands.c:381] Config command: bindsym $mod+space focus mode_toggle
+00:00:00.160 [INFO] [sway/commands.c:404] After replacement: bindsym Mod4+space focus mode_toggle
+00:00:00.160 [DEBUG] [sway/commands/bind.c:298] bindsym - Bound Mod4+space to command `focus mode_toggle` for device '*'
+00:00:00.160 [DEBUG] [sway/config.c:839] Read line 190: 
+00:00:00.160 [DEBUG] [sway/config.c:839] Read line 191:     # Move focus to the parent container
+00:00:00.160 [DEBUG] [sway/config.c:839] Read line 192:     bindsym $mod+a focus parent
+00:00:00.160 [INFO] [sway/commands.c:381] Config command: bindsym $mod+a focus parent
+00:00:00.160 [INFO] [sway/commands.c:404] After replacement: bindsym Mod4+a focus parent
+00:00:00.160 [DEBUG] [sway/commands/bind.c:298] bindsym - Bound Mod4+a to command `focus parent` for device '*'
+00:00:00.160 [DEBUG] [sway/config.c:839] Read line 193: #
+00:00:00.160 [DEBUG] [sway/config.c:839] Read line 194: # Scratchpad:
+00:00:00.160 [DEBUG] [sway/config.c:839] Read line 195: #
+00:00:00.160 [DEBUG] [sway/config.c:839] Read line 196:     # Sway has a "scratchpad", which is a bag of holding for windows.
+00:00:00.160 [DEBUG] [sway/config.c:839] Read line 197:     # You can send windows there and get them back later.
+00:00:00.160 [DEBUG] [sway/config.c:839] Read line 198: 
+00:00:00.160 [DEBUG] [sway/config.c:839] Read line 199:     # Move the currently focused window to the scratchpad
+00:00:00.160 [DEBUG] [sway/config.c:839] Read line 200:     bindsym $mod+Shift+minus move scratchpad
+00:00:00.160 [INFO] [sway/commands.c:381] Config command: bindsym $mod+Shift+minus move scratchpad
+00:00:00.160 [INFO] [sway/commands.c:404] After replacement: bindsym Mod4+Shift+minus move scratchpad
+00:00:00.160 [DEBUG] [sway/commands/bind.c:298] bindsym - Bound Mod4+Shift+minus to command `move scratchpad` for device '*'
+00:00:00.160 [DEBUG] [sway/config.c:839] Read line 201: 
+00:00:00.160 [DEBUG] [sway/config.c:839] Read line 202:     # Show the next scratchpad window or hide the focused scratchpad window.
+00:00:00.160 [DEBUG] [sway/config.c:839] Read line 203:     # If there are multiple scratchpad windows, this command cycles through them.
+00:00:00.160 [DEBUG] [sway/config.c:839] Read line 204:     bindsym $mod+minus scratchpad show
+00:00:00.160 [INFO] [sway/commands.c:381] Config command: bindsym $mod+minus scratchpad show
+00:00:00.160 [INFO] [sway/commands.c:404] After replacement: bindsym Mod4+minus scratchpad show
+00:00:00.160 [DEBUG] [sway/commands/bind.c:298] bindsym - Bound Mod4+minus to command `scratchpad show` for device '*'
+00:00:00.161 [DEBUG] [sway/config.c:839] Read line 205: #
+00:00:00.161 [DEBUG] [sway/config.c:839] Read line 206: # Resizing containers:
+00:00:00.161 [DEBUG] [sway/config.c:839] Read line 207: #
+00:00:00.161 [DEBUG] [sway/config.c:839] Read line 208: mode "resize" {
+00:00:00.161 [DEBUG] [sway/config.c:893] Entering block 'mode "resize"'
+00:00:00.161 [DEBUG] [sway/config.c:839] Read line 209:     # left will shrink the containers width
+00:00:00.161 [DEBUG] [sway/config.c:839] Read line 210:     # right will grow the containers width
+00:00:00.161 [DEBUG] [sway/config.c:839] Read line 211:     # up will shrink the containers height
+00:00:00.161 [DEBUG] [sway/config.c:839] Read line 212:     # down will grow the containers height
+00:00:00.161 [DEBUG] [sway/config.c:839] Read line 213:     bindsym $left resize shrink width 10px
+00:00:00.161 [INFO] [sway/commands.c:381] Config command: mode "resize" bindsym $left resize shrink width 10px
+00:00:00.161 [INFO] [sway/commands.c:404] After replacement: mode "resize" bindsym h resize shrink width 10px
+00:00:00.161 [DEBUG] [sway/commands.c:436] Subcommand: bindsym h resize shrink width 10px
+00:00:00.161 [DEBUG] [sway/commands/bind.c:298] bindsym - Bound h to command `resize shrink width 10px` for device '*'
+00:00:00.161 [DEBUG] [sway/config.c:839] Read line 214:     bindsym $down resize grow height 10px
+00:00:00.161 [INFO] [sway/commands.c:381] Config command: mode "resize" bindsym $down resize grow height 10px
+00:00:00.161 [INFO] [sway/commands.c:404] After replacement: mode "resize" bindsym j resize grow height 10px
+00:00:00.161 [DEBUG] [sway/commands.c:436] Subcommand: bindsym j resize grow height 10px
+00:00:00.161 [DEBUG] [sway/commands/bind.c:298] bindsym - Bound j to command `resize grow height 10px` for device '*'
+00:00:00.161 [DEBUG] [sway/config.c:839] Read line 215:     bindsym $up resize shrink height 10px
+00:00:00.161 [INFO] [sway/commands.c:381] Config command: mode "resize" bindsym $up resize shrink height 10px
+00:00:00.161 [INFO] [sway/commands.c:404] After replacement: mode "resize" bindsym k resize shrink height 10px
+00:00:00.161 [DEBUG] [sway/commands.c:436] Subcommand: bindsym k resize shrink height 10px
+00:00:00.161 [DEBUG] [sway/commands/bind.c:298] bindsym - Bound k to command `resize shrink height 10px` for device '*'
+00:00:00.161 [DEBUG] [sway/config.c:839] Read line 216:     bindsym $right resize grow width 10px
+00:00:00.161 [INFO] [sway/commands.c:381] Config command: mode "resize" bindsym $right resize grow width 10px
+00:00:00.161 [INFO] [sway/commands.c:404] After replacement: mode "resize" bindsym l resize grow width 10px
+00:00:00.161 [DEBUG] [sway/commands.c:436] Subcommand: bindsym l resize grow width 10px
+00:00:00.161 [DEBUG] [sway/commands/bind.c:298] bindsym - Bound l to command `resize grow width 10px` for device '*'
+00:00:00.161 [DEBUG] [sway/config.c:839] Read line 217: 
+00:00:00.161 [DEBUG] [sway/config.c:839] Read line 218:     # Ditto, with arrow keys
+00:00:00.161 [DEBUG] [sway/config.c:839] Read line 219:     bindsym Left resize shrink width 10px
+00:00:00.161 [INFO] [sway/commands.c:381] Config command: mode "resize" bindsym Left resize shrink width 10px
+00:00:00.161 [INFO] [sway/commands.c:404] After replacement: mode "resize" bindsym Left resize shrink width 10px
+00:00:00.161 [DEBUG] [sway/commands.c:436] Subcommand: bindsym Left resize shrink width 10px
+00:00:00.161 [DEBUG] [sway/commands/bind.c:298] bindsym - Bound Left to command `resize shrink width 10px` for device '*'
+00:00:00.161 [DEBUG] [sway/config.c:839] Read line 220:     bindsym Down resize grow height 10px
+00:00:00.161 [INFO] [sway/commands.c:381] Config command: mode "resize" bindsym Down resize grow height 10px
+00:00:00.161 [INFO] [sway/commands.c:404] After replacement: mode "resize" bindsym Down resize grow height 10px
+00:00:00.161 [DEBUG] [sway/commands.c:436] Subcommand: bindsym Down resize grow height 10px
+00:00:00.161 [DEBUG] [sway/commands/bind.c:298] bindsym - Bound Down to command `resize grow height 10px` for device '*'
+00:00:00.161 [DEBUG] [sway/config.c:839] Read line 221:     bindsym Up resize shrink height 10px
+00:00:00.161 [INFO] [sway/commands.c:381] Config command: mode "resize" bindsym Up resize shrink height 10px
+00:00:00.161 [INFO] [sway/commands.c:404] After replacement: mode "resize" bindsym Up resize shrink height 10px
+00:00:00.161 [DEBUG] [sway/commands.c:436] Subcommand: bindsym Up resize shrink height 10px
+00:00:00.161 [DEBUG] [sway/commands/bind.c:298] bindsym - Bound Up to command `resize shrink height 10px` for device '*'
+00:00:00.161 [DEBUG] [sway/config.c:839] Read line 222:     bindsym Right resize grow width 10px
+00:00:00.161 [INFO] [sway/commands.c:381] Config command: mode "resize" bindsym Right resize grow width 10px
+00:00:00.161 [INFO] [sway/commands.c:404] After replacement: mode "resize" bindsym Right resize grow width 10px
+00:00:00.161 [DEBUG] [sway/commands.c:436] Subcommand: bindsym Right resize grow width 10px
+00:00:00.162 [DEBUG] [sway/commands/bind.c:298] bindsym - Bound Right to command `resize grow width 10px` for device '*'
+00:00:00.162 [DEBUG] [sway/config.c:839] Read line 223: 
+00:00:00.162 [DEBUG] [sway/config.c:839] Read line 224:     # Return to default mode
+00:00:00.162 [DEBUG] [sway/config.c:839] Read line 225:     bindsym Return mode "default"
+00:00:00.162 [INFO] [sway/commands.c:381] Config command: mode "resize" bindsym Return mode "default"
+00:00:00.162 [INFO] [sway/commands.c:404] After replacement: mode "resize" bindsym Return mode "default"
+00:00:00.162 [DEBUG] [sway/commands.c:436] Subcommand: bindsym Return mode "default"
+00:00:00.162 [DEBUG] [sway/commands/bind.c:298] bindsym - Bound Return to command `mode "default"` for device '*'
+00:00:00.162 [DEBUG] [sway/config.c:839] Read line 226:     bindsym Escape mode "default"
+00:00:00.162 [INFO] [sway/commands.c:381] Config command: mode "resize" bindsym Escape mode "default"
+00:00:00.162 [INFO] [sway/commands.c:404] After replacement: mode "resize" bindsym Escape mode "default"
+00:00:00.162 [DEBUG] [sway/commands.c:436] Subcommand: bindsym Escape mode "default"
+00:00:00.162 [DEBUG] [sway/commands/bind.c:298] bindsym - Bound Escape to command `mode "default"` for device '*'
+00:00:00.162 [DEBUG] [sway/config.c:839] Read line 227: }
+00:00:00.162 [DEBUG] [sway/config.c:910] Exiting block 'mode "resize"'
+00:00:00.162 [DEBUG] [sway/config.c:839] Read line 228: bindsym $mod+r mode "resize"
+00:00:00.162 [INFO] [sway/commands.c:381] Config command: bindsym $mod+r mode "resize"
+00:00:00.162 [INFO] [sway/commands.c:404] After replacement: bindsym Mod4+r mode "resize"
+00:00:00.162 [DEBUG] [sway/commands/bind.c:298] bindsym - Bound Mod4+r to command `mode "resize"` for device '*'
+00:00:00.162 [DEBUG] [sway/config.c:839] Read line 229: 
+00:00:00.162 [DEBUG] [sway/config.c:839] Read line 230: #
+00:00:00.162 [DEBUG] [sway/config.c:839] Read line 231: # Screen capture
+00:00:00.162 [DEBUG] [sway/config.c:839] Read line 232: #
+00:00:00.162 [DEBUG] [sway/config.c:839] Read line 233: set $screenshot 1 selected, 2 whole, 3 selected clipboard, 4 whole clipboard, 5 swappy
+00:00:00.162 [INFO] [sway/commands.c:381] Config command: set $screenshot 1 selected, 2 whole, 3 selected clipboard, 4 whole clipboard, 5 swappy
+00:00:00.162 [INFO] [sway/commands.c:404] After replacement: set $screenshot 1 selected, 2 whole, 3 selected clipboard, 4 whole clipboard, 5 swappy
+00:00:00.162 [DEBUG] [sway/config.c:839] Read line 234: mode "$screenshot" {
+00:00:00.162 [DEBUG] [sway/config.c:893] Entering block 'mode "$screenshot"'
+00:00:00.162 [DEBUG] [sway/config.c:839] Read line 235:     bindsym 1 exec 'grim -g "$(slurp)" ~/ps_$(date +"%Y%m%d%H%M%S").png', mode "default"
+00:00:00.162 [INFO] [sway/commands.c:381] Config command: mode "$screenshot" bindsym 1 exec 'grim -g "$(slurp)" ~/ps_$(date +"%Y%m%d%H%M%S").png', mode "default"
+00:00:00.162 [INFO] [sway/commands.c:404] After replacement: mode "1 selected, 2 whole, 3 selected clipboard, 4 whole clipboard, 5 swappy" bindsym 1 exec 'grim -g "$(slurp)" ~/ps_$(date +"%Y%m%d%H%M%S").png', mode "default"
+00:00:00.162 [DEBUG] [sway/commands.c:436] Subcommand: bindsym 1 exec 'grim -g "$(slurp)" ~/ps_$(date +"%Y%m%d%H%M%S").png', mode "default"
+00:00:00.162 [DEBUG] [sway/commands/bind.c:298] bindsym - Bound 1 to command `exec 'grim -g "$(slurp)" ~/ps_$(date +"%Y%m%d%H%M%S").png', mode "default"` for device '*'
+00:00:00.162 [DEBUG] [sway/config.c:839] Read line 236:     bindsym 2 exec 'grim ~/ps_$(date +"%Y%m%d%H%M%S").png', mode "default"
+00:00:00.162 [INFO] [sway/commands.c:381] Config command: mode "$screenshot" bindsym 2 exec 'grim ~/ps_$(date +"%Y%m%d%H%M%S").png', mode "default"
+00:00:00.162 [INFO] [sway/commands.c:404] After replacement: mode "1 selected, 2 whole, 3 selected clipboard, 4 whole clipboard, 5 swappy" bindsym 2 exec 'grim ~/ps_$(date +"%Y%m%d%H%M%S").png', mode "default"
+00:00:00.162 [DEBUG] [sway/commands.c:436] Subcommand: bindsym 2 exec 'grim ~/ps_$(date +"%Y%m%d%H%M%S").png', mode "default"
+00:00:00.162 [DEBUG] [sway/commands/bind.c:298] bindsym - Bound 2 to command `exec 'grim ~/ps_$(date +"%Y%m%d%H%M%S").png', mode "default"` for device '*'
+00:00:00.162 [DEBUG] [sway/config.c:839] Read line 237:     bindsym 3 exec 'grim -g "$(slurp)" - | wl-copy', mode "default"
+00:00:00.162 [INFO] [sway/commands.c:381] Config command: mode "$screenshot" bindsym 3 exec 'grim -g "$(slurp)" - | wl-copy', mode "default"
+00:00:00.162 [INFO] [sway/commands.c:404] After replacement: mode "1 selected, 2 whole, 3 selected clipboard, 4 whole clipboard, 5 swappy" bindsym 3 exec 'grim -g "$(slurp)" - | wl-copy', mode "default"
+00:00:00.162 [DEBUG] [sway/commands.c:436] Subcommand: bindsym 3 exec 'grim -g "$(slurp)" - | wl-copy', mode "default"
+00:00:00.162 [DEBUG] [sway/commands/bind.c:298] bindsym - Bound 3 to command `exec 'grim -g "$(slurp)" - | wl-copy', mode "default"` for device '*'
+00:00:00.162 [DEBUG] [sway/config.c:839] Read line 238:     bindsym 4 exec 'grim - | wl-copy', mode "default"
+00:00:00.163 [INFO] [sway/commands.c:381] Config command: mode "$screenshot" bindsym 4 exec 'grim - | wl-copy', mode "default"
+00:00:00.163 [INFO] [sway/commands.c:404] After replacement: mode "1 selected, 2 whole, 3 selected clipboard, 4 whole clipboard, 5 swappy" bindsym 4 exec 'grim - | wl-copy', mode "default"
+00:00:00.163 [DEBUG] [sway/commands.c:436] Subcommand: bindsym 4 exec 'grim - | wl-copy', mode "default"
+00:00:00.163 [DEBUG] [sway/commands/bind.c:298] bindsym - Bound 4 to command `exec 'grim - | wl-copy', mode "default"` for device '*'
+00:00:00.163 [DEBUG] [sway/config.c:839] Read line 239:     bindsym 5 exec 'grim -g "$(slurp)" - | swappy -f -', mode "default"
+00:00:00.163 [INFO] [sway/commands.c:381] Config command: mode "$screenshot" bindsym 5 exec 'grim -g "$(slurp)" - | swappy -f -', mode "default"
+00:00:00.163 [INFO] [sway/commands.c:404] After replacement: mode "1 selected, 2 whole, 3 selected clipboard, 4 whole clipboard, 5 swappy" bindsym 5 exec 'grim -g "$(slurp)" - | swappy -f -', mode "default"
+00:00:00.163 [DEBUG] [sway/commands.c:436] Subcommand: bindsym 5 exec 'grim -g "$(slurp)" - | swappy -f -', mode "default"
+00:00:00.163 [DEBUG] [sway/commands/bind.c:298] bindsym - Bound 5 to command `exec 'grim -g "$(slurp)" - | swappy -f -', mode "default"` for device '*'
+00:00:00.163 [DEBUG] [sway/config.c:839] Read line 240: 
+00:00:00.163 [DEBUG] [sway/config.c:839] Read line 241: # back to normal: Enter or Escape
+00:00:00.163 [DEBUG] [sway/config.c:839] Read line 242:     bindsym Return mode "default"
+00:00:00.163 [INFO] [sway/commands.c:381] Config command: mode "$screenshot" bindsym Return mode "default"
+00:00:00.163 [INFO] [sway/commands.c:404] After replacement: mode "1 selected, 2 whole, 3 selected clipboard, 4 whole clipboard, 5 swappy" bindsym Return mode "default"
+00:00:00.163 [DEBUG] [sway/commands.c:436] Subcommand: bindsym Return mode "default"
+00:00:00.163 [DEBUG] [sway/commands/bind.c:298] bindsym - Bound Return to command `mode "default"` for device '*'
+00:00:00.163 [DEBUG] [sway/config.c:839] Read line 243:     bindsym Escape mode "default"
+00:00:00.163 [INFO] [sway/commands.c:381] Config command: mode "$screenshot" bindsym Escape mode "default"
+00:00:00.163 [INFO] [sway/commands.c:404] After replacement: mode "1 selected, 2 whole, 3 selected clipboard, 4 whole clipboard, 5 swappy" bindsym Escape mode "default"
+00:00:00.163 [DEBUG] [sway/commands.c:436] Subcommand: bindsym Escape mode "default"
+00:00:00.163 [DEBUG] [sway/commands/bind.c:298] bindsym - Bound Escape to command `mode "default"` for device '*'
+00:00:00.163 [DEBUG] [sway/config.c:839] Read line 244:     bindsym $mod+Print mode "default"
+00:00:00.163 [INFO] [sway/commands.c:381] Config command: mode "$screenshot" bindsym $mod+Print mode "default"
+00:00:00.163 [INFO] [sway/commands.c:404] After replacement: mode "1 selected, 2 whole, 3 selected clipboard, 4 whole clipboard, 5 swappy" bindsym Mod4+Print mode "default"
+00:00:00.163 [DEBUG] [sway/commands.c:436] Subcommand: bindsym Mod4+Print mode "default"
+00:00:00.163 [DEBUG] [sway/commands/bind.c:298] bindsym - Bound Mod4+Print to command `mode "default"` for device '*'
+00:00:00.163 [DEBUG] [sway/config.c:839] Read line 245: }
+00:00:00.163 [DEBUG] [sway/config.c:910] Exiting block 'mode "$screenshot"'
+00:00:00.163 [DEBUG] [sway/config.c:839] Read line 246: 
+00:00:00.163 [DEBUG] [sway/config.c:839] Read line 247: bindsym $mod+Print mode "$screenshot"
+00:00:00.163 [INFO] [sway/commands.c:381] Config command: bindsym $mod+Print mode "$screenshot"
+00:00:00.163 [INFO] [sway/commands.c:404] After replacement: bindsym Mod4+Print mode "1 selected, 2 whole, 3 selected clipboard, 4 whole clipboard, 5 swappy"
+00:00:00.163 [DEBUG] [sway/commands/bind.c:298] bindsym - Bound Mod4+Print to command `mode "1 selected, 2 whole, 3 selected clipboard, 4 whole clipboard, 5 swappy"` for device '*'
+00:00:00.163 [DEBUG] [sway/config.c:839] Read line 248: 
+00:00:00.163 [DEBUG] [sway/config.c:839] Read line 249: #
+00:00:00.163 [DEBUG] [sway/config.c:839] Read line 250: # Status Bar:
+00:00:00.163 [DEBUG] [sway/config.c:839] Read line 251: #
+00:00:00.163 [DEBUG] [sway/config.c:839] Read line 252: # Read `man 5 sway-bar` for more information about this section.
+00:00:00.163 [DEBUG] [sway/config.c:839] Read line 253: # bar {
+00:00:00.163 [DEBUG] [sway/config.c:839] Read line 254: #     position top
+00:00:00.163 [DEBUG] [sway/config.c:839] Read line 255: #
+00:00:00.163 [DEBUG] [sway/config.c:839] Read line 256: #     # When the status_command prints a new line to stdout, swaybar updates.
+00:00:00.163 [DEBUG] [sway/config.c:839] Read line 257: #     # The default just shows the current date and time.
+00:00:00.163 [DEBUG] [sway/config.c:839] Read line 258: #     status_command while date +'%Y-%m-%d %I:%M:%S %p'; do sleep 1; done
+00:00:00.163 [DEBUG] [sway/config.c:839] Read line 259: #     
+00:00:00.163 [DEBUG] [sway/config.c:839] Read line 260: #     colors {
+00:00:00.163 [DEBUG] [sway/config.c:839] Read line 261: #         statusline #ffffff
+00:00:00.164 [DEBUG] [sway/config.c:839] Read line 262: #         background #323232
+00:00:00.164 [DEBUG] [sway/config.c:839] Read line 263: #         inactive_workspace #32323200 #32323200 #5c5c5c
+00:00:00.164 [DEBUG] [sway/config.c:839] Read line 264: #     }
+00:00:00.164 [DEBUG] [sway/config.c:839] Read line 265: # }
+00:00:00.164 [DEBUG] [sway/config.c:839] Read line 266: 
+00:00:00.164 [DEBUG] [sway/config.c:839] Read line 267: bar swaybar_command waybar
+00:00:00.164 [INFO] [sway/commands.c:381] Config command: bar swaybar_command waybar
+00:00:00.164 [INFO] [sway/commands.c:404] After replacement: bar swaybar_command waybar
+00:00:00.164 [DEBUG] [sway/commands/bar.c:91] Creating bar: bar-0
+00:00:00.164 [DEBUG] [sway/commands.c:436] Subcommand: swaybar_command waybar
+00:00:00.164 [DEBUG] [sway/commands/bar/swaybar_command.c:13] Using custom swaybar command: waybar
+00:00:00.164 [DEBUG] [sway/config.c:839] Read line 268: # Windows
+00:00:00.164 [DEBUG] [sway/config.c:839] Read line 269: ## No title
+00:00:00.164 [DEBUG] [sway/config.c:839] Read line 270: # default_border none
+00:00:00.164 [DEBUG] [sway/config.c:839] Read line 271: default_border pixel 0
+00:00:00.164 [INFO] [sway/commands.c:381] Config command: default_border pixel 0
+00:00:00.164 [INFO] [sway/commands.c:404] After replacement: default_border pixel 0
+00:00:00.164 [DEBUG] [sway/config.c:839] Read line 272: client.focused "#1b1b1b" "#1b1b1b" "#fefefe" "#fefefe" "#fefefe00"
+00:00:00.164 [INFO] [sway/commands.c:381] Config command: client.focused "#1b1b1b" "#1b1b1b" "#fefefe" "#fefefe" "#fefefe00"
+00:00:00.164 [INFO] [sway/commands.c:404] After replacement: client.focused "#1b1b1b" "#1b1b1b" "#fefefe" "#fefefe" "#fefefe00"
+00:00:00.164 [DEBUG] [sway/config.c:839] Read line 273: 
+00:00:00.164 [DEBUG] [sway/config.c:839] Read line 274: # inactive window opacity
+00:00:00.164 [DEBUG] [sway/config.c:839] Read line 275: exec gammastep -l 52.237049:21.017532 -t +6500:+3500
+00:00:00.164 [INFO] [sway/commands.c:381] Config command: exec gammastep -l 52.237049:21.017532 -t +6500:+3500
+00:00:00.164 [INFO] [sway/commands.c:404] After replacement: exec gammastep -l 52.237049:21.017532 -t +6500:+3500
+00:00:00.164 [DEBUG] [sway/config.c:883] Deferring command `exec gammastep -l 52.237049:21.017532 -t +6500:+3500'
+00:00:00.164 [DEBUG] [sway/config.c:839] Read line 276: exec inactive-windows-transparency.py --opacity 0.9
+00:00:00.164 [INFO] [sway/commands.c:381] Config command: exec inactive-windows-transparency.py --opacity 0.9
+00:00:00.164 [INFO] [sway/commands.c:404] After replacement: exec inactive-windows-transparency.py --opacity 0.9
+00:00:00.164 [DEBUG] [sway/config.c:883] Deferring command `exec inactive-windows-transparency.py --opacity 0.9'
+00:00:00.164 [DEBUG] [sway/config.c:839] Read line 277: exec sleep 5; systemctl --user start kanshi.service
+00:00:00.164 [INFO] [sway/commands.c:381] Config command: exec sleep 5; systemctl --user start kanshi.service
+00:00:00.164 [INFO] [sway/commands.c:404] After replacement: exec sleep 5; systemctl --user start kanshi.service
+00:00:00.164 [DEBUG] [sway/config.c:883] Deferring command `exec sleep 5; systemctl --user start kanshi.service'
+00:00:00.164 [DEBUG] [sway/config.c:839] Read line 278: exec fcitx5 -d
+00:00:00.164 [INFO] [sway/commands.c:381] Config command: exec fcitx5 -d
+00:00:00.164 [INFO] [sway/commands.c:404] After replacement: exec fcitx5 -d
+00:00:00.164 [DEBUG] [sway/config.c:883] Deferring command `exec fcitx5 -d'
+00:00:00.164 [DEBUG] [sway/config.c:839] Read line 279: 
+00:00:00.164 [DEBUG] [sway/config.c:839] Read line 280: include /etc/sway/config.d/*
+00:00:00.164 [INFO] [sway/commands.c:381] Config command: include /etc/sway/config.d/*
+00:00:00.164 [INFO] [sway/commands.c:404] After replacement: include /etc/sway/config.d/*
+00:00:00.165 [INFO] [sway/config.c:417] Loading config from /nix/store/n23yq0vr6is3hhbaf7xmvyz1f58bkc23-nixos.conf
+00:00:00.165 [DEBUG] [sway/config.c:839] Read line 1: # Import the most important environment variables into the D-Bus and systemd
+00:00:00.165 [DEBUG] [sway/config.c:839] Read line 2: # user environments (e.g. required for screen sharing and Pinentry prompts):
+00:00:00.165 [DEBUG] [sway/config.c:839] Read line 3: exec dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK XDG_CURRENT_DESKTOP
+00:00:00.165 [INFO] [sway/commands.c:381] Config command: exec dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK XDG_CURRENT_DESKTOP
+00:00:00.165 [INFO] [sway/commands.c:404] After replacement: exec dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK XDG_CURRENT_DESKTOP
+00:00:00.165 [DEBUG] [sway/config.c:883] Deferring command `exec dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK XDG_CURRENT_DESKTOP'
+00:00:00.165 [DEBUG] [sway/config.c:839] Read line 281: 
+00:00:00.165 [DEBUG] [sway/config.c:839] Read line 282: 
+00:00:00.192 [INFO] [sway/realtime.c:35] Failed to set scheduling priority to 1
+00:00:00.192 [DEBUG] [sway/server.c:357] Initializing Xwayland (lazy=1)
+00:00:00.192 [INFO] [sway/server.c:384] Starting backend on wayland display 'wayland-2'
+00:00:00.192 [INFO] [wlr] [backend/wayland/backend.c:436] Starting Wayland backend
+00:00:00.192 [DEBUG] [sway/input/input-manager.c:234] adding device: '0:0:wayland-keyboard-seat0'
+00:00:00.192 [DEBUG] [sway/input/input-manager.c:184] no fallback seat config - creating default
+00:00:00.192 [DEBUG] [sway/config/seat.c:66] Adding non-wildcard seat config
+00:00:00.192 [DEBUG] [sway/config/seat.c:83] Config stored for seat seat0
+00:00:00.192 [DEBUG] [sway/input/input-manager.c:636] applying seat config for seat seat0
+00:00:00.192 [DEBUG] [sway/input/seat.c:974] adding device 0:0:wayland-keyboard-seat0 to seat seat0
+00:00:00.199 [DEBUG] [sway/input/keyboard.c:908] Created keyboard group 0x1cb6390
+00:00:00.199 [DEBUG] [sway/input/keyboard.c:931] Adding keyboard 0:0:wayland-keyboard-seat0 to group 0x1cb6390
+00:00:00.211 [DEBUG] [sway/desktop/output.c:1019] New output 0x1d0dcf0: WL-1 (non-desktop: 0)
+00:00:00.211 [DEBUG] [sway/config/output.c:401] Turning on output WL-1
+00:00:00.211 [DEBUG] [sway/config/output.c:473] Auto-detected output scale: 1.000000
+00:00:00.211 [DEBUG] [sway/config/output.c:520] Committing output WL-1
+00:00:00.211 [DEBUG] [wlr] [types/output/render.c:168] Attaching empty buffer to output for modeset
+00:00:00.211 [DEBUG] [wlr] [types/output/swapchain.c:27] Choosing primary buffer format XR24 (0x34325258) for output 'WL-1'
+00:00:00.211 [DEBUG] [wlr] [types/output/swapchain.c:96] Testing swapchain for output 'WL-1'
+00:00:00.211 [DEBUG] [wlr] [render/swapchain.c:106] Allocating new swapchain buffer
+00:00:00.214 [DEBUG] [wlr] [render/allocator/gbm.c:145] Allocated 1280x720 GBM buffer with format XR24 (0x34325258), modifier GFX9,GFX9_64K_D_X,DCC,DCC_PIPE_ALIGN,DCC_INDEPENDENT_64B,DCC_MAX_COMPRESSED_BLOCK=64B,DCC_CONSTANT_ENCODE,PIPE_XOR_BITS=2,BANK_XOR_BITS=0,RB=1,PIPE_2 (0x020000044051BA01)
+00:00:00.215 [DEBUG] [wlr] [render/gles2/renderer.c:159] Created GL FBO for buffer 1280x720
+00:00:00.227 [DEBUG] [sway/tree/workspace.c:277] Workspace: Generating new workspace name for output WL-1
+00:00:00.227 [DEBUG] [sway/tree/workspace.c:214] Got valid workspace command for target: 'number 1'
+00:00:00.227 [DEBUG] [sway/tree/workspace.c:239] Isolated name from workspace number: '1'
+00:00:00.227 [DEBUG] [sway/tree/workspace.c:268] Workspace: Found free name 1
+00:00:00.227 [DEBUG] [sway/tree/workspace.c:214] Got valid workspace command for target: 'number 2'
+00:00:00.227 [DEBUG] [sway/tree/workspace.c:239] Isolated name from workspace number: '2'
+00:00:00.227 [DEBUG] [sway/tree/workspace.c:214] Got valid workspace command for target: 'number 3'
+00:00:00.227 [DEBUG] [sway/tree/workspace.c:239] Isolated name from workspace number: '3'
+00:00:00.227 [DEBUG] [sway/tree/workspace.c:214] Got valid workspace command for target: 'number 4'
+00:00:00.227 [DEBUG] [sway/tree/workspace.c:239] Isolated name from workspace number: '4'
+00:00:00.227 [DEBUG] [sway/tree/workspace.c:214] Got valid workspace command for target: 'number 5'
+00:00:00.227 [DEBUG] [sway/tree/workspace.c:239] Isolated name from workspace number: '5'
+00:00:00.227 [DEBUG] [sway/tree/workspace.c:214] Got valid workspace command for target: 'number 6'
+00:00:00.227 [DEBUG] [sway/tree/workspace.c:239] Isolated name from workspace number: '6'
+00:00:00.227 [DEBUG] [sway/tree/workspace.c:214] Got valid workspace command for target: 'number 7'
+00:00:00.227 [DEBUG] [sway/tree/workspace.c:239] Isolated name from workspace number: '7'
+00:00:00.227 [DEBUG] [sway/tree/workspace.c:214] Got valid workspace command for target: 'number 8'
+00:00:00.227 [DEBUG] [sway/tree/workspace.c:239] Isolated name from workspace number: '8'
+00:00:00.227 [DEBUG] [sway/tree/workspace.c:214] Got valid workspace command for target: 'number 9'
+00:00:00.227 [DEBUG] [sway/tree/workspace.c:239] Isolated name from workspace number: '9'
+00:00:00.227 [DEBUG] [sway/tree/workspace.c:214] Got valid workspace command for target: 'number 10'
+00:00:00.227 [DEBUG] [sway/tree/workspace.c:239] Isolated name from workspace number: '10'
+00:00:00.227 [DEBUG] [sway/tree/output.c:127] Creating default workspace 1
+00:00:00.227 [DEBUG] [sway/tree/workspace.c:65] Adding workspace 1 for output WL-1
+00:00:00.228 [DEBUG] [wlr] [xcursor/wlr_xcursor.c:225] Loaded cursor theme 'default' at size 24 (26 available cursors)
+00:00:00.228 [DEBUG] [wlr] [xcursor/wlr_xcursor.c:225] Loaded cursor theme 'default' at size 24 (26 available cursors)
+00:00:00.228 [DEBUG] [sway/desktop/layer_shell.c:229] Usable area changed, rearranging output
+00:00:00.228 [DEBUG] [sway/tree/arrange.c:263] Usable area for ws: 1280x720@0,0
+00:00:00.228 [DEBUG] [sway/tree/arrange.c:297] Arranging workspace '1' at 0.000000, 0.000000
+00:00:00.228 [DEBUG] [sway/tree/arrange.c:263] Usable area for ws: 1280x720@0,0
+00:00:00.228 [DEBUG] [sway/tree/arrange.c:297] Arranging workspace '1' at 0.000000, 0.000000
+00:00:00.228 [DEBUG] [sway/desktop/transaction.c:398] Transaction 0x1d02fe0 committing with 2 instructions
+00:00:00.228 [DEBUG] [sway/desktop/transaction.c:294] Applying transaction 0x1d02fe0
+00:00:00.228 [DEBUG] [wlr] [backend/wayland/pointer.c:448] creating pointer for output 'WL-1' from seat 'seat0'
+00:00:00.228 [DEBUG] [sway/input/input-manager.c:234] adding device: '0:0:wayland-pointer-seat0'
+00:00:00.228 [DEBUG] [sway/input/seat.c:974] adding device 0:0:wayland-pointer-seat0 to seat seat0
+00:00:00.228 [DEBUG] [sway/input/seat.c:722] Applying input mapping to 0:0:wayland-pointer-seat0
+00:00:00.228 [DEBUG] [sway/input/seat.c:768] Mapping input device 0:0:wayland-pointer-seat0 to output WL-1
+00:00:00.228 [DEBUG] [sway/input/seat.c:788] Mapped to output WL-1
+00:00:00.231 [DEBUG] [wlr] [render/swapchain.c:106] Allocating new swapchain buffer
+00:00:00.231 [DEBUG] [wlr] [render/allocator/gbm.c:145] Allocated 10x16 GBM buffer with format AR24 (0x34325241), modifier GFX9,GFX9_64K_D_X,DCC,DCC_PIPE_ALIGN,DCC_INDEPENDENT_64B,DCC_MAX_COMPRESSED_BLOCK=64B,DCC_CONSTANT_ENCODE,PIPE_XOR_BITS=2,BANK_XOR_BITS=0,RB=1,PIPE_2 (0x020000044051BA01)
+00:00:00.231 [DEBUG] [wlr] [render/gles2/renderer.c:159] Created GL FBO for buffer 10x16
+00:00:00.232 [INFO] [wlr] [backend/headless/backend.c:17] Starting headless backend
+00:00:00.232 [DEBUG] [sway/config/bar.c:265] Invoking swaybar for bar id 'bar-0'
+00:00:00.243 [DEBUG] [sway/config/bar.c:258] Spawned swaybar bar-0
+00:00:00.243 [DEBUG] [sway/config.c:688] Running deferred commands
+00:00:00.243 [INFO] [sway/commands.c:261] Handling command 'exec swayidle -w          timeout 900 $lock          timeout 1800 'swaymsg "output * power off"' resume 'swaymsg "output * power on"'          before-sleep $lock lock $lock unlock $lock'
+00:00:00.243 [DEBUG] [sway/commands/exec_always.c:58] Executing swayidle -w timeout 900 'swaylock -f' timeout 1800 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' before-sleep 'swaylock -f' lock 'swaylock -f' unlock 'swaylock -f'
+00:00:00.255 [DEBUG] [sway/commands/exec_always.c:111] Child process created with pid 63594
+00:00:00.255 [DEBUG] [sway/commands/exec_always.c:113] Recording workspace for process 63594
+00:00:00.255 [INFO] [sway/commands.c:261] Handling command 'exec gammastep -l 52.237049:21.017532 -t +6500:+3500'
+00:00:00.255 [DEBUG] [sway/commands/exec_always.c:58] Executing gammastep -l 52.237049:21.017532 -t +6500:+3500
+00:00:00.267 [DEBUG] [sway/commands/exec_always.c:111] Child process created with pid 63596
+00:00:00.267 [DEBUG] [sway/commands/exec_always.c:113] Recording workspace for process 63596
+00:00:00.267 [INFO] [sway/commands.c:261] Handling command 'exec inactive-windows-transparency.py --opacity 0.9'
+00:00:00.267 [DEBUG] [sway/commands/exec_always.c:58] Executing inactive-windows-transparency.py --opacity 0.9
+00:00:00.280 [DEBUG] [sway/commands/exec_always.c:111] Child process created with pid 63598
+00:00:00.280 [DEBUG] [sway/commands/exec_always.c:113] Recording workspace for process 63598
+00:00:00.280 [INFO] [sway/commands.c:261] Handling command 'exec sleep 5'
+00:00:00.280 [DEBUG] [sway/commands/exec_always.c:58] Executing sleep 5
+00:00:00.292 [DEBUG] [sway/commands/exec_always.c:111] Child process created with pid 63600
+00:00:00.293 [DEBUG] [sway/commands/exec_always.c:113] Recording workspace for process 63600
+00:00:00.293 [INFO] [sway/commands.c:261] Handling command 'systemctl --user start kanshi.service'
+00:00:00.293 [ERROR] [sway/config.c:695] Error on line 'exec sleep 5; systemctl --user start kanshi.service': Unknown/invalid command 'systemctl'
+00:00:00.293 [INFO] [sway/commands.c:261] Handling command 'exec fcitx5 -d'
+00:00:00.293 [DEBUG] [sway/commands/exec_always.c:58] Executing fcitx5 -d
+00:00:00.308 [DEBUG] [sway/commands/exec_always.c:111] Child process created with pid 63602
+00:00:00.308 [DEBUG] [sway/commands/exec_always.c:113] Recording workspace for process 63602
+00:00:00.308 [INFO] [sway/commands.c:261] Handling command 'exec dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK XDG_CURRENT_DESKTOP'
+00:00:00.308 [DEBUG] [sway/commands/exec_always.c:58] Executing dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK XDG_CURRENT_DESKTOP
+00:00:00.322 [DEBUG] [sway/commands/exec_always.c:111] Child process created with pid 63604
+00:00:00.322 [DEBUG] [sway/commands/exec_always.c:113] Recording workspace for process 63604
+00:00:00.322 [INFO] [sway/server.c:396] Running compositor on wayland display 'wayland-2'
+00:00:00.322 [DEBUG] [wlr] [render/swapchain.c:106] Allocating new swapchain buffer
+00:00:00.323 [DEBUG] [wlr] [render/allocator/gbm.c:145] Allocated 1280x720 GBM buffer with format XR24 (0x34325258), modifier GFX9,GFX9_64K_D_X,DCC,DCC_PIPE_ALIGN,DCC_INDEPENDENT_64B,DCC_MAX_COMPRESSED_BLOCK=64B,DCC_CONSTANT_ENCODE,PIPE_XOR_BITS=2,BANK_XOR_BITS=0,RB=1,PIPE_2 (0x020000044051BA01)
+00:00:00.323 [DEBUG] [wlr] [render/gles2/renderer.c:159] Created GL FBO for buffer 1280x720
+00:00:00.324 [DEBUG] [wlr] [types/output/render.c:168] Attaching empty buffer to output for modeset
+00:00:00.324 [DEBUG] [wlr] [types/output/swapchain.c:27] Choosing primary buffer format XR24 (0x34325258) for output 'WL-1'
+00:00:00.324 [DEBUG] [wlr] [types/output/swapchain.c:96] Testing swapchain for output 'WL-1'
+00:00:00.324 [DEBUG] [wlr] [render/swapchain.c:106] Allocating new swapchain buffer
+00:00:00.324 [DEBUG] [wlr] [render/allocator/gbm.c:145] Allocated 640x1048 GBM buffer with format XR24 (0x34325258), modifier GFX9,GFX9_64K_D_X,DCC,DCC_PIPE_ALIGN,DCC_INDEPENDENT_64B,DCC_MAX_COMPRESSED_BLOCK=64B,DCC_CONSTANT_ENCODE,PIPE_XOR_BITS=2,BANK_XOR_BITS=0,RB=1,PIPE_2 (0x020000044051BA01)
+00:00:00.324 [DEBUG] [wlr] [render/gles2/renderer.c:159] Created GL FBO for buffer 640x1048
+00:00:00.325 [DEBUG] [sway/desktop/layer_shell.c:229] Usable area changed, rearranging output
+00:00:00.325 [DEBUG] [sway/tree/arrange.c:263] Usable area for ws: 640x1048@0,0
+00:00:00.325 [DEBUG] [sway/tree/arrange.c:297] Arranging workspace '1' at 0.000000, 0.000000
+00:00:00.325 [DEBUG] [sway/tree/arrange.c:263] Usable area for ws: 640x1048@0,0
+00:00:00.325 [DEBUG] [sway/tree/arrange.c:297] Arranging workspace '1' at 0.000000, 0.000000
+00:00:00.325 [DEBUG] [sway/desktop/transaction.c:398] Transaction 0x1e1b090 committing with 1 instructions
+00:00:00.325 [DEBUG] [sway/desktop/transaction.c:294] Applying transaction 0x1e1b090
+00:00:00.325 [DEBUG] [sway/tree/arrange.c:263] Usable area for ws: 640x1048@0,0
+00:00:00.325 [DEBUG] [sway/tree/arrange.c:297] Arranging workspace '1' at 0.000000, 0.000000
+00:00:00.325 [DEBUG] [sway/desktop/transaction.c:398] Transaction 0x1e1b090 committing with 1 instructions
+00:00:00.325 [DEBUG] [sway/desktop/transaction.c:294] Applying transaction 0x1e1b090
+2025-01-11 02:25:41 - [main.c:282] Found config * for output WL-1 ((null))
+00:00:00.326 [DEBUG] [wlr] [types/wlr_compositor.c:692] New wlr_surface 0x1e31a10 (res 0x1d096b0)
+00:00:00.326 [DEBUG] [wlr] [types/wlr_layer_shell_v1.c:464] new layer_surface 0x1e31ec0 (res 0x1d09fb0)
+00:00:00.326 [DEBUG] [sway/desktop/layer_shell.c:646] new layer surface: namespace wallpaper layer 0 anchor 15 size 0x0 margin 0,0,0,0,
+Warning: Zero outputs support gamma adjustment.
+Warning: 1/1 output(s) do not support gamma adjustment.
+00:00:00.328 [DEBUG] [wlr] [render/swapchain.c:106] Allocating new swapchain buffer
+00:00:00.329 [DEBUG] [wlr] [render/allocator/gbm.c:145] Allocated 640x1048 GBM buffer with format XR24 (0x34325258), modifier GFX9,GFX9_64K_D_X,DCC,DCC_PIPE_ALIGN,DCC_INDEPENDENT_64B,DCC_MAX_COMPRESSED_BLOCK=64B,DCC_CONSTANT_ENCODE,PIPE_XOR_BITS=2,BANK_XOR_BITS=0,RB=1,PIPE_2 (0x020000044051BA01)
+00:00:00.329 [DEBUG] [wlr] [render/gles2/renderer.c:159] Created GL FBO for buffer 640x1048
+I2025-01-11 02:25:41.244301 instance.cpp:1384] Override Enabled Addons: {}
+I2025-01-11 02:25:41.244489 instance.cpp:1385] Override Disabled Addons: {}
+I2025-01-11 02:25:41.255469 addonmanager.cpp:205] Loaded addon wayland
+00:00:00.358 [INFO] [wlr] [xwayland/server.c:108] Starting Xwayland on :1
+00:00:00.362 [DEBUG] [wlr] [types/wlr_compositor.c:692] New wlr_surface 0x1cfb6a0 (res 0x1fcedf0)
+00:00:00.362 [DEBUG] [wlr] [types/wlr_compositor.c:692] New wlr_surface 0x1fcf040 (res 0x1fcf3f0)
+[2025-01-11 02:25:41.321] [info] Using configuration file /home/mavia/.config/waybar/config
+[2025-01-11 02:25:41.325] [info] Unable to receive desktop appearance: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: No existeix la interfície «org.freedesktop.portal.Settings» en l'objecte al camí /org/freedesktop/portal/desktop
+[2025-01-11 02:25:41.326] [info] Using CSS file /home/mavia/.config/waybar/style.css
+basic_string::_M_create
+Warning: Zero outputs support gamma adjustment.
+Warning: 1/1 output(s) do not support gamma adjustment.
+[2025-01-11 02:25:41.336] [warning] Mapping is not an object
+00:00:00.427 [DEBUG] [sway/ipc-server.c:197] New client: fd 49
+00:00:00.427 [DEBUG] [sway/ipc-server.c:197] New client: fd 54
+00:00:00.430 [DEBUG] [sway/ipc-server.c:197] New client: fd 56
+00:00:00.431 [DEBUG] [sway/ipc-server.c:197] New client: fd 58
+00:00:00.431 [DEBUG] [sway/ipc-server.c:197] New client: fd 60
+00:00:00.431 [DEBUG] [sway/criteria.c:726] Found pair: con_id=2147483647
+00:00:00.431 [INFO] [sway/commands.c:261] Handling command 'opacity 0.9'
+00:00:00.431 [DEBUG] [sway/criteria.c:726] Found pair: con_id=3
+00:00:00.431 [INFO] [sway/commands.c:261] Handling command 'opacity 0.9'
+00:00:00.431 [DEBUG] [sway/criteria.c:726] Found pair: con_id=2147483646
+00:00:00.432 [INFO] [sway/commands.c:261] Handling command 'opacity 0.9'
+00:00:00.432 [DEBUG] [sway/ipc-server.c:197] New client: fd 62
+00:00:00.432 [DEBUG] [sway/ipc-server.c:197] New client: fd 64
+00:00:00.432 [DEBUG] [sway/ipc-server.c:197] New client: fd 67
+[2025-01-11 02:25:41.356] [error] media stopped unexpectedly, is it endless?
+00:00:00.480 [DEBUG] [wlr] [types/wlr_compositor.c:692] New wlr_surface 0x1fdc200 (res 0x1fd0770)
+00:00:00.480 [DEBUG] [wlr] [types/wlr_xdg_activation_v1.c:306] Rejecting activate request: unknown token
+00:00:00.480 [DEBUG] [wlr] [types/wlr_layer_shell_v1.c:464] new layer_surface 0x1fc5b30 (res 0x1fdc5b0)
+00:00:00.480 [DEBUG] [sway/desktop/layer_shell.c:646] new layer surface: namespace waybar layer 2 anchor 13 size 0x30 margin 0,0,0,0,
+00:00:00.480 [DEBUG] [sway/desktop/layer_shell.c:229] Usable area changed, rearranging output
+00:00:00.480 [DEBUG] [sway/tree/arrange.c:263] Usable area for ws: 640x1018@0,30
+00:00:00.480 [DEBUG] [sway/tree/arrange.c:297] Arranging workspace '1' at 0.000000, 30.000000
+00:00:00.481 [DEBUG] [sway/desktop/transaction.c:398] Transaction 0x1e31fc0 committing with 1 instructions
+00:00:00.481 [DEBUG] [sway/desktop/transaction.c:294] Applying transaction 0x1e31fc0
+Warning: Zero outputs support gamma adjustment.
+Warning: 1/1 output(s) do not support gamma adjustment.
+00:00:00.530 [DEBUG] [wlr] [types/wlr_compositor.c:692] New wlr_surface 0x1fd6200 (res 0x1fd65b0)
+00:00:00.530 [DEBUG] [wlr] [xwayland/server.c:273] Xserver is ready
+00:00:00.531 [DEBUG] [wlr] [xwayland/xwm.c:1956] xfixes version: 6.0
+00:00:00.531 [DEBUG] [wlr] [xwayland/xwm.c:1977] xres version: 1.2
+00:00:00.541 [DEBUG] [wlr] [xwayland/selection/selection.c:149] not handling selection events: no seat assigned to xwayland
+00:00:00.541 [DEBUG] [wlr] [xwayland/selection/selection.c:149] not handling selection events: no seat assigned to xwayland
+00:00:00.541 [DEBUG] [wlr] [xwayland/selection/selection.c:149] not handling selection events: no seat assigned to xwayland
+00:00:00.541 [DEBUG] [wlr] [xwayland/selection/selection.c:149] not handling selection events: no seat assigned to xwayland
+00:00:00.541 [DEBUG] [wlr] [xwayland/selection/selection.c:149] not handling selection events: no seat assigned to xwayland
+00:00:00.541 [DEBUG] [wlr] [xwayland/selection/selection.c:149] not handling selection events: no seat assigned to xwayland
+00:00:00.542 [DEBUG] [wlr] [xwayland/selection/selection.c:149] not handling selection events: no seat assigned to xwayland
+00:00:00.542 [DEBUG] [wlr] [xwayland/selection/selection.c:149] not handling selection events: no seat assigned to xwayland
+00:00:00.542 [DEBUG] [wlr] [xwayland/selection/selection.c:149] not handling selection events: no seat assigned to xwayland
+00:00:00.542 [DEBUG] [sway/desktop/xwayland.c:790] New xwayland surface title='(null)' class='(null)'
+00:00:00.542 [DEBUG] [sway/input/cursor.c:964] denying request to set cursor from unfocused client
+The XKEYBOARD keymap compiler (xkbcomp) reports:
+> Warning:          Unsupported maximum keycode 708, clipping.
+>                   X11 cannot support keycodes above 255.
+> Warning:          Could not resolve keysym XF86KbdInputAssistPrevgrou
+> Warning:          Could not resolve keysym XF86KbdInputAssistNextgrou
+Errors from xkbcomp are not fatal to the X server
+00:00:00.562 [DEBUG] [wlr] [xwayland/selection/selection.c:149] not handling selection events: no seat assigned to xwayland
+00:00:00.562 [DEBUG] [wlr] [xwayland/xwm.c:1646] unhandled X11 event: MappingNotify (34)
+00:00:00.562 [DEBUG] [wlr] [xwayland/selection/selection.c:149] not handling selection events: no seat assigned to xwayland
+00:00:00.562 [DEBUG] [wlr] [xwayland/xwm.c:1646] unhandled X11 event: MappingNotify (34)
+I2025-01-11 02:25:41.474382 xcbconnection.cpp:189] Connecting to X11 display, display name::1.
+I2025-01-11 02:25:41.474529 xcbconnection.cpp:194] X11 display: :1 is xwayland.
+I2025-01-11 02:25:41.474826 addonmanager.cpp:205] Loaded addon xcb
+I2025-01-11 02:25:41.478148 addonmanager.cpp:205] Loaded addon quickphrase
+I2025-01-11 02:25:41.478664 addonmanager.cpp:205] Loaded addon imselector
+I2025-01-11 02:25:41.487387 addonmanager.cpp:205] Loaded addon keyboard
+I2025-01-11 02:25:41.488664 addonmanager.cpp:205] Loaded addon clipboard
+I2025-01-11 02:25:41.489459 addonmanager.cpp:205] Loaded addon waylandim
+I2025-01-11 02:25:41.490160 addonmanager.cpp:205] Loaded addon unicode
+E2025-01-11 02:25:41.492154 addonloader.cpp:61] Failed to create addon: dbus Unable to request dbus name. Is there another fcitx already running?
+I2025-01-11 02:25:41.492226 addonmanager.cpp:201] Could not load addon dbus
+I2025-01-11 02:25:41.492324 addonmanager.cpp:308] Unloading addon unicode
+I2025-01-11 02:25:41.492390 addonmanager.cpp:308] Unloading addon waylandim
+I2025-01-11 02:25:41.492457 addonmanager.cpp:308] Unloading addon clipboard
+I2025-01-11 02:25:41.492544 addonmanager.cpp:308] Unloading addon keyboard
+I2025-01-11 02:25:41.492789 addonmanager.cpp:308] Unloading addon imselector
+I2025-01-11 02:25:41.492838 addonmanager.cpp:308] Unloading addon quickphrase
+I2025-01-11 02:25:41.493126 addonmanager.cpp:308] Unloading addon xcb
+I2025-01-11 02:25:41.493454 addonmanager.cpp:308] Unloading addon wayland
+00:00:00.584 [DEBUG] [wlr] [xwayland/selection/selection.c:149] not handling selection events: no seat assigned to xwayland
+Warning: Zero outputs support gamma adjustment.
+Warning: 1/1 output(s) do not support gamma adjustment.
+Warning: Zero outputs support gamma adjustment.
+Warning: 1/1 output(s) do not support gamma adjustment.
+[2025-01-11 02:25:41.669] [warning] Requested height: 30 is less than the minimum height: 32 required by the modules
+[2025-01-11 02:25:41.669] [info] Bar configured (width: 640, height: 32) for output: WL-1
+00:00:00.762 [DEBUG] [sway/desktop/layer_shell.c:229] Usable area changed, rearranging output
+00:00:00.762 [DEBUG] [sway/tree/arrange.c:263] Usable area for ws: 640x1016@0,32
+00:00:00.762 [DEBUG] [sway/tree/arrange.c:297] Arranging workspace '1' at 0.000000, 32.000000
+00:00:00.762 [DEBUG] [sway/desktop/transaction.c:398] Transaction 0x1fd3f40 committing with 1 instructions
+00:00:00.762 [DEBUG] [sway/desktop/transaction.c:294] Applying transaction 0x1fd3f40
+Warning: Zero outputs support gamma adjustment.
+Warning: 1/1 output(s) do not support gamma adjustment.
+Warning: Zero outputs support gamma adjustment.
+Warning: 1/1 output(s) do not support gamma adjustment.
+Warning: Zero outputs support gamma adjustment.
+Warning: 1/1 output(s) do not support gamma adjustment.
+Warning: Zero outputs support gamma adjustment.
+Warning: 1/1 output(s) do not support gamma adjustment.
+Warning: Zero outputs support gamma adjustment.
+Warning: 1/1 output(s) do not support gamma adjustment.
+Warning: Zero outputs support gamma adjustment.
+Warning: 1/1 output(s) do not support gamma adjustment.
+Warning: Zero outputs support gamma adjustment.
+Warning: 1/1 output(s) do not support gamma adjustment.
+Warning: Zero outputs support gamma adjustment.
+Warning: 1/1 output(s) do not support gamma adjustment.
+Warning: Zero outputs support gamma adjustment.
+Warning: 1/1 output(s) do not support gamma adjustment.
+Warning: Zero outputs support gamma adjustment.
+Warning: 1/1 output(s) do not support gamma adjustment.
+Warning: Zero outputs support gamma adjustment.
+Warning: 1/1 output(s) do not support gamma adjustment.
+Warning: Zero outputs support gamma adjustment.
+Warning: 1/1 output(s) do not support gamma adjustment.
+Warning: Zero outputs support gamma adjustment.
+Warning: 1/1 output(s) do not support gamma adjustment.
+Warning: Zero outputs support gamma adjustment.
+Warning: 1/1 output(s) do not support gamma adjustment.
+Warning: Zero outputs support gamma adjustment.
+Warning: 1/1 output(s) do not support gamma adjustment.
+Warning: Zero outputs support gamma adjustment.
+Warning: 1/1 output(s) do not support gamma adjustment.
+Warning: Zero outputs support gamma adjustment.
+Warning: 1/1 output(s) do not support gamma adjustment.
+Warning: Zero outputs support gamma adjustment.
+Warning: 1/1 output(s) do not support gamma adjustment.
+Warning: Zero outputs support gamma adjustment.
+Warning: 1/1 output(s) do not support gamma adjustment.
+Warning: Zero outputs support gamma adjustment.
+Warning: 1/1 output(s) do not support gamma adjustment.
+Warning: Zero outputs support gamma adjustment.
+Warning: 1/1 output(s) do not support gamma adjustment.
+Warning: Zero outputs support gamma adjustment.
+Warning: 1/1 output(s) do not support gamma adjustment.
+Warning: Zero outputs support gamma adjustment.
+Warning: 1/1 output(s) do not support gamma adjustment.
+Warning: Zero outputs support gamma adjustment.
+Warning: 1/1 output(s) do not support gamma adjustment.
+Warning: Zero outputs support gamma adjustment.
+Warning: 1/1 output(s) do not support gamma adjustment.
+Warning: Zero outputs support gamma adjustment.
+Warning: 1/1 output(s) do not support gamma adjustment.
+Warning: Zero outputs support gamma adjustment.
+Warning: 1/1 output(s) do not support gamma adjustment.
+Warning: Zero outputs support gamma adjustment.
+Warning: 1/1 output(s) do not support gamma adjustment.
+Warning: Zero outputs support gamma adjustment.
+Warning: 1/1 output(s) do not support gamma adjustment.
+Warning: Zero outputs support gamma adjustment.
+Warning: 1/1 output(s) do not support gamma adjustment.
+Warning: Zero outputs support gamma adjustment.
+Warning: 1/1 output(s) do not support gamma adjustment.
+Warning: Zero outputs support gamma adjustment.
+Warning: 1/1 output(s) do not support gamma adjustment.
+Warning: Zero outputs support gamma adjustment.
+Warning: 1/1 output(s) do not support gamma adjustment.
+Warning: Zero outputs support gamma adjustment.
+Warning: 1/1 output(s) do not support gamma adjustment.
+Warning: Zero outputs support gamma adjustment.
+Warning: 1/1 output(s) do not support gamma adjustment.
+Warning: Zero outputs support gamma adjustment.
+Warning: 1/1 output(s) do not support gamma adjustment.
+00:00:05.006 [2025-01-11 02:25:45.916] [info] Quitting.
+[INFO] [sway/main.c:418] Shutting down sway
+00:00:05.010 [DEBUG] [sway/desktop/layer_shell.c:386] Layer surface destroyed (wallpaper)
+00:00:05.010 [DEBUG] [sway/desktop/layer_shell.c:386] Layer surface destroyed (waybar)
+00:00:05.010 [DEBUG] [sway/desktop/layer_shell.c:229] Usable area changed, rearranging output
+00:00:05.010 [DEBUG] [sway/tree/arrange.c:263] Usable area for ws: 640x1048@0,0
+00:00:05.010 [DEBUG] [sway/tree/arrange.c:297] Arranging workspace '1' at 0.000000, 0.000000
+00:00:05.010 [DEBUG] [sway/desktop/transaction.c:398] Transaction 0x1cf47c0 committing with 1 instructions
+00:00:05.010 [DEBUG] [sway/desktop/transaction.c:294] Applying transaction 0x1cf47c0
+00:00:05.011 [DEBUG] [sway/tree/output.c:264] Disabling output 'WL-1'
+00:00:05.011 [DEBUG] [sway/tree/workspace.c:145] Destroying workspace '1'
+00:00:05.011 [DEBUG] [sway/ipc-server.c:301] Sending workspace::empty event
+00:00:05.011 [DEBUG] [sway/input/seat.c:722] Applying input mapping to 0:0:wayland-pointer-seat0
+00:00:05.011 [DEBUG] [sway/input/seat.c:768] Mapping input device 0:0:wayland-pointer-seat0 to output WL-1
+00:00:05.011 [DEBUG] [sway/input/seat.c:780] Requested output WL-1 for device 0:0:wayland-pointer-seat0 isn't present
+00:00:05.011 [DEBUG] [sway/tree/output.c:287] Destroying output 'WL-1'
+00:00:05.011 [DEBUG] [sway/desktop/transaction.c:398] Transaction 0x1d0aa20 committing with 2 instructions
+00:00:05.011 [DEBUG] [sway/desktop/transaction.c:294] Applying transaction 0x1d0aa20
+00:00:05.011 [DEBUG] [sway/input/input-manager.c:202] removing device: '0:0:wayland-pointer-seat0'
+00:00:05.011 [DEBUG] [sway/input/seat.c:994] removing device 0:0:wayland-pointer-seat0 from seat seat0
+00:00:05.012 [DEBUG] [sway/input/input-manager.c:202] removing device: '0:0:wayland-keyboard-seat0'
+00:00:05.012 [DEBUG] [sway/input/seat.c:994] removing device 0:0:wayland-keyboard-seat0 from seat seat0
+00:00:05.012 [DEBUG] [sway/input/keyboard.c:799] Removing keyboard 0:0:wayland-keyboard-seat0 from group 0x1cb6390
+00:00:05.012 [DEBUG] [sway/input/keyboard.c:805] Destroying empty keyboard group 0x1cb6390
+00:00:05.012 [INFO] [sway/ipc-server.c:571] IPC Client 67 disconnected
+00:00:05.012 [INFO] [sway/ipc-server.c:571] IPC Client 64 disconnected
+00:00:05.013 [INFO] [sway/ipc-server.c:571] IPC Client 62 disconnected
+00:00:05.013 [INFO] [sway/ipc-server.c:571] IPC Client 60 disconnected
+00:00:05.013 [INFO] [sway/ipc-server.c:571] IPC Client 58 disconnected
+00:00:05.013 [INFO] [sway/ipc-server.c:571] IPC Client 56 disconnected
+00:00:05.013 [INFO] [sway/ipc-server.c:571] IPC Client 54 disconnected
+00:00:05.013 [INFO] [sway/ipc-server.c:571] IPC Client 49 disconnected
+Warning: Zero outputs support gamma adjustment.
+Warning: 1/1 output(s) do not support gamma adjustment.
+Error: Wayland connection experienced a fatal error: -1
+Error: Temperature adjustment failed.

@@ -48,7 +48,7 @@
     discord
     # blender-hip
     (callPackage ./modules/mc/pkg.nix {})
-    (callPackage ./modules/zen/pkg.nix {})
+    # (callPackage ./modules/zen/pkg.nix {})
   ];
 
   home.shellAliases = {

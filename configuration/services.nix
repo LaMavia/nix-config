@@ -5,6 +5,8 @@
 
   services.blueman.enable = true;
 
+  services.flatpak.enable = true;
+
   services.pipewire = {
     enable = true;
     alsa.enable = true;

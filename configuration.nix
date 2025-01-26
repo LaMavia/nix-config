@@ -47,18 +47,18 @@
   time.timeZone = "Europe/Warsaw";
 
   # Select internationalisation properties.
-  i18n = {
-    defaultLocale = "ca_ES.UTF-8";  
+  i18n = let l = "ja_JP.UTF-8"; in {
+    defaultLocale = l;  
     extraLocaleSettings = {
-      LC_ADDRESS = "es_ES.UTF-8";
-      LC_IDENTIFICATION = "es_ES.UTF-8";
-      LC_MEASUREMENT = "es_ES.UTF-8";
-      LC_MONETARY = "es_ES.UTF-8";
-      LC_NAME = "es_ES.UTF-8";
-      LC_NUMERIC = "es_ES.UTF-8";
-      LC_PAPER = "es_ES.UTF-8";
-      LC_TELEPHONE = "es_ES.UTF-8";
-      LC_TIME = "es_ES.UTF-8";
+      LC_ADDRESS = l;
+      LC_IDENTIFICATION = l;
+      LC_MEASUREMENT = l;
+      LC_MONETARY = l;
+      LC_NAME = l;
+      LC_NUMERIC = l;
+      LC_PAPER = l;
+      LC_TELEPHONE = l;
+      LC_TIME = l;
     };
 
     inputMethod = {
@@ -66,10 +66,12 @@
       fcitx5 = {
         waylandFrontend = true;
         addons = with pkgs; [
-          rime-data
-          fcitx5-rime
           fcitx5-gtk
           fcitx5-mozc
+          fcitx5-chinese-addons
+          rime-data
+          fcitx5-rime
+          fcitx5-nord
         ];
       };
     };
