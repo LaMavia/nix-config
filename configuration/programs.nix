@@ -14,6 +14,10 @@
     wrapperFeatures.gtk = true;
   };
 
+  programs.niri = {
+    enable = true;
+  };
+
   programs.fish = {
     enable = true;
   };

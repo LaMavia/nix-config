@@ -5,8 +5,11 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    niri = {
+      url = "github:sodiboo/niri-flake";
+    };
   };
-  outputs = { self, nixpkgs, home-manager }: {
+  outputs = { self, nixpkgs, home-manager, niri }: {
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       modules = [ 
@@ -21,7 +24,11 @@
         ./configuration/virtualisation/docker.nix
         ./configuration/virtualisation/wayland.nix
         home-manager.nixosModules.home-manager
+        niri.nixosModules.niri
           {
+            nixpkgs.overlays = [
+              niri.overlays.niri
+            ];
             # home-manager.backupFileExtension = "backup";
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;

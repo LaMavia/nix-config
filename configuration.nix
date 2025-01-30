@@ -62,7 +62,8 @@
     };
 
     inputMethod = {
-      enabled = "fcitx5";
+      enable = true;
+      type = "fcitx5";
       fcitx5 = {
         waylandFrontend = true;
         addons = with pkgs; [
@@ -107,14 +108,10 @@
   # setup fonts
   fonts.packages = with pkgs; [
     noto-fonts
-    noto-fonts-cjk
+    noto-fonts-cjk-sans
     noto-fonts-emoji
-    (nerdfonts.override {
-      fonts = [
-        "FiraCode"
-        "DroidSansMono"
-      ];
-    })
+    nerd-fonts.fira-code
+    nerd-fonts.droid-sans-mono
   ];
 
   users.users.mavia = {
