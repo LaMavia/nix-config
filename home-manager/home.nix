@@ -15,6 +15,7 @@
     ./modules/direnv.nix
     ./modules/nvim/default.nix
     ./modules/lvim/default.nix
+    ./modules/niri/default.nix
     # ./modules/nixvim/default.nix
   ];
   
