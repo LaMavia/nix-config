@@ -7,6 +7,7 @@
     ./dot/foot/default.nix
     ./dot/tmux/default.nix
     ./dot/gestures/default.nix
+    ./dot/fuzzel/default.nix
     # program configs
     ./modules/git.nix
     ./modules/fish/default.nix
