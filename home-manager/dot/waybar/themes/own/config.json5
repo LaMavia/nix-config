@@ -22,6 +22,22 @@
         "all-outputs": true,
         "warp-on-scroll": false,
     },
+    "niri/workspaces": {
+	    "format": "{icon}",
+	    "format-icons": {
+		    // Named workspaces
+		    // (you need to configure them in niri)
+		    "browser": "",
+		    "music": "",
+		    "code": "",
+		    "misc": "",
+		    "mail": "",
+		    // Icons by state
+
+		    "active": "",
+		    "default": ""
+	    }
+    },
     "keyboard-state": {
         "numlock": true,
         "capslock": true,
