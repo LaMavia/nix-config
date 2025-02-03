@@ -1,7 +1,7 @@
 spawn-at-startup "xwayland-satellite"
 spawn-at-startup "waybar"
 spawn-at-startup "fcitx5 -d"
-spawn-at-startup "swww-daemon"
+spawn-at-startup "bash" "-c" "nohup" "swww-daemon" ">/dev/null" "&"
 spawn-at-startup "swww" "img" "~/.config/niri/wallpaper.png"
 
 input {
@@ -10,6 +10,10 @@ input {
         natural-scroll
         middle-emulation
     }
+}
+
+cursor {
+    xcursor-size 12
 }
 
 layout {
@@ -48,6 +52,12 @@ animations {
  slowdown 0.5
 }
 
+workspace "edit"
+
+workspace "side"
+
+workspace "mail"
+
 binds {
     // Mod-Shift-/, which is usually the same as Mod-?,
     // shows a list of important hotkeys.
@@ -69,14 +79,14 @@ binds {
 
     // Move focus between columns
     Mod+Left  { focus-column-left; }
-    Mod+Down  { focus-window-down; }
-    Mod+Up    { focus-window-up; }
+    // Mod+Down  { focus-window-down; }
+    // Mod+Up    { focus-window-up; }
     Mod+Right { focus-column-right; }
 
     // Move entire column
     Mod+Shift+Left  { move-column-left; }
-    Mod+Shift+Down  { move-window-down; }
-    Mod+Shift+Up    { move-window-up; }
+    Mod+Shift+Down  { move-column-to-workspace-down; }
+    Mod+Shift+Up    { move-column-to-workspace-up; }
     Mod+Shift+Right { move-column-right; }
   
     // Alternative commands that move across workspaces when reaching
@@ -101,12 +111,12 @@ binds {
 
     Mod+Page_Down      { focus-workspace-down; }
     Mod+Page_Up        { focus-workspace-up; }
-    Mod+U              { focus-workspace-down; }
-    Mod+I              { focus-workspace-up; }
+    Mod+Down           { focus-workspace-down; }
+    Mod+Up             { focus-workspace-up; }
     Mod+Ctrl+Page_Down { move-column-to-workspace-down; }
     Mod+Ctrl+Page_Up   { move-column-to-workspace-up; }
-    Mod+Ctrl+U         { move-column-to-workspace-down; }
-    Mod+Ctrl+I         { move-column-to-workspace-up; }
+    Mod+Ctrl+Down      { move-column-to-workspace-down; }
+    Mod+Ctrl+Up        { move-column-to-workspace-up; }
 
     // Alternatively, there are commands to move just a single window:
     // Mod+Ctrl+Page_Down { move-window-to-workspace-down; }
@@ -114,8 +124,8 @@ binds {
 
     Mod+Shift+Page_Down { move-workspace-down; }
     Mod+Shift+Page_Up   { move-workspace-up; }
-    Mod+Shift+U         { move-workspace-down; }
-    Mod+Shift+I         { move-workspace-up; }
+    // Mod+Shift+Down      { move-workspace-down; }
+    // Mod+Shift+Up        { move-workspace-up; }
 
     Mod+WheelScrollDown      cooldown-ms=150 { focus-workspace-down; }
     Mod+WheelScrollUp        cooldown-ms=150 { focus-workspace-up; }
@@ -146,15 +156,15 @@ binds {
     Mod+9 {  spawn "~/.scripts/exec_and_signal.sh" "focus-workspace 9"; }
 
     // Move column to workspace
-    Mod+Ctrl+1 { spawn "~/.scripts/exec_and_signal.sh" "move-column-to-workspace 1" "focus-workspace 1"; }
-    Mod+Ctrl+2 { spawn "~/.scripts/exec_and_signal.sh" "move-column-to-workspace 2" "focus-workspace 2"; }
-    Mod+Ctrl+3 { spawn "~/.scripts/exec_and_signal.sh" "move-column-to-workspace 3" "focus-workspace 3"; }
-    Mod+Ctrl+4 { spawn "~/.scripts/exec_and_signal.sh" "move-column-to-workspace 4" "focus-workspace 4"; }
-    Mod+Ctrl+5 { spawn "~/.scripts/exec_and_signal.sh" "move-column-to-workspace 5" "focus-workspace 5"; }
-    Mod+Ctrl+6 { spawn "~/.scripts/exec_and_signal.sh" "move-column-to-workspace 6" "focus-workspace 6"; }
-    Mod+Ctrl+7 { spawn "~/.scripts/exec_and_signal.sh" "move-column-to-workspace 7" "focus-workspace 7"; }
-    Mod+Ctrl+8 { spawn "~/.scripts/exec_and_signal.sh" "move-column-to-workspace 8" "focus-workspace 8"; }
-    Mod+Ctrl+9 { spawn "~/.scripts/exec_and_signal.sh" "move-column-to-workspace 9" "focus-workspace 9"; }
+    Mod+Shift+1 { spawn "~/.scripts/exec_and_signal.sh" "move-column-to-workspace 1" "focus-workspace 1"; }
+    Mod+Shift+2 { spawn "~/.scripts/exec_and_signal.sh" "move-column-to-workspace 2" "focus-workspace 2"; }
+    Mod+Shift+3 { spawn "~/.scripts/exec_and_signal.sh" "move-column-to-workspace 3" "focus-workspace 3"; }
+    Mod+Shift+4 { spawn "~/.scripts/exec_and_signal.sh" "move-column-to-workspace 4" "focus-workspace 4"; }
+    Mod+Shift+5 { spawn "~/.scripts/exec_and_signal.sh" "move-column-to-workspace 5" "focus-workspace 5"; }
+    Mod+Shift+6 { spawn "~/.scripts/exec_and_signal.sh" "move-column-to-workspace 6" "focus-workspace 6"; }
+    Mod+Shift+7 { spawn "~/.scripts/exec_and_signal.sh" "move-column-to-workspace 7" "focus-workspace 7"; }
+    Mod+Shift+8 { spawn "~/.scripts/exec_and_signal.sh" "move-column-to-workspace 8" "focus-workspace 8"; }
+    Mod+Shift+9 { spawn "~/.scripts/exec_and_signal.sh" "move-column-to-workspace 9" "focus-workspace 9"; }
 
     // Alternatively, there are commands to move just a single window:
     // Mod+Ctrl+1 { move-window-to-workspace 1; }

@@ -6,7 +6,7 @@
     fuzzel
   ];
 
-  home.file."~/.scripts" = {
+  home.file.".scripts" = {
     source = ./scripts;
     recursive = true;
   };
