@@ -4,7 +4,7 @@
     enable = true;
     libraries = with pkgs; [
       zlib
-      libgcc
+      glibc_multi
     ];
   };
 

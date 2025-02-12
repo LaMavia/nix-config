@@ -1,7 +1,8 @@
 spawn-at-startup "xwayland-satellite"
 spawn-at-startup "waybar"
 spawn-at-startup "fcitx5 -d"
-spawn-at-startup "bash" "-c" "nohup" "swww-daemon" ">/dev/null" "&"
+spawn-at-startup "bash" "-c" "'swww-daemon & disown'"
+spawn-at-startup "systemctl" "--user" "start" "gamma"
 spawn-at-startup "swww" "img" "~/.config/niri/wallpaper.png"
 
 input {
@@ -75,7 +76,7 @@ binds {
     XF86AudioMute { spawn "pactl" "set-sink-mute" "@DEFAULT_SINK@" "toggle"; }
     XF86AudioRaiseVolume { spawn "pactl" "set-sink-volume" "@DEFAULT_SINK@" "+5%"; }
 
-    XF86MonBrightnessDown { spawn "brightnessctl" "s" "-5%";  }
+    XF86MonBrightnessDown { spawn "brightnessctl" "s" "5%-";  }
     XF86MonBrightnessUp { spawn "brightnessctl" "s" "+5%";  }
 
     // Close Active window

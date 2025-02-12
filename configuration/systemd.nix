@@ -20,7 +20,18 @@
           PassEnvironment = "DISPLAY";
           ExecStart="${pkgs.gammastep}/bin/gammastep -l 52.237049:21.017532 -t +6500:+3500";
         };
-        wantedBy = [ "multi-user.target" ];
+        wantedBy = [ "default.target" ];
+      };
+
+      swww = {
+        enable = true;
+        description = "swww daemon";
+        after = [ "graphical-session.target" ];
+        wantedBy = [ "default.target" ];
+        serviceConfig = { 
+          ExecStart = "${pkgs.swww}/bin/swww-daemon";
+          RestartSec = 5; 
+        };
       };
 
       kanshi = {
