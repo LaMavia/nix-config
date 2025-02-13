@@ -1,5 +1,8 @@
 { pkgs, ... }:
 {
+  imports = [
+    ../../dot/onagre/default.nix
+  ];
   home.packages = with pkgs; [
     swww
     xwayland-satellite
