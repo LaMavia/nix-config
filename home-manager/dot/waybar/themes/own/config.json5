@@ -6,7 +6,7 @@
     // "width": 30, // Waybar width
     "spacing": 0, // Gaps between modules (4px)
     // Choose the order of the modules
-    "modules-left": ["sway/workspaces", "sway/mode", "sway/scratchpad", "custom/media"],
+    "modules-left": ["sway/workspaces", "niri/workspaces", "sway/mode", "sway/scratchpad", "custom/media"],
     "modules-center": [
         "clock"
     ],
