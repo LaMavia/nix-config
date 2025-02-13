@@ -1,7 +1,9 @@
 { pkgs, ... }:
 {
   imports = [
-    ../../dot/onagre/default.nix
+    ../../dot/fuzzel/default.nix
+    ../../dot/waybar/default.nix
+    ../../dot/swaync/default.nix
   ];
   home.packages = with pkgs; [
     swww
