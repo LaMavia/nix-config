@@ -29,7 +29,6 @@
     bun
     rustc
     cargo
-    octaveFull
     amberol
     eartag
     file-roller
@@ -47,6 +46,8 @@
     zed
     whatsapp-for-linux
     discord
+    bat
+    hyfetch
     # blender-hip
     (callPackage ./modules/mc/pkg.nix {})
     # (callPackage ./modules/zen/pkg.nix {})

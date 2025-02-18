@@ -15,6 +15,15 @@
     plugins = [
       # Enable a plugin (here grc for colorized command output) from nixpkgs
       { name = "grc"; src = pkgs.fishPlugins.grc.src; }
+      { 
+        name = "loadenv";  
+        src = pkgs.fetchFromGitHub {
+          owner = "berk-karaal";
+          repo = "loadenv.fish";
+          rev = "e5ad1b3e8cf779bd897a5fa4c0dc55a920b01ed7";
+          sha256 = "RyGjJ8NxTqEr9MW7hnrTlry6fW+IF4el1IPUh7WIwxU=";
+        };
+      } 
       # Manually packaging and enable a plugin
       {
         name = "z";
