@@ -47,7 +47,7 @@
   time.timeZone = "Europe/Warsaw";
 
   # Select internationalisation properties.
-  i18n = let l = "ja_JP.UTF-8"; in {
+  i18n = let l = "es_ES.UTF-8"; in {
     defaultLocale = l;  
     extraLocaleSettings = {
       LC_ADDRESS = l;
@@ -86,7 +86,7 @@
     # XDG_CURRENT_DESKTOP = "sway";
     LIBVIRT_DEFAULT_URI = [ "qemu:///system" ];
     GLFW_IM_MODULE = "fcitx";
-    GTK_IM_MODULE = "fcitx";
+    # GTK_IM_MODULE = "fcitx";
     INPUT_METHOD = "fcitx";
     XMODIFIERS = "@im=fcitx";
     IMSETTINGS_MODULE = "fcitx";

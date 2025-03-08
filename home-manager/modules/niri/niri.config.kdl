@@ -1,7 +1,7 @@
 spawn-at-startup "xwayland-satellite"
 spawn-at-startup "waybar"
 spawn-at-startup "fcitx5 -d"
-spawn-at-startup "bash" "-c" "'swww-daemon & disown'"
+spawn-at-startup "swww-daemon & disown"
 spawn-at-startup "systemctl" "--user" "start" "gamma"
 spawn-at-startup "swww" "img" "~/.config/niri/wallpaper.png"
 spawn-at-startup "~/.scripts/swayidle.sh"
@@ -28,7 +28,9 @@ layout {
         proportion 0.66667
     }
 
-    default-column-width {}
+    default-column-width {
+        proportion 1.0;
+    }
 
     focus-ring {
         off
@@ -217,4 +219,5 @@ binds {
     // moving the mouse or pressing any other key.
     Mod+Shift+P { power-off-monitors; }
     Mod+L { spawn "~/.scripts/swayidle.sh"; }
+    Mod+Shift+N { spawn "swaync-client" "-t"; }
 }

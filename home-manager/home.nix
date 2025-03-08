@@ -30,7 +30,7 @@
     rustc
     cargo
     amberol
-    eartag
+    # eartag
     file-roller
     nodejs_22
     zoom-us

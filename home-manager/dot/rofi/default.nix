@@ -5,6 +5,6 @@
   home.file.".config/rofi/config.rasi".source = ./themes/spotlight-dark.rasi;
 
   home.packages = with pkgs; [
-    rofi
+    rofi-wayland
   ];
 }
