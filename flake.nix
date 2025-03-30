@@ -8,7 +8,10 @@
     niri = {
       url = "github:sodiboo/niri-flake";
     };
-    nvf.url = "github:notashelf/nvf";
+    nvf = {
+      url = "github:notashelf/nvf";
+      follows = "nixpkgs";
+    };
   };
   outputs = { self, nixpkgs, home-manager, niri, nvf, ... }: {
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
@@ -37,13 +40,5 @@
           }
       ];
     };
-
- homeConfigurations.mavia = home-manager.lib.homeManagerConfiguration {
-    pkgs = nixpkgs.legacyPackages.x86_64-linux;
-    modules = [
-      ./home-manager/home.nix
-      nvf.homeManagerModules.default
-    ];
-  };
   };
 }
