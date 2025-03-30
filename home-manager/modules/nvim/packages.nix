@@ -5,4 +5,5 @@
  bottom
  nixd
  prettierd
+ gcc
 ]

@@ -1,4 +1,4 @@
-{ pkgs, lib, ... }:
+{ pkgs, lib, inputs, ... }:
 
 {
   imports = [
@@ -13,11 +13,12 @@
     ./modules/gtk.nix
     ./modules/fonts.nix
     ./modules/direnv.nix
-    ./modules/nvim/v2.nix
-    ./modules/lvim/default.nix
+    ./modules/nvim/default.nix
+    # ./modules/lvim/default.nix
     ./modules/niri/default.nix
     # ./modules/nvf/default.nix
     # ./modules/nixvim/default.nix
+    # inputs.nixvim.homeManagerModules.nixvim
   ];
   
   home.enableNixpkgsReleaseCheck = false;
@@ -51,6 +52,7 @@
     hyfetch
     # blender-hip
     (callPackage ./modules/mc/pkg.nix {})
+    # Akari.packages.${system}.default
     # (callPackage ./modules/zen/pkg.nix {})
   ];
 
