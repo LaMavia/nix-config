@@ -1,14 +1,13 @@
 { pkgs, ... }:
 {
   imports = [
-    ../../dot/fuzzel/default.nix
+    ../../dot/walker/default.nix
     ../../dot/waybar/default.nix
     ../../dot/swaync/default.nix
   ];
   home.packages = with pkgs; [
     swww
     xwayland-satellite
-    fuzzel
   ];
 
   home.file.".scripts" = {

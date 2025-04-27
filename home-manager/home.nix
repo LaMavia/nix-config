@@ -14,11 +14,7 @@
     ./modules/fonts.nix
     ./modules/direnv.nix
     ./modules/nvim/default.nix
-    # ./modules/lvim/default.nix
     ./modules/niri/default.nix
-    # ./modules/nvf/default.nix
-    # ./modules/nixvim/default.nix
-    # inputs.nixvim.homeManagerModules.nixvim
   ];
   
   home.enableNixpkgsReleaseCheck = false;
@@ -26,17 +22,14 @@
   home.homeDirectory = "/home/mavia";
 
   home.packages = with pkgs; [
-    brave
     thunderbird
     bun
     rustc
     cargo
     amberol
-    # eartag
     file-roller
     nodejs_22
     zoom-us
-    signal-desktop
     vscode
     spotify
     tokei
@@ -50,10 +43,7 @@
     discord
     bat
     hyfetch
-    # blender-hip
     (callPackage ./modules/mc/pkg.nix {})
-    # Akari.packages.${system}.default
-    # (callPackage ./modules/zen/pkg.nix {})
   ];
 
   home.shellAliases = {
