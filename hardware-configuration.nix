@@ -5,7 +5,8 @@
 
 {
   imports =
-    [ (modulesPath + "/installer/scan/not-detected.nix")
+    [
+      (modulesPath + "/installer/scan/not-detected.nix")
     ];
 
   boot.initrd.availableKernelModules = [ "nvme" "xhci_pci" ];
@@ -14,26 +15,36 @@
   boot.extraModulePackages = [ ];
 
   fileSystems."/" =
-    { device = "/dev/disk/by-uuid/4f6f466b-aae0-4892-bf36-bf3b7a4d0f0a";
+    {
+      device = "/dev/disk/by-uuid/4f6f466b-aae0-4892-bf36-bf3b7a4d0f0a";
       fsType = "ext4";
     };
 
   boot.initrd.luks.devices."luks-5db8742d-d7f2-4060-ab30-a0c2f395192b".device = "/dev/disk/by-uuid/5db8742d-d7f2-4060-ab30-a0c2f395192b";
 
   fileSystems."/boot" =
-    { device = "/dev/disk/by-uuid/257F-0016";
+    {
+      device = "/dev/disk/by-uuid/257F-0016";
       fsType = "vfat";
+      options = [ "fmask=0022" "dmask=0022" ];
     };
 
-  swapDevices =
-    [ { device = "/dev/disk/by-uuid/385c3dfa-51b0-4f37-8752-0f0a14a30c3a"; }
-    ];
+  swapDevices = [{
+    device = "/swapfile";
+    size = 16 * 1024; # 16GB
+  }];
 
   # Enables DHCP on each ethernet and wireless interface. In case of scripted networking
   # (the default) this is the recommended approach. When using systemd-networkd it's
   # still possible to use this option, but it's recommended to use it in conjunction
   # with explicit per-interface declarations with `networking.interfaces.<interface>.useDHCP`.
   networking.useDHCP = lib.mkDefault true;
+  # networking.interfaces.br-3b15b9dba2f7.useDHCP = lib.mkDefault true;
+  # networking.interfaces.br-af49f349a19e.useDHCP = lib.mkDefault true;
+  # networking.interfaces.br-d1a61abb2072.useDHCP = lib.mkDefault true;
+  # networking.interfaces.br-e9a0b5af53bd.useDHCP = lib.mkDefault true;
+  # networking.interfaces.br-eb5d74f68040.useDHCP = lib.mkDefault true;
+  # networking.interfaces.docker0.useDHCP = lib.mkDefault true;
   # networking.interfaces.wlo1.useDHCP = lib.mkDefault true;
 
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";

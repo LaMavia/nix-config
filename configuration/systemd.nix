@@ -1,6 +1,6 @@
 { pkgs, ... }:
 {
-  systemd = {  
+  systemd = {
     services."getty@tty1".enable = false;
     services."autovt@tty1".enable = false;
 
@@ -18,21 +18,24 @@
         serviceConfig = {
           Type = "simple";
           PassEnvironment = "DISPLAY";
-          ExecStart="${pkgs.gammastep}/bin/gammastep -l 52.237049:21.017532 -t +6500:+3500";
+          ExecStart = "${pkgs.gammastep}/bin/gammastep -l 52.237049:21.017532 -t +6500:+3500";
+          RestartSec = 10;
+          Restart = "on-failure";
         };
         wantedBy = [ "default.target" ];
       };
 
-      swww = {
-        enable = true;
-        description = "swww daemon";
-        after = [ "graphical-session.target" ];
-        wantedBy = [ "default.target" ];
-        serviceConfig = { 
-          ExecStart = "${pkgs.swww}/bin/swww-daemon";
-          RestartSec = 5; 
-        };
-      };
+      # swww = {
+      #   enable = true;
+      #   description = "swww daemon";
+      #   after = [ "graphical-session.target" ];
+      #   wantedBy = [ "default.target" ];
+      #   serviceConfig = {
+      #     ExecStart = "${pkgs.swww}/bin/swww-daemon";
+      #     RestartSec = 10;
+      #     Restart = "on-failure";
+      #   };
+      # };
 
       kanshi = {
         description = "kanshi daemon";

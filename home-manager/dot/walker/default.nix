@@ -6,6 +6,6 @@
 
   home.file.".config/walker" = {
     source = ./config;
-    recusrive = true;
+    recursive = true;
   };
 }

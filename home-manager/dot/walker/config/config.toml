@@ -5,10 +5,10 @@ close_when_open = false
 theme = "default"
 monitor = ""
 hotreload_theme = false
-as_window = false
+as_window = true
 timeout = 0
-disable_click_to_close = false
-force_keyboard_focus = false
+disable_click_to_close = true
+force_keyboard_focus = true
 
 [keys]
 accept_typeahead = ["tab"]

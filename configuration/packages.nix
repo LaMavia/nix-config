@@ -45,8 +45,7 @@ in
     gnutar
     zip
     wget
-    brave
-    (wrapFirefox (firefox-unwrapped.override { pipewireSupport = true;}) {})
+    (wrapFirefox (firefox-unwrapped.override { pipewireSupport = true; }) { })
     sway
     kitty
     wayland

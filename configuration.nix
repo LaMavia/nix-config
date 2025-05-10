@@ -31,8 +31,26 @@
   };
 
   # Bootloader.
-  boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
+  # boot.loader.systemd-boot.enable = true;
+  # boot.loader.efi.canTouchEfiVariables = true;
+
+  boot.loader = {
+    timeout = 10;
+
+    systemd-boot.enable = true;
+    efi.canTouchEfiVariables = true;
+    # efi = {
+    #   efiSysMountPoint = "/boot/EFI";
+    #   canTouchEfiVariables = true;
+    # };
+    #
+    # grub = {
+    #   enable = true;
+    #   efiSupport = true;
+    #   device = "nodev";
+    #   configurationLimit = 50;
+    # };
+  };
 
   # Kernel
   boot.kernelPackages = pkgs.linuxPackages_zen;
@@ -47,37 +65,38 @@
   time.timeZone = "Europe/Warsaw";
 
   # Select internationalisation properties.
-  i18n = let l = "es_ES.UTF-8"; in {
-    defaultLocale = l;  
-    extraLocaleSettings = {
-      LC_ADDRESS = l;
-      LC_IDENTIFICATION = l;
-      LC_MEASUREMENT = l;
-      LC_MONETARY = l;
-      LC_NAME = l;
-      LC_NUMERIC = l;
-      LC_PAPER = l;
-      LC_TELEPHONE = l;
-      LC_TIME = l;
-    };
+  i18n = let l = "es_ES.UTF-8"; in
+    {
+      defaultLocale = l;
+      extraLocaleSettings = {
+        LC_ADDRESS = l;
+        LC_IDENTIFICATION = l;
+        LC_MEASUREMENT = l;
+        LC_MONETARY = l;
+        LC_NAME = l;
+        LC_NUMERIC = l;
+        LC_PAPER = l;
+        LC_TELEPHONE = l;
+        LC_TIME = l;
+      };
 
-    inputMethod = {
-      enable = true;
-      type = "fcitx5";
-      fcitx5 = {
-        waylandFrontend = true;
-        addons = with pkgs; [
-          fcitx5-gtk
-          fcitx5-mozc
-          fcitx5-chinese-addons
-          rime-data
-          fcitx5-rime
-          fcitx5-nord
-        ];
+      inputMethod = {
+        enable = true;
+        type = "fcitx5";
+        fcitx5 = {
+          waylandFrontend = true;
+          addons = with pkgs; [
+            fcitx5-gtk
+            fcitx5-mozc
+            fcitx5-chinese-addons
+            rime-data
+            fcitx5-rime
+            fcitx5-nord
+          ];
+        };
       };
     };
-  };
-  
+
   environment.sessionVariables = {
     XDG_CACHE_HOME = "$HOME/.cache";
     XDG_CONFIG_HOME = "$HOME/.config";
@@ -99,7 +118,7 @@
     enable = true;
     wlr.enable = true;
     # gtk portal needed to make gtk apps happy
-    extraPortals = with pkgs; [ 
+    extraPortals = with pkgs; [
       # xdg-desktop-portal-gtk 
       xdg-desktop-portal-wlr
     ];
