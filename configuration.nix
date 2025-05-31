@@ -37,19 +37,20 @@
   boot.loader = {
     timeout = 10;
 
-    systemd-boot.enable = true;
-    efi.canTouchEfiVariables = true;
-    # efi = {
-    #   efiSysMountPoint = "/boot/EFI";
-    #   canTouchEfiVariables = true;
-    # };
-    #
-    # grub = {
-    #   enable = true;
-    #   efiSupport = true;
-    #   device = "nodev";
-    #   configurationLimit = 50;
-    # };
+    # systemd-boot.enable = true;
+    # efi.canTouchEfiVariables = true;
+    efi = {
+      efiSysMountPoint = "/boot";
+      canTouchEfiVariables = true;
+    };
+
+    grub = {
+      enable = true;
+      efiSupport = true;
+      device = "nodev";
+      useOSProber = true;
+      configurationLimit = 50;
+    };
   };
 
   # Kernel
