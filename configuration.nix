@@ -50,6 +50,9 @@
       device = "nodev";
       useOSProber = true;
       configurationLimit = 50;
+      theme = (pkgs.catppuccin-grub.override {
+        flavor = "mocha";
+      });
     };
   };
 

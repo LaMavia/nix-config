@@ -16,7 +16,7 @@
     ./modules/nvim/default.nix
     ./modules/niri/default.nix
   ];
-  
+
   home.enableNixpkgsReleaseCheck = false;
   home.username = "mavia";
   home.homeDirectory = "/home/mavia";
@@ -43,11 +43,15 @@
     discord
     bat
     hyfetch
-    (callPackage ./modules/mc/pkg.nix {})
+    (callPackage ./modules/mc/pkg.nix { })
+    eza
+    uutils-coreutils-noprefix
+    dust
   ];
 
   home.shellAliases = {
     zed-editor = lib.getExe pkgs.zed-editor;
+    li = "${lib.getExe pkgs.eza} -l --icons";
   };
 
   home.sessionVariables = { };

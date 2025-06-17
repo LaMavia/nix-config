@@ -1,3 +1,4 @@
+{ pkgs, ... }:
 {
   services = {
     dbus.enable = true;
@@ -45,7 +46,14 @@
       displayManager = {
         gdm.enable = true;
       };
-      
+
+    };
+
+    mongodb = {
+      enable = true;
+      package = pkgs.mongodb-ce;
+      enableAuth = false;
+      bind_ip = "127.0.0.1";
     };
   };
 }
