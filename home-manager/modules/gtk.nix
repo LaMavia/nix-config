@@ -14,9 +14,9 @@
       };
       "org/gnome/desktop/input-sources" = {
         show-all-sources = true;
-        sources = [ 
-          (lib.gvariant.mkTuple [ "xkb" "pl" ]) 
-          (lib.gvariant.mkTuple [ "xkb" "jp" ]) 
+        sources = [
+          (lib.gvariant.mkTuple [ "xkb" "pl" ])
+          (lib.gvariant.mkTuple [ "xkb" "jp" ])
         ];
         xkb-options = [ "terminate:ctrl_alt_bksp" ];
       };
@@ -26,7 +26,7 @@
   gtk = {
     enable = true;
     theme = {
-      name = "Catppuccin-Macchiato-Standard-Pink-Dark";
+      name = "catppuccin-macchiato-pink-standard+rimless";
       package = pkgs.catppuccin-gtk.override {
         accents = [ "pink" ];
         size = "standard";

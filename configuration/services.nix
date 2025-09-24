@@ -31,22 +31,19 @@
         enable = true;
         user = "mavia";
       };
+      gdm.enable = true;
     };
 
-    desktopManager.cosmic = {
-      enable = true;
+    desktopManager = {
+      cosmic.enable = true;
+      gnome.enable = true;
     };
 
     xserver = {
       enable = true;
       desktopManager = {
-        gnome.enable = true;
         runXdgAutostartIfNone = true;
       };
-      displayManager = {
-        gdm.enable = true;
-      };
-
     };
 
     mongodb = {

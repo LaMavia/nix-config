@@ -38,6 +38,11 @@ in
           }
       }
 
+      output "eDP-1" {
+          backdrop-color "#ecdfcf"
+      }
+
+
       cursor {
           xcursor-size 12
       }

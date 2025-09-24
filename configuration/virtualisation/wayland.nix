@@ -4,5 +4,5 @@
     enable = true;
   };
 
-  environment.systemPackages = with pkgs; [waydroid];
+  # environment.systemPackages = with pkgs; [waydroid];
 }

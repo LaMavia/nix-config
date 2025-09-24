@@ -65,6 +65,7 @@ in
     swaynotificationcenter
     brightnessctl
     pulseaudio
+    ldacbt
     home-manager
     gh
     appimage-run

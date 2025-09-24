@@ -4,9 +4,9 @@
     services."getty@tty1".enable = false;
     services."autovt@tty1".enable = false;
 
-    extraConfig = ''
-      DefaultTimeoutStopSec=1s
-    '';
+    settings.Manager = {
+      DefaultTimeoutStopSec = "1s";
+    };
 
     user.services = {
       gamma = {

@@ -47,6 +47,7 @@
     eza
     uutils-coreutils-noprefix
     dust
+    signal-desktop
   ];
 
   home.shellAliases = {
