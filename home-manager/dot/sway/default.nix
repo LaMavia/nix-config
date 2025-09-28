@@ -10,7 +10,7 @@
 
   home.packages = with pkgs; [
     sway-contrib.inactive-windows-transparency
-    python311Packages.i3ipc
+    # python311Packages.i3ipc
   ];
 
   home.file.".config/sway/wallpaper.png" = {

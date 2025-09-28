@@ -61,7 +61,7 @@ in
     tmux
     waybar
     nautilus
-    rofi-wayland
+    rofi
     swaynotificationcenter
     brightnessctl
     pulseaudio
