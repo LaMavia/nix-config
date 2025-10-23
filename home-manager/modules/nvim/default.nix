@@ -1,10 +1,11 @@
 { pkgs, config, ... }:
-let 
- path = "/home/mavia/.nixos/home-manager/modules/nvim/config";
-in {
- home.file.".config/nvim" = {
-  source = builtins.trace "nvim config path: ${path}" (config.lib.file.mkOutOfStoreSymlink "${path}");
- };
+let
+  path = "/home/mavia/.nixos/home-manager/modules/nvim/config_";
+in
+{
+  home.file.".config/nvim" = {
+    source = config.lib.file.mkOutOfStoreSymlink "${path}";
+  };
 
- home.packages = import ./packages.nix { pkgs=pkgs; };
+  home.packages = import ./packages.nix { pkgs = pkgs; };
 }
