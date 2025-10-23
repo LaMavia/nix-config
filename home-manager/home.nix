@@ -48,6 +48,7 @@
     uutils-coreutils-noprefix
     dust
     signal-desktop
+    # inputs.nixvim.packages.${pkgs.stdenv.hostPlatform.system}.default
   ];
 
   home.shellAliases = {

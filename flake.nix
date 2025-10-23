@@ -15,9 +15,9 @@
     # Neve.url = "github:redyf/Neve";
   };
   outputs = { self, nixpkgs, home-manager, niri, ... } @ inputs: {
-    overlays.additions = final: prev: {
-      nixvim = inputs.nixvim.packages.${prev.system}.default;
-    };
+    # overlays.additions = final: prev: {
+    #   nixvim = inputs.nixvim.packages.${prev.system}.default;
+    # };
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       specialArgs = {
