@@ -51,6 +51,7 @@ return {
       -- "pyright"
       "clangd",
       "ocamllsp",
+      "r_language_server",
     },
     -- customize language server configuration options passed to `lspconfig`
     ---@diagnostic disable: missing-fields
@@ -72,7 +73,10 @@ return {
         require("lspconfig").clangd.setup({
 
         })
-      end
+      end,
+      r_language_server = function (_, opts)
+        require('lspconfig').r_language_server.setup({})
+      end,
     },
     -- Configure buffer local auto commands to add when attaching a language server
     autocmds = {
