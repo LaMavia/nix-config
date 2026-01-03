@@ -36,10 +36,10 @@
     unzip
     htop
     slack
-    onlyoffice-bin_latest
+    onlyoffice-desktopeditors
     (lib.hiPrio zed-editor)
     zed
-    whatsapp-for-linux
+    wasistlos
     discord
     bat
     hyfetch

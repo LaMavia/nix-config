@@ -12,6 +12,10 @@
     niri = {
       url = "github:sodiboo/niri-flake";
     };
+    noctalia = {
+      url = "github:noctalia-dev/noctalia-shell";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     # Neve.url = "github:redyf/Neve";
   };
   outputs = { self, nixpkgs, home-manager, niri, ... } @ inputs: {
@@ -34,6 +38,7 @@
         ./configuration/hardware.nix
         ./configuration/virtualisation/docker.nix
         ./configuration/virtualisation/wayland.nix
+        ./home-manager/modules/noctalia.nix
         niri.nixosModules.niri
         home-manager.nixosModules.home-manager
         {

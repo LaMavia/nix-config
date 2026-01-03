@@ -22,10 +22,6 @@
       enable = true;
       qemu = {
         swtpm.enable = true;
-        ovmf = {
-          enable = true;
-          packages = [ pkgs.OVMFFull ];
-        };
       };
     };
   };
@@ -92,7 +88,7 @@
           addons = with pkgs; [
             fcitx5-gtk
             fcitx5-mozc
-            fcitx5-chinese-addons
+            qt6Packages.fcitx5-chinese-addons
             rime-data
             fcitx5-rime
             fcitx5-nord
