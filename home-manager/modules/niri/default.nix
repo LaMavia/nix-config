@@ -7,6 +7,7 @@ in
     ../../dot/waybar/default.nix
     ../../dot/swaync/default.nix
   ];
+
   home.packages = with pkgs; [
     swaybg
     xwayland-satellite
@@ -22,6 +23,8 @@ in
   };
 
   programs.niri = {
+    enable = true;
+    # program = pkgs.niri-unstable;
     config = ''
       spawn-at-startup "xwayland-satellite"
       spawn-at-startup "waybar"

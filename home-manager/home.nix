@@ -1,4 +1,4 @@
-{ pkgs, lib, inputs, ... }:
+{ pkgs, lib, inputs, system, ... }:
 
 {
   imports = [
@@ -13,8 +13,12 @@
     ./modules/gtk.nix
     ./modules/fonts.nix
     ./modules/direnv.nix
+    # ./modules/nvf/default.nix
     ./modules/nvim/default.nix
-    ./modules/niri/default.nix
+    # ./modules/niri/default.nix
+    # inputs.niri.homeModules.niri
+    # inputs.nixvim.homeManagerModules.nixvim
+    # inputs.nix4nvchad.homeManagerModule
   ];
 
   home.enableNixpkgsReleaseCheck = false;
@@ -30,24 +34,25 @@
     file-roller
     nodejs_22
     zoom-us
-    vscode
-    spotify
+    # vscode
+    # spotify
     tokei
     unzip
     htop
-    slack
+    # slack
     onlyoffice-desktopeditors
-    (lib.hiPrio zed-editor)
+    # (lib.hiPrio zed-editor)
     zed
     wasistlos
-    discord
+    # discord
     bat
     hyfetch
-    (callPackage ./modules/mc/pkg.nix { })
+    # (callPackage ./modules/mc/pkg.nix { })
     eza
     uutils-coreutils-noprefix
     dust
     signal-desktop
+    # (inputs.nixvim-config.packages.${pkgs.stdenv.hostPlatform.system}.default)
     # inputs.nixvim.packages.${pkgs.stdenv.hostPlatform.system}.default
   ];
 

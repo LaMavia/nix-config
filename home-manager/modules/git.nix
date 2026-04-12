@@ -2,8 +2,12 @@
 {
   programs.git = {
     enable = false;
-    userName = "LaMavia";
-    userEmail = "ts438730@students.mimuw.edu.pl";
+    settings = {
+      user = {
+        name = "LaMavia";
+        email = "zs438730@students.mimuw.edu.pl";
+      };
+    };
   };
 
   home.packages = with pkgs; [

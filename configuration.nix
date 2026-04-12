@@ -3,6 +3,7 @@
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
 { config, pkgs, lib, ... }:
+let defaultBrowser = "/var/lib/flatpak/exports/bin/net.waterfox.waterfox"; in
 {
   imports =
     [
@@ -111,18 +112,31 @@
     IMSETTINGS_MODULE = "fcitx";
     QT_IM_MODULE = "fcitx";
     SDL_IM_MODULE = "fcitx";
+    DEFAULT_BROWSER = defaultBrowser;
+  };
+
+  xdg = {
+    portal = {
+      enable = true;
+      wlr.enable = true;
+      # gtk portal needed to make gtk apps happy
+      extraPortals = with pkgs; [
+        # xdg-desktop-portal-gtk 
+        xdg-desktop-portal-wlr
+      ];
+    };
+
+    mime.defaultApplications =
+      {
+        "text/html" = defaultBrowser;
+        "x-scheme-handler/http" = defaultBrowser;
+        "x-scheme-handler/https" = defaultBrowser;
+        "x-scheme-handler/about" = defaultBrowser;
+        "x-scheme-handler/unknown" = defaultBrowser;
+      };
   };
 
 
-  xdg.portal = {
-    enable = true;
-    wlr.enable = true;
-    # gtk portal needed to make gtk apps happy
-    extraPortals = with pkgs; [
-      # xdg-desktop-portal-gtk 
-      xdg-desktop-portal-wlr
-    ];
-  };
 
   # setup fonts
   fonts.packages = with pkgs; [

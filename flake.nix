@@ -1,28 +1,42 @@
 {
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.11";
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    nixvim = {
-      url = "path:./home-manager/modules/nixvim";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-    niri = {
-      url = "github:sodiboo/niri-flake";
-    };
-    noctalia = {
-      url = "github:noctalia-dev/noctalia-shell";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-    # Neve.url = "github:redyf/Neve";
-  };
-  outputs = { self, nixpkgs, home-manager, niri, ... } @ inputs: {
-    # overlays.additions = final: prev: {
-    #   nixvim = inputs.nixvim.packages.${prev.system}.default;
+    # nixvim = {
+    #   url = "github:nix-community/nixvim";
+    #   # inputs.nixpkgs.follows = "nixpkgs";
     # };
-    nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
+    # niri = {
+    #  url = "github:sodiboo/niri-flake";
+      # inputs.nixpkgs.follows = "nixpkgs";
+    # };
+    # nix4nvchad = {
+    #   url = "github:nix-community/nix4nvchad";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
+    # nixvim-config = {
+    #   url = "github:nicolas-goudry/nixvim-config";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
+    # noctalia = {
+    #   url = "github:noctalia-dev/noctalia-shell";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
+    # Neve.url = "github:redyf/Neve";
+    # nvf = {
+    #   url = "github:NotAShelf/nvf";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
+  };
+  outputs = { self, nixpkgs, home-manager, ... } @ inputs: {
+    # overlays.additions = final: _prev: {
+    #   nixvim = inputs.nixvim-config.packages.${_prev.system}.default;
+    # };
+
+    nixosConfigurations.nixos = nixpkgs.lib.nixosSystem rec {
       system = "x86_64-linux";
       specialArgs = {
         inherit inputs;
@@ -38,18 +52,21 @@
         ./configuration/hardware.nix
         ./configuration/virtualisation/docker.nix
         ./configuration/virtualisation/wayland.nix
-        ./home-manager/modules/noctalia.nix
-        niri.nixosModules.niri
+        # ./home-manager/modules/noctalia.nix
+        # inputs.niri.nixosModules.niri
         home-manager.nixosModules.home-manager
         {
-          nixpkgs.overlays = [
-            niri.overlays.niri
-          ];
-          # home-manager.backupFileExtension = "backup";
-          home-manager.useGlobalPkgs = true;
-          home-manager.useUserPackages = true;
-          home-manager.users.mavia = import ./home-manager/home.nix;
-          home-manager.extraSpecialArgs = { inherit inputs; };
+          home-manager = {
+            extraSpecialArgs = {
+              inherit system inputs; # <- this will make inputs available anywhere in the HM configuration
+            };
+            # sharedModules = [ inputs.nvf.homeManagerModules.default ];
+            # useGlobalPkgs = true;
+            # useUserPackages = true;
+            users.mavia = import ./home-manager/home.nix;
+          };
+
+          home-manager.backupFileExtension = "backup";
         }
       ];
     };

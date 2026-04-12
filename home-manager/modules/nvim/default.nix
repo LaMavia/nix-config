@@ -7,5 +7,13 @@ in
     source = config.lib.file.mkOutOfStoreSymlink "${path}";
   };
 
-  home.packages = import ./packages.nix { pkgs = pkgs; };
+  home.packages = with pkgs;[
+    neovim
+    lazygit
+    ripgrep
+    bottom
+    nixd
+    prettierd
+    gcc
+  ];
 }
