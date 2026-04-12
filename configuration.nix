@@ -9,9 +9,13 @@ let defaultBrowser = "/var/lib/flatpak/exports/bin/net.waterfox.waterfox"; in
     [
       # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      ./configuration/cachix.nix
     ];
 
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  nix.settings = {
+    experimental-features = [ "nix-command" "flakes" ];
+    trusted-users = [ "root" "mavia" ];
+  };
   nixpkgs.config.allowUnfree = true;
   nixpkgs.config.allowUnfreePredicate = _: true;
 

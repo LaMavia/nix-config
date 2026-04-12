@@ -45,7 +45,7 @@ in
     gnutar
     zip
     wget
-    (wrapFirefox (firefox-unwrapped.override { pipewireSupport = true; }) { })
+    # (wrapFirefox (firefox-unwrapped.override { pipewireSupport = true; }) { })
     sway
     kitty
     wayland
@@ -71,5 +71,6 @@ in
     appimage-run
     totem
     gammastep
+    cachix
   ]);
 }

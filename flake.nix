@@ -10,8 +10,8 @@
     #   # inputs.nixpkgs.follows = "nixpkgs";
     # };
     # niri = {
-    #  url = "github:sodiboo/niri-flake";
-    # inputs.nixpkgs.follows = "nixpkgs";
+    #   url = "github:sodiboo/niri-flake";
+    #   # inputs.nixpkgs.follows = "nixpkgs";
     # };
     # nix4nvchad = {
     #   url = "github:nix-community/nix4nvchad";
