@@ -15,8 +15,8 @@
     ./modules/direnv.nix
     # ./modules/nvf/default.nix
     ./modules/nvim/default.nix
-    # ./modules/niri/default.nix
-    # inputs.niri.homeModules.niri
+    ./modules/niri/default.nix
+    inputs.niri.homeModules.niri
     # inputs.nixvim.homeManagerModules.nixvim
     # inputs.nix4nvchad.homeManagerModule
   ];

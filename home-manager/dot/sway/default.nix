@@ -10,6 +10,7 @@
 
   home.packages = with pkgs; [
     sway-contrib.inactive-windows-transparency
+    fuzzel
     # python311Packages.i3ipc
   ];
 

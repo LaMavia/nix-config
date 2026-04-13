@@ -9,10 +9,10 @@
     #   url = "github:nix-community/nixvim";
     #   # inputs.nixpkgs.follows = "nixpkgs";
     # };
-    # niri = {
-    #   url = "github:sodiboo/niri-flake";
-    #   # inputs.nixpkgs.follows = "nixpkgs";
-    # };
+    niri = {
+      url = "github:sodiboo/niri-flake";
+      # inputs.nixpkgs.follows = "nixpkgs";
+    };
     # nix4nvchad = {
     #   url = "github:nix-community/nix4nvchad";
     #   inputs.nixpkgs.follows = "nixpkgs";
@@ -32,10 +32,6 @@
     # };
   };
   outputs = { self, nixpkgs, home-manager, ... } @ inputs: {
-    # overlays.additions = final: _prev: {
-    #   nixvim = inputs.nixvim-config.packages.${_prev.system}.default;
-    # };
-
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem rec {
       system = "x86_64-linux";
       specialArgs = {
@@ -67,8 +63,10 @@
           };
 
           home-manager.backupFileExtension = "backup";
+          nixpkgs.overlays = [ inputs.niri.overlays.niri ];
         }
       ];
+
     };
   };
 }
