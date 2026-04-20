@@ -38,7 +38,8 @@ return {
     -- enable servers that you already have installed without mason
     servers = {
       "clangd",
-      "ocamllsp"
+      "ocamllsp",
+      "hls"
     },
     -- customize language server configuration passed to `vim.lsp.config`
     -- client specific configuration can also go in `lsp/` in your configuration root (see `:h lsp-config`)
@@ -55,11 +56,11 @@ return {
       clangd = function() 
         vim.lsp.enable('clangd')
         vim.lsp.config('clangd', {
-            filetypes = { 'c' },
+            filetypes = { 'c', 'cpp' },
             autostart = true,
             cmd = { "/nix/store/l6cms9wn13829x2iq0sj5fmn4zz3zarv-clang-tools-21.1.8/bin/clangd" }
         })
-      end
+      end,
     },
     -- Configure buffer local auto commands to add when attaching a language server
     autocmds = {
@@ -78,7 +79,7 @@ return {
           -- the rest of the autocmd options (:h nvim_create_autocmd)
           desc = "Refresh codelens (buffer)",
           callback = function(args)
-            if require("astrolsp").config.features.codelens then vim.lsp.codelens.enable(true, { bufnr = args.buf }) end
+            if require("astrolsp").config.features.codelens then vim.lsp.enable("codelens", { bufnr = args.buf }) end
           end,
         },
       },
