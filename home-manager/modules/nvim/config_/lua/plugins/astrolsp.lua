@@ -39,7 +39,8 @@ return {
     servers = {
       "clangd",
       "ocamllsp",
-      "hls"
+      "hls",
+      "ltex"
     },
     -- customize language server configuration passed to `vim.lsp.config`
     -- client specific configuration can also go in `lsp/` in your configuration root (see `:h lsp-config`)
@@ -61,6 +62,14 @@ return {
             cmd = { "/nix/store/l6cms9wn13829x2iq0sj5fmn4zz3zarv-clang-tools-21.1.8/bin/clangd" }
         })
       end,
+      ltex = function() 
+        vim.lsp.enable('ltex')
+        vim.lsp.config('ltex', {
+            filetypes = { 'tex' },
+            autostart = true,
+            cmd = { "ltex-ls-plus" }
+        })
+      end, 
     },
     -- Configure buffer local auto commands to add when attaching a language server
     autocmds = {
